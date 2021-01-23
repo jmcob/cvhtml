@@ -3,13 +3,13 @@
 h1 {
   background-color: rgb(29, 140, 7);
   color: aquamarine;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   font-family: monospace;
 }
 
 h2 {
-  color: purple;
-  background-color: bisque;
+  color: palegreen;
+  background-color: crimson;
   font-size: 1.5rem;
 }
 
