@@ -18,6 +18,7 @@ img {
   float: left;
   margin-right: 35px;
   width: 10%;
+  margi
 }
 
 #pic {
@@ -28,12 +29,12 @@ img {
 
 #right {
   float: right;
-  width: 42%px;
+  width: 350px;
 }
 
 #left {
   float: left;
-  width: 42%;
+  width: 350px;
 }
 
 h1 {
