@@ -1,8 +1,8 @@
 /* comments !! */
 .subtitle {
   font-style: italic;
-  background-color: grey;
-  color: white;
+  background-color: white;
+  color: grey;
 }
 
 img {
@@ -37,8 +37,8 @@ img {
 }
 
 h1 {
-  background-color: grey;
-  color: white;
+  background-color: white;
+  color: grey;
   font-size: 2rem;
   font-family: monospace;
 }
