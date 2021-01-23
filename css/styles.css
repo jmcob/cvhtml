@@ -12,6 +12,7 @@ img {
 
 #header {
   height: fit-content;
+  line-height: normal;
 }
 
 #paint {
