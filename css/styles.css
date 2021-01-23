@@ -16,25 +16,23 @@ img {
 
 #paint {
   float: left;
-  margin-right: 35px;
+  margin-right: 2%;
   width: 9%;
-  margi
 }
 
 #pic {
-  float: inline-end;
   float: right;
-  width: 15%;
+  width: 18%;
 }
 
 #right {
   float: right;
-  width: 42%;
+  width: 39%;
 }
 
 #left {
   float: left;
-  width: 42%;
+  width: 45%;
 }
 
 h1 {
