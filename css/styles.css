@@ -11,13 +11,6 @@ body {
   height: 100%;
 }
 
-#header {
-  height: fit-content;
-  line-height: normal;
-  background-color: #ec3f0f;
-}
-
-/* images */
 #paint {
   width: 20px;
   background-image: url("pic2.png");
@@ -31,6 +24,15 @@ body {
   overflow: hidden;
   z-index: -1;
 }
+
+#header {
+  margin-left: 20px;
+  height: fit-content;
+  line-height: normal;
+  background-color: white;
+}
+
+/* images */
 
 #main {
   margin-left: 20px;
@@ -57,14 +59,14 @@ ul {
 }
 
 h1 {
-  color: white;
+  color: black;
   font-size: 2rem;
   font-family: monospace;
   margin: 0px;
 }
 
 h2 {
-  color: white;
+  color: black;
   font-size: 1.5rem;
   text-align: right;
   margin: 0px;
@@ -73,7 +75,7 @@ h2 {
 h3 {
   color: white;
   font-size: 1.2rem;
-  background-color: rgb(23, 23, 158);
+  background-color: rgb(0, 0, 0);
   margin-left: 0%;
   margin-top: 0%;
   margin-right: 0%;
@@ -81,7 +83,7 @@ h3 {
 }
 
 h4 {
-  color: #ec3f0f;
+  color: black;
   margin-left: 10px;
   margin-top: 8px;
   margin-bottom: 8px;
@@ -96,11 +98,6 @@ p {
   margin: 5px;
   margin-left: 10px;
   margin-bottom: 10px;
-}
-
-strong {
-  color: midnightblue;
-  font-size: 1.35rem;
 }
 
 em {
@@ -119,7 +116,7 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 a {
-  color: midnightblue;
+  color: grey;
 }
 
 a:hover {
@@ -127,5 +124,6 @@ a:hover {
 }
 
 a:active {
-  background-color: #f15025;
+  color: white;
+  background-color: #ec3f0f;
 }
