@@ -11,42 +11,42 @@ img {
 }
 
 #header {
-  height: fit-content;
+  height: 10vh;
   line-height: normal;
+  background-color: #f15025;
 }
 
 #paint {
   float: left;
   margin-right: 2%;
-  width: 9%;
+  width: 9vw;
 }
 
 #pic {
   float: right;
-  width: 18%;
+  width: 18vw;
 }
 
 #right {
   float: right;
-  width: 39%;
+  width: 39vw;
 }
 
 #left {
   float: left;
-  width: 45%;
+  width: 45vw;
 }
 
 h1 {
-  background-color: white;
-  color: #27c5f1;
+  color: white;
   font-size: 2rem;
   font-family: monospace;
 }
 
 h2 {
   color: white;
-  background-color: #f15025;
   font-size: 1.5rem;
+  text-align: right;
 }
 
 h3 {
@@ -66,7 +66,7 @@ h5 {
 strong {
   color: white;
   background-color: #27c5f1;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
 }
 
 em {
@@ -84,4 +84,5 @@ body {
 a {
   color: #c5f127;
   font-style: bold;
+  font-size: 1.35rem;
 }
