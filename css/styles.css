@@ -19,7 +19,6 @@ body {
 
 /* images */
 #paint {
-  max-width: 120px;
   width: 11vw;
   background-image: url("pic2.png");
   height: 100%;
@@ -34,7 +33,7 @@ body {
 }
 
 #main {
-  margin-left: 11vh;
+  margin-left: 11vw;
 }
 #pic {
   float: right;
@@ -44,14 +43,13 @@ body {
 }
 
 /* columns*/
+#left {
+  float: left;
+  width: calc(48vw);
+}
 #right {
   float: right;
   width: calc(40vw);
-}
-
-#left {
-  float: left;
-  width: calc(45vw);
 }
 
 h1 {
