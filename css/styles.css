@@ -45,7 +45,7 @@ body {
 /* columns*/
 #left {
   float: left;
-  width: calc(48vw);
+  width: calc(47vw);
 }
 #right {
   float: right;
