@@ -1,11 +1,3 @@
-/* comments !! */
-.subtitle {
-  font-style: italic;
-  background-color: white;
-  color: #27c5f1;
-  margin: 1%;
-}
-
 img {
   max-width: 100%;
   max-height: 100%;
@@ -24,6 +16,16 @@ img {
   margin-right: 0px;
 }
 
+/*sous le header*/
+.subtitle {
+  font-style: italic;
+  background-color: white;
+  color: #726da8;
+  margin: 1%;
+  margin-left: 2%;
+}
+
+/* columns*/
 #right {
   float: right;
   width: 50vw;
@@ -49,43 +51,46 @@ h2 {
 
 h3 {
   color: white;
-  font-size: 1.2rem; /* hello */
+  font-size: 1.2rem;
   background-color: #5327f1;
+  margin-left: 2%;
 }
 
 h4 {
   color: #f15025;
+  margin-left: 2%;
 }
 
 h5 {
   font-size: 1rem;
   margin: 0.5%;
+  margin-left: 2%;
 }
 p {
   margin: 1%;
+  margin-left: 2%;
 }
 
 strong {
-  color: white;
-  background-color: #27c5f1;
+  color: midnightblue;
   font-size: 1.35rem;
 }
 
 em {
-  background-color: #c5f127;
+  font-weight: bold;
+  font-style: italic;
 }
+
 body {
   background-color: white;
   margin: 0%;
 }
 
 * {
-  color: midnightblue;
+  color: black;
   font-size: 1rem;
   font-family: Helvetica, Arial, sans-serif;
 }
 a {
-  color: #c5f127;
-  font-style: bold;
-  font-size: 1.35rem;
+  color: midnightblue;
 }
