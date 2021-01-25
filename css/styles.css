@@ -19,7 +19,7 @@ body {
 
 /* images */
 #paint {
-  width: 58px;
+  width: 39px;
   background-image: url("pic2.png");
   height: 100%;
   background-repeat: repeat-y;
@@ -33,7 +33,7 @@ body {
 }
 
 #main {
-  margin-left: 58px;
+  margin-left: 39px;
 }
 #pic {
   float: right;
@@ -45,11 +45,11 @@ body {
 /* columns*/
 #left {
   float: left;
-  width: calc(50vw - 29px);
+  width: calc(50vw - 20px);
 }
 #right {
   float: right;
-  width: calc(48vw - 29px);
+  width: calc(48vw - 20px);
 }
 
 h1 {
