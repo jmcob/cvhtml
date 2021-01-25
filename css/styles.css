@@ -2,7 +2,7 @@
 .subtitle {
   font-style: italic;
   background-color: white;
-  color: grey;
+  color: #27c5f1;
 }
 
 img {
@@ -38,25 +38,25 @@ img {
 
 h1 {
   background-color: white;
-  color: grey;
+  color: #27c5f1;
   font-size: 2rem;
   font-family: monospace;
 }
 
 h2 {
   color: white;
-  background-color: orangered;
+  background-color: #f15025;
   font-size: 1.5rem;
 }
 
 h3 {
   color: white;
   font-size: 1.4rem; /* hello */
-  background-color: midnightblue;
+  background-color: #5327f1;
 }
 
 h4 {
-  color: orangered;
+  color: #f15025;
 }
 
 h5 {
@@ -65,12 +65,12 @@ h5 {
 
 strong {
   color: white;
-  background-color: grey;
+  background-color: #27c5f1;
   font-size: 1.5rem;
 }
 
 em {
-  background-color: lightgrey;
+  background-color: #c5f127;
 }
 body {
   background-color: white;
@@ -82,6 +82,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 a {
-  color: lightsteelblue;
+  color: #c5f127;
   font-style: bold;
 }
