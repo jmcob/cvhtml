@@ -14,7 +14,8 @@ img {
   max-width: 120px;
   width: 11vw;
   background-image: url("pic2.png");
-  height: 100vh;
+  height: 150vh;
+  min-height: 100vh;
   background-repeat: repeat-y;
   float: left;
 }
@@ -94,4 +95,12 @@ body {
 }
 a {
   color: midnightblue;
+}
+
+a:hover {
+  background-color: greenyellow;
+}
+
+a:active {
+  background-color: #f15025;
 }
