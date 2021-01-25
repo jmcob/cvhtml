@@ -12,6 +12,7 @@ img {
 
 #header {
   height: 10vh;
+  height: fit-content;
   line-height: normal;
   background-color: #f15025;
 }
