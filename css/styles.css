@@ -9,13 +9,15 @@ img {
   background-color: #f15025;
 }
 
+/* images */
 #paint {
+  max-width: 120px;
+  width: 11vw;
+  background-image: url("pic2.png");
+  height: 100vh;
+  background-repeat: repeat-y;
   float: left;
-  max-width: 180px;
-  width: 20%;
-  background-image: url("/../pics/pic2.png");
 }
-
 #pic {
   float: right;
   min-width: 100px;
@@ -23,27 +25,15 @@ img {
   margin-right: 0px;
 }
 
-/*sous le header*/
-.subtitle {
-  font-style: italic;
-  background-color: white;
-  color: midnightblue;
-  margin: 1%;
-  margin-left: 2%;
-}
-#subtitle {
-  margin: 5%;
-}
-
 /* columns*/
 #right {
   float: right;
-  width: calc(98vw / 2 - 90px);
+  width: calc(40vw);
 }
 
 #left {
   float: left;
-  width: calc(97vw / 2 - 90px);
+  width: calc(45vw);
 }
 
 h1 {
