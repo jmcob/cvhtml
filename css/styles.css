@@ -12,7 +12,7 @@ img {
 }
 
 #header {
-  height: 100px;
+  min-height: 100px;
   line-height: normal;
   background-color: #f15025;
 }
@@ -30,7 +30,7 @@ img {
 
 #right {
   float: right;
-  width: 39vw;
+  width: 50vw;
 }
 
 #left {
