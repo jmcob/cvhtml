@@ -12,14 +12,14 @@ body {
 }
 
 #header {
-  min-height: 42px;
+  height: 58px;
   line-height: normal;
   background-color: #ec3f0f;
 }
 
 /* images */
 #paint {
-  width: 39px;
+  width: 29px;
   background-image: url("pic2.png");
   height: 100%;
   background-repeat: repeat-y;
@@ -33,7 +33,7 @@ body {
 }
 
 #main {
-  margin-left: 39px;
+  margin-left: 29px;
 }
 #pic {
   float: right;
@@ -45,11 +45,11 @@ body {
 /* columns*/
 #left {
   float: left;
-  width: calc(50vw - 20px);
+  width: calc(50vw - 15px);
 }
 #right {
   float: right;
-  width: calc(48vw - 20px);
+  width: calc(47vw - 15px);
 }
 
 h1 {
