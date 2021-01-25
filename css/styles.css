@@ -14,12 +14,12 @@ body {
 #header {
   min-height: 42px;
   line-height: normal;
-  background-color: #f15025;
+  background-color: #ec3f0f;
 }
 
 /* images */
 #paint {
-  width: 11vw;
+  width: 58px;
   background-image: url("pic2.png");
   height: 100%;
   background-repeat: repeat-y;
@@ -33,7 +33,7 @@ body {
 }
 
 #main {
-  margin-left: 11vw;
+  margin-left: 58px;
 }
 #pic {
   float: right;
@@ -45,11 +45,11 @@ body {
 /* columns*/
 #left {
   float: left;
-  width: calc(47vw);
+  width: calc(50vw - 29px);
 }
 #right {
   float: right;
-  width: calc(40vw);
+  width: calc(48vw - 29px);
 }
 
 h1 {
@@ -69,13 +69,14 @@ h2 {
 h3 {
   color: white;
   font-size: 1.2rem;
-  background-color: midnightblue;
-  margin-left: 2%;
-  margin-top: 1%;
+  background-color: rgb(23, 23, 158);
+  margin-left: 0%;
+  margin-top: 0%;
+  margin-right: 0%;
 }
 
 h4 {
-  color: #f15025;
+  color: #ec3f0f;
   margin-left: 2%;
 }
 
