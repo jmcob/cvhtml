@@ -9,6 +9,13 @@ img {
   background-color: #f15025;
 }
 
+#paint {
+  float: left;
+  max-width: 180px;
+  width: 20%;
+  background-image: url("/../pics/pic2.png");
+}
+
 #pic {
   float: right;
   min-width: 100px;
@@ -24,16 +31,19 @@ img {
   margin: 1%;
   margin-left: 2%;
 }
+#subtitle {
+  margin: 5%;
+}
 
 /* columns*/
 #right {
   float: right;
-  width: 50vw;
+  width: calc(98vw / 2 - 90px);
 }
 
 #left {
   float: left;
-  width: 45vw;
+  width: calc(97vw / 2 - 90px);
 }
 
 h1 {
@@ -54,6 +64,7 @@ h3 {
   font-size: 1.2rem;
   background-color: midnightblue;
   margin-left: 2%;
+  margin-top: 1%;
 }
 
 h4 {
