@@ -20,7 +20,7 @@ img {
 .subtitle {
   font-style: italic;
   background-color: white;
-  color: #726da8;
+  color: midnightblue;
   margin: 1%;
   margin-left: 2%;
 }
@@ -52,7 +52,7 @@ h2 {
 h3 {
   color: white;
   font-size: 1.2rem;
-  background-color: #5327f1;
+  background-color: midnightblue;
   margin-left: 2%;
 }
 
