@@ -2,24 +2,39 @@ img {
   max-width: 100%;
   max-height: 100%;
 }
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  height: 100%;
+}
 
 #header {
   min-height: 42px;
   line-height: normal;
   background-color: #f15025;
 }
-#name {
-  color: white;
-}
+
 /* images */
 #paint {
   max-width: 120px;
   width: 11vw;
   background-image: url("pic2.png");
   height: 100%;
-  min-height: 100vh;
   background-repeat: repeat-y;
-  float: left;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+
+#main {
+  margin-left: 11vh;
 }
 #pic {
   float: right;
