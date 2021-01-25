@@ -17,15 +17,11 @@ img {
   background-color: #f15025;
 }
 
-#paint {
-  float: left;
-  margin-right: 2%;
-  width: 9vw;
-}
-
 #pic {
   float: right;
-  width: 18vw;
+  min-width: 100px;
+  max-width: 25%;
+  margin-right: 0px;
 }
 
 #right {
