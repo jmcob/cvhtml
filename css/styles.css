@@ -35,6 +35,10 @@ body {
 #main {
   margin-left: 29px;
 }
+ul {
+  margin-left: -5%;
+}
+
 #pic {
   float: right;
   min-width: 100px;
