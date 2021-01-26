@@ -4,7 +4,7 @@ html {
 }
 
 img {
-  width: 100%;
+  width: 50%;
 }
 
 #paint {
@@ -43,8 +43,7 @@ ul {
 
 #pic {
   display: flex;
-  justify-content: flex-end;
-  max-width: 25vw;
+  justify-content: center;
 }
 
 /* columns*/
