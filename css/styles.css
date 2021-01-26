@@ -7,10 +7,6 @@ img {
   width: 100%;
 }
 
-body {
-  height: 100%;
-}
-
 #paint {
   width: 20px;
   background-image: url("pic2.png");
@@ -47,7 +43,8 @@ ul {
 
 #pic {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  max-width: 25vw;
 }
 
 /* columns*/
@@ -120,6 +117,7 @@ em {
 body {
   background-color: white;
   margin: 0%;
+  height: 100%;
 }
 
 * {
