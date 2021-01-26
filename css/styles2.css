@@ -1,0 +1,26 @@
+h1 {
+  background-color: crimson;
+  color: white;
+  text-align: center;
+  padding: 80px 40px 20px 10px;
+  margin-right: 80px;
+  margin-bottom: 0;
+  border-bottom-right-radius: 20%;
+  border-bottom-left-radius: 20%;
+}
+p {
+  background-color: darkslateblue;
+  color: white;
+  padding: 20px;
+  margin-left: 80px;
+  margin-top: 0;
+  font-size: larger;
+  border-style: solid;
+  border-width: 10px;
+  border-color: red;
+  border-radius: 20px;
+}
+* {
+  font-family: cursive;
+  margin: 0;
+}
