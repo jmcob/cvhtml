@@ -6,6 +6,7 @@ html {
 img {
   width: 50%;
   min-width: 150px;
+  max-width: 200px;
 }
 
 #paint {
