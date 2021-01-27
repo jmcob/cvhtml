@@ -22,7 +22,7 @@ img {
   left: 0;
   right: 0;
   overflow: hidden;
-  z-index: -1;
+  z-index: 1;
 }
 
 #header {
@@ -35,6 +35,7 @@ img {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  box-shadow: inset -32em -14em pink;
 }
 
 .section {
@@ -139,6 +140,15 @@ a:active {
   background-color: #tomato;
 }
 
+header {
+  background-image: url(pics/04.jpg);
+}
+
 footer {
   margin: 20px;
+  background-color: crimson;
+  padding: 1.5em;
+  box-sizing: border-box;
+  margin: 0%;
+  color: white;
 }
