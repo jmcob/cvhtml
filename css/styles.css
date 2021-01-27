@@ -10,6 +10,10 @@ img {
   border-radius: 20px;
   border: 2px solid black;
 }
+#top {
+  color: black;
+  font-weight: 900;
+}
 
 #paint {
   width: 20px;
@@ -72,7 +76,7 @@ h1 {
   color: black;
   font-size: 25px;
   font-family: monospace;
-  margin: 20px 8px;
+  margin: 0 20px;
 }
 
 h2 {
@@ -141,7 +145,7 @@ a:active {
 }
 
 header {
-  background-image: url(pics/04.jpg);
+  margin: 20px 0 0 0;
 }
 
 footer {
