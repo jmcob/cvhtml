@@ -4,7 +4,7 @@ html {
 }
 
 img {
-  width: 50%;
+  width: 100%;
   min-width: 140px;
   max-width: 200px;
   border-radius: 20px;
@@ -33,9 +33,9 @@ img {
 #main {
   margin-left: 20px;
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
-  justify-content: space-around;
+  /*align-items: flex-start;
+  justify-content: space-around;*/
   flex-wrap: wrap;
 }
 ul li {
