@@ -43,7 +43,13 @@ img {
   margin: 10px;
   box-sizing: border-box;
   height: fit-content;
-  border: 1px solid black;
+  border: 10px solid gold;
+  box-shadow: inset 9em 3em teal;
+  /*box-shadow: 20px -16px teal;*/
+}
+
+.section:hover {
+  box-shadow: 60px -16px tomato;
 }
 
 ul li {
@@ -69,8 +75,8 @@ h1 {
 }
 
 h2 {
-  color: black;
-  font-size: 1.5rem;
+  color: indigo;
+  font-size: 1.6rem;
   margin-left: 10px;
   text-align: center;
 }
@@ -83,12 +89,8 @@ h3 {
   padding-right: 0px;
   font-weight: bolder;
   font-size: larger;
-}
-
-h3 span {
-  background-color: midnightblue;
-  font-size: 1.2rem;
-  color: white;
+  background-color: transparent;
+  color: indigo;
 }
 
 h4 {
@@ -124,14 +126,19 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 a {
-  color: grey;
+  color: tomato;
+  font-weight: bolder;
 }
 
 a:hover {
-  background-color: greenyellow;
+  background-color: teal;
 }
 
 a:active {
   color: white;
-  background-color: #ec3f0f;
+  background-color: #tomato;
+}
+
+footer {
+  margin: 20px;
 }
