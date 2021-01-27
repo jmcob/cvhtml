@@ -137,7 +137,7 @@ a:hover {
 
 a:active {
   color: white;
-  background-color: #tomato;
+  background-color: tomato;
 }
 
 header {
