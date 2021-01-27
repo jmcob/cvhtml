@@ -42,6 +42,8 @@ img {
   padding: 20px;
   margin: 10px;
   box-sizing: border-box;
+  height: fit-content;
+  border: 1px solid black;
 }
 
 ul li {
