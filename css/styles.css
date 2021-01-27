@@ -47,19 +47,19 @@ img {
   margin: 10px;
   box-sizing: border-box;
   height: fit-content;
-  border: 10px solid gold;
+  border: 12px solid gold;
   /*box-shadow: 20px -16px teal;*/
 }
 
 .section:hover {
-  box-shadow: 60px -16px tomato;
+  box-shadow: 12px -12px tomato;
 }
 
-ul li {
-  color: black;
-  margin-left: 0;
-  list-style: none;
+
+ul {
+  padding: 0.5em;
 }
+
 
 #pic {
   display: flex;
