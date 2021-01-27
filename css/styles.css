@@ -39,7 +39,7 @@ img {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  box-shadow: inset -32em -14em pink;
+  box-shadow: inset 25em 0em lightseagreen;
 }
 
 .section {
@@ -49,7 +49,7 @@ img {
   box-sizing: border-box;
   height: fit-content;
   border: 10px solid gold;
-  box-shadow: inset 9em 3em teal;
+  box-shadow: inset 9em 3em rgb(180, 136, 145);
   /*box-shadow: 20px -16px teal;*/
 }
 
