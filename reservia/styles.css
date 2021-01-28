@@ -58,3 +58,29 @@ aside {
   flex-direction: row;
   flex-wrap: wrap;
 }
+.legs {
+  border: 1px solid black;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.pics {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.pic {
+  padding: 30px;
+  margin: 20px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  width: 18vw;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 1px solid black;
+}
