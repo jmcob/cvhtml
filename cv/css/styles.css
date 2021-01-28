@@ -29,6 +29,10 @@ img {
   z-index: 1;
 }
 
+body {
+  background-image: linear-gradient(white, BlanchedAlmond);
+}
+
 #header {
   margin-left: 20px;
   height: fit-content;
@@ -49,8 +53,9 @@ img {
   box-sizing: border-box;
   height: fit-content;
   border: 12px solid gold;
-  /*box-shadow: 20px -16px teal;*/
+  background-image: linear-gradient(white, transparent);
 }
+/*box-shadow: 20px -16px teal;*/
 
 .section6 {
   width: 560px;
@@ -60,6 +65,7 @@ img {
   box-sizing: border-box;
   height: fit-content;
   border: 12px solid gold;
+  background-image: linear-gradient(white, transparent);
 }
 
 .section:hover {
@@ -159,7 +165,6 @@ header {
 
 footer {
   margin: 20px;
-  background-color: white;
   padding: 1.5em;
   box-sizing: border-box;
   margin: 0%;
