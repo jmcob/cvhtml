@@ -12,3 +12,49 @@
 .search_field {
   padding: 0 3rem;
 }
+
+* {
+  font-family: "Raleway", sans-serif;
+}
+.core {
+  display: flex;
+  flex-direction: row;
+}
+article {
+  border: 1px solid black;
+  width: calc(100vw - 3rem - 35vw);
+  max-height: 500px;
+  margin-right: 1rem;
+}
+
+aside {
+  border: 1px solid black;
+  width: calc(100vw - 3rem - 70vw);
+  max-height: 500px;
+  margin-right: 1rem;
+}
+
+.views p {
+  padding: 30px;
+  margin: 20px;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+.views {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.sideviews p {
+  padding: 30px;
+  margin: 20px;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+.sideviews {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
