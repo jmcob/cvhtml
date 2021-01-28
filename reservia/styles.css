@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3rem;
+}
+
+.menu li {
+  display: inline-flex;
+  padding: 0 2rem;
+}
+
+.search_field {
+  padding: 0 3rem;
+}

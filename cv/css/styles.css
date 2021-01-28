@@ -4,11 +4,15 @@ html {
 }
 
 img {
-  width: 50%;
+  width: 100%;
   min-width: 140px;
   max-width: 200px;
   border-radius: 20px;
   border: 2px solid black;
+}
+#top {
+  color: black;
+  font-weight: 900;
 }
 
 #paint {
@@ -22,72 +26,58 @@ img {
   left: 0;
   right: 0;
   overflow: hidden;
-  z-index: -1;
+  z-index: 1;
 }
 
 #header {
   margin-left: 20px;
   height: fit-content;
-  line-height: normal;
-  background-color: white;
 }
 
 #main {
   margin-left: 20px;
   display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-direction: row;
   flex-wrap: wrap;
-  max-width: 100vw;
 }
+
+.section {
+  width: 280px;
+  padding: 20px;
+  margin: 10px;
+  box-sizing: border-box;
+  height: fit-content;
+  border: 12px solid gold;
+  /*box-shadow: 20px -16px teal;*/
+}
+
+.section:hover {
+  box-shadow: 12px -12px tomato;
+}
+
+
 ul {
-  color: black;
-  margin-top: 2px;
+  padding: 0.5em;
 }
+
 
 #pic {
   display: flex;
   justify-content: center;
 }
 
-/* columns
-#right {
-  display: flex;
-  flex-direction: column;
-  width: calc(47vw - 10px);
-  min-width: 300px;
-}
-#left {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  /*position: absolute;
-  top: 30px;
-  bottom: 0;
-  left: 20px;
-  right: 50vw;
-  overflow: hidden;
-  z-index: -1;
-  width: calc(47vw - 10px);
-  min-width: 300px;
-}*/
-
 h1 {
   color: black;
-  font-size: 30px;
+  font-size: 25px;
   font-family: monospace;
-  margin: 20px 8px;
+  margin: 0 20px;
 }
 
 h2 {
-  color: black;
-  font-size: 1.5rem;
+  color: indigo;
+  font-size: 1.6rem;
   margin-left: 10px;
   text-align: center;
-}
-h3 span:hover {
-  background-color: #f15025;
 }
 
 h3 {
@@ -97,12 +87,9 @@ h3 {
   margin-bottom: 10px;
   padding-right: 0px;
   font-weight: bolder;
-}
-
-h3 span {
-  background-color: midnightblue;
-  font-size: 1.2rem;
-  color: white;
+  font-size: larger;
+  background-color: transparent;
+  color: indigo;
 }
 
 h4 {
@@ -112,15 +99,9 @@ h4 {
   margin-bottom: 8px;
 }
 
-h5 {
-  font-size: 1rem;
-  margin: 0.5%;
-  margin-left: 2%;
 }
 p {
-  margin: 5px;
-  margin-left: 10px;
-  margin-bottom: 10px;
+  text-indent: 40px;
 }
 
 em {
@@ -140,14 +121,28 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 a {
-  color: grey;
+  color: tomato;
+  font-weight: bolder;
 }
 
 a:hover {
-  background-color: greenyellow;
+  background-color: teal;
 }
 
 a:active {
   color: white;
-  background-color: #ec3f0f;
+  background-color: tomato;
+}
+
+header {
+  margin: 20px 0 0 0;
+}
+
+footer {
+  margin: 20px;
+  background-color: white;
+  padding: 1.5em;
+  box-sizing: border-box;
+  margin: 0%;
+  color: white;
 }
