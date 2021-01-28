@@ -55,11 +55,9 @@ img {
   box-shadow: 12px -12px tomato;
 }
 
-
 ul {
   padding: 0.5em;
 }
-
 
 #pic {
   display: flex;
@@ -91,7 +89,6 @@ h3 {
   background-color: transparent;
   color: indigo;
 }
-
 h4 {
   color: black;
   margin-left: 10px;
@@ -99,7 +96,6 @@ h4 {
   margin-bottom: 8px;
 }
 
-}
 p {
   text-indent: 40px;
 }
