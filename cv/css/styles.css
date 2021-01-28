@@ -97,7 +97,7 @@ h4 {
 }
 
 p {
-  text-indent: 40px;
+  text-indent: 21px;
 }
 
 em {
@@ -141,4 +141,9 @@ footer {
   box-sizing: border-box;
   margin: 0%;
   color: white;
+}
+
+ol li {
+  line-height: 1.5rem;
+  list-style-position: inside;
 }
