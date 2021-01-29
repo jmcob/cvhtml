@@ -31,17 +31,16 @@
 }
 
 article {
-  border-radius: 30px 30px;
+  border-radius: 20px 20px;
   max-height: fit-content;
-  min-width: 300px;
-  min-width: 33vw;
-  max-width: 63vw;
   margin-right: 2vw;
+  width: auto;
+  max-width: 1200px;
   background-color: #f2f2f2;
 }
 
 aside {
-  border-radius: 30px 30px;
+  border-radius: 20px 20px;
   min-width: 300px;
   max-height: fit-content;
   background-color: #f2f2f2;
@@ -49,21 +48,20 @@ aside {
 
 .views p {
   margin: 0.75vw 1.5vw;
-  width: 200px;
   box-sizing: border-box;
-  border-radius: 30px 30px;
-  border: 4px solid white;
+  border-radius: 20px 20px;
+  border: 2.5px solid white;
   background-color: white;
   width: 300px;
 }
 .views img {
   object-fit: contain;
   object-fit: cover;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  border: 4px solid white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border: 2.5px solid white;
   box-sizing: border-box;
-  width: 292px;
+  width: 295px;
   height: 170px;
 }
 
@@ -77,19 +75,19 @@ aside {
 
 .sideviews p {
   width: 280px;
-  height: 120px
+  height: 130px;
   margin: 0.75vw 1.5vw;
   box-sizing: border-box;
-  border: 4px solid white;
-  border-radius: 30px 30px;
+  border: 2.5px solid white;
+  border-radius: 20px 20px;
   background-color: white;
 }
 
 .sideviews img {
   object-fit: cover;
-  border: 4px solid white;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
+  border: 2.5px solid white;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
   height: 120px;
   width: 120px;
   float: left;
@@ -121,7 +119,7 @@ aside {
   margin: 1vw;
   min-width: 200px;
   box-sizing: border-box;
-  border-radius: 30px 30px;
+  border-radius: 20px 20px;
 }
 .pic p {
   margin: 0;
@@ -129,7 +127,7 @@ aside {
   border: 1px solid black;
   background-color: white;
   width: 200px;
-  border-radius: 30px 30px;
+  border-radius: 20px 20px;
 }
 
 .pic img {
@@ -138,7 +136,7 @@ aside {
   object-fit: scale-down;
   width: 200px;
   height: 150px;
-  border-radius: 30px 30px;
+  border-radius: 20px 20px;
 }
 /* end of flexbox hébergements et activités*/
 
