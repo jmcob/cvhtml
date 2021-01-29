@@ -41,14 +41,15 @@ article {
   /* aka hébergements */
   border-radius: 20px 20px;
   margin-right: 2%;
-  width: calc(100% - 320px - 2%);
+  width: calc(100% - 350px - 5%);
   background-color: #f2f2f2;
 }
 
 aside {
   /* aka les plus populaires*/
   border-radius: 20px 20px;
-  width: 320px;
+  width: 350px;
+  padding: 1.5%;
   background-color: #f2f2f2;
 }
 
@@ -59,7 +60,8 @@ aside {
   border-radius: 20px 20px;
   border: 2.5px solid white;
   background-color: white;
-  width: 260px;
+  width: 250px;
+  height: 200px;
   box-shadow: 2px 2px 2px lightgrey;
 }
 .views img {
@@ -69,8 +71,8 @@ aside {
   border-top-right-radius: 20px;
   border: 2.5px solid white;
   box-sizing: border-box;
-  width: 255px;
-  height: 170px;
+  width: 245px;
+  height: 120px;
 }
 
 .views {
@@ -82,8 +84,8 @@ aside {
 }
 /* sideviews est la box de chaque hébergement dans aside */
 .sideviews p {
-  width: 300px;
-  height: 130px;
+  width: 340px;
+  height: 150px;
   margin: 0.75vw;
   box-sizing: border-box;
   border: 2.5px solid white;
@@ -97,8 +99,8 @@ aside {
   border: 2.5px solid white;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  height: 120px;
-  width: 120px;
+  height: 140px;
+  width: 130px;
   float: left;
 }
 
