@@ -7,12 +7,12 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 0 3rem;
+  padding: 0;
 }
 
 .menu li {
   display: inline-flex;
-  padding: 0 2rem;
+  padding-left: 2vw;
 }
 
 .inscription {
@@ -20,34 +20,38 @@
 }
 /* end of mise en forme header*/
 
-.search_field {
-  padding: 0 3rem;
+body {
+  padding: 0 3vw;
 }
 
 /* flexbox hébergements */
 .core {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 article {
   border: 1px solid black;
-  width: calc(100vw - 3rem - 35vw);
-  max-height: 500px;
-  margin-right: 1rem;
+  width: 59vw;
+  max-height: fit-content;
+  margin-right: 2vw;
+  background-color: #f2f2f2;
 }
 
 aside {
   border: 1px solid black;
-  width: calc(100vw - 3rem - 70vw);
-  max-height: 500px;
-  margin-right: 1rem;
+  width: 30vw;
+  max-height: fit-content;
+  background-color: #f2f2f2;
 }
 
 .views p {
   padding: 30px;
-  margin: 20px;
+  margin: 0.75vw 1.5vw;
   box-sizing: border-box;
   border: 1px solid black;
+  background-color: white;
+  width: 16vw;
 }
 
 .views {
@@ -58,9 +62,11 @@ aside {
 
 .sideviews p {
   padding: 30px;
-  margin: 20px;
+  margin: 0.75vw 1.5vw;
+  width: 28vw;
   box-sizing: border-box;
   border: 1px solid black;
+  background-color: white;
 }
 .sideviews {
   display: flex;
@@ -72,8 +78,8 @@ aside {
 /*flexbox  activités*/
 .legs {
   border: 1px solid black;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 1.5vw;
+  margin-bottom: 1.5vw;
 }
 .pics {
   display: flex;
@@ -82,11 +88,11 @@ aside {
 }
 
 .pic {
-  padding: 30px;
-  margin: 20px;
+  padding: 2vw;
+  margin: 1.5vw;
   box-sizing: border-box;
   border: 1px solid black;
-  width: 18vw;
+  width: 19.5vw;
 }
 /* end of flexbox hébergements et activités*/
 
@@ -97,6 +103,8 @@ aside {
   flex-wrap: wrap;
   justify-content: space-around;
   border: 1px solid black;
+  background-color: #f2f2f2;
+  width: 100vw;
 }
 
 /* end of flexbox footer */
@@ -108,13 +116,11 @@ aside {
   margin: 0px;
   padding: 0px;
 }
-input {
-  margin: 0px;
-}
 
 a:hover {
   /*text-decoration: overline;*/
   color: #0064fc;
+  padding-top: 2rem;
   border-top: 1px solid #0064fc;
 }
 
