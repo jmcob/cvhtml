@@ -33,6 +33,7 @@ body {
 article {
   border: 1px solid black;
   width: 59vw;
+  min-width: 280px;
   max-height: fit-content;
   margin-right: 2vw;
   background-color: #f2f2f2;
@@ -41,17 +42,25 @@ article {
 aside {
   border: 1px solid black;
   width: 30vw;
+  min-width: 280px;
   max-height: fit-content;
   background-color: #f2f2f2;
 }
 
 .views p {
-  padding: 30px;
+  padding: 1vw;
   margin: 0.75vw 1.5vw;
+  min-width: 265px;
   box-sizing: border-box;
   border: 1px solid black;
   background-color: white;
   width: 16vw;
+}
+.views img {
+  object-fit: contain;
+  object-fit: cover;
+  width: 265px;
+  height: 150px;
 }
 
 .views {
@@ -64,10 +73,20 @@ aside {
   padding: 30px;
   margin: 0.75vw 1.5vw;
   width: 28vw;
+  min-width: 265px;
   box-sizing: border-box;
   border: 1px solid black;
   background-color: white;
 }
+
+.sideviews img {
+  object-fit: contain;
+  object-fit: cover;
+  width: 24vw;
+  height: 170px;
+  min-width: 265px;
+}
+
 .sideviews {
   display: flex;
   flex-direction: row;
@@ -90,6 +109,7 @@ aside {
 .pic {
   padding: 2vw;
   margin: 1.5vw;
+  min-width: 265px;
   box-sizing: border-box;
   border: 1px solid black;
   width: 19.5vw;
