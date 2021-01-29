@@ -2,6 +2,9 @@
 * {
   font-family: "Raleway", sans-serif;
 }
+.bloc_page {
+  padding: 0 3vw;
+}
 
 /*mise en forme header*/
 .header {
@@ -12,7 +15,7 @@
 
 .menu li {
   display: inline-flex;
-  padding-left: 2vw;
+  padding-left: 3vw;
 }
 
 .inscription {
@@ -20,78 +23,83 @@
 }
 /* end of mise en forme header*/
 
-body {
-  padding: 0 3vw;
-}
-
 /* flexbox hébergements */
 .core {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   flex-wrap: wrap;
 }
+
 article {
-  border: 1px solid black;
-  width: 59vw;
-  min-width: 280px;
+  border-radius: 30px 30px;
   max-height: fit-content;
+  min-width: 300px;
+  min-width: 33vw;
+  max-width: 63vw;
   margin-right: 2vw;
   background-color: #f2f2f2;
 }
 
 aside {
-  border: 1px solid black;
-  width: 30vw;
-  min-width: 280px;
+  border-radius: 30px 30px;
+  min-width: 300px;
   max-height: fit-content;
   background-color: #f2f2f2;
 }
 
 .views p {
-  padding: 1vw;
   margin: 0.75vw 1.5vw;
-  min-width: 265px;
+  width: 200px;
   box-sizing: border-box;
-  border: 1px solid black;
+  border-radius: 30px 30px;
+  border: 4px solid white;
   background-color: white;
-  width: 16vw;
+  width: 300px;
 }
 .views img {
   object-fit: contain;
   object-fit: cover;
-  width: 265px;
-  height: 150px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border: 4px solid white;
+  box-sizing: border-box;
+  width: 292px;
+  height: 170px;
 }
 
 .views {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .sideviews p {
-  padding: 30px;
+  width: 280px;
+  height: 120px
   margin: 0.75vw 1.5vw;
-  width: 28vw;
-  min-width: 265px;
   box-sizing: border-box;
-  border: 1px solid black;
+  border: 4px solid white;
+  border-radius: 30px 30px;
   background-color: white;
 }
 
 .sideviews img {
-  object-fit: contain;
   object-fit: cover;
-  object-fit: scale-down;
-  width: 24vw;
-  height: 170px;
-  min-width: 265px;
+  border: 4px solid white;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  height: 120px;
+  width: 120px;
+  float: left;
 }
 
 .sideviews {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 /* end of flexbox hébergements*/
@@ -105,32 +113,32 @@ aside {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .pic {
-  padding: 1vw;
   margin: 1vw;
-  min-width: 220px;
+  min-width: 200px;
   box-sizing: border-box;
-  border: 1px solid black;
-  width: 20.5vw;
+  border-radius: 30px 30px;
 }
 .pic p {
-  padding: 1vw;
   margin: 0;
-  min-width: 240px;
   box-sizing: border-box;
   border: 1px solid black;
   background-color: white;
-  width: 16vw;
+  width: 200px;
+  border-radius: 30px 30px;
 }
 
 .pic img {
   object-fit: contain;
   object-fit: cover;
   object-fit: scale-down;
-  width: 220px;
+  width: 200px;
   height: 150px;
+  border-radius: 30px 30px;
 }
 /* end of flexbox hébergements et activités*/
 
@@ -142,17 +150,25 @@ aside {
   justify-content: space-around;
   border: 1px solid black;
   background-color: #f2f2f2;
-  width: 100vw;
+  margin: 0;
 }
 
 /* end of flexbox footer */
 
 /* mise en forme search field */
+.search_field_form_input {
+  height: 35px;
+}
+
 .search_field_button {
   color: white;
   background-color: #0064fc;
   margin: 0px;
   padding: 0px;
+  height: 35px;
+  border-top-right-radius: 10px 10px;
+  border-bottom-right-radius: 10px 10px;
+  box-shadow: none;
 }
 
 a:hover {
