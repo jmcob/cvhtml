@@ -37,6 +37,9 @@ body {
   margin-left: 20px;
   height: fit-content;
 }
+header {
+  margin: 20px 0 0 20px;
+}
 
 #main {
   margin-left: 20px;
@@ -159,10 +162,6 @@ a:active {
   background-color: tomato;
 }
 
-header {
-  margin: 20px 0 0 0;
-}
-
 footer {
   margin: 20px;
   padding: 1.5em;
@@ -175,4 +174,20 @@ footer {
 ol li {
   line-height: 1.5rem;
   list-style-position: inside;
+}
+
+/* ceci concerne Jonas*/
+.chapter {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  padding: 2vw 4vw;
+  box-sizing: border-box;
+  border: 2px solid gold;
+  margin: 2vw;
+}
+
+.flexchapters {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
