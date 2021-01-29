@@ -42,7 +42,6 @@ article {
   border-radius: 20px 20px;
   width: calc(100% - 350px - 5%);
   background-color: #f2f2f2;
-  min-width: 350px;
 }
 
 aside {
@@ -53,6 +52,12 @@ aside {
   margin-bottom: 30px;
   margin-left: 2%;
   background-color: #f2f2f2;
+}
+@media screen and (max-width: 600px) {
+  aside,
+  article {
+    width: 100%;
+  }
 }
 
 /* views est la box de chaque hébergements dans article */
@@ -113,6 +118,18 @@ aside {
   align-items: center;
 }
 
+@media screen and (max-width: 600px) {
+  .views p,
+  .sideviews p {
+    width: calc(100% - 5vw);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .views img {
+    width: calc(100% - 2.5px);
+  }
+}
 /* end of flexbox hébergements article + aside */
 
 /*flexbox  activités*/
