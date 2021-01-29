@@ -25,6 +25,7 @@
 
 /* flexbox hébergements */
 .core {
+  /*container pour section, aka hébergement + les plus populaire*/
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
@@ -32,6 +33,7 @@
 }
 
 article {
+  /* aka hébergements */
   border-radius: 20px 20px;
   max-height: fit-content;
   margin-right: 2%;
@@ -40,12 +42,14 @@ article {
 }
 
 aside {
+  /* aka les plus populaires*/
   border-radius: 20px 20px;
   width: 320px;
   max-height: fit-content;
   background-color: #f2f2f2;
 }
 
+/* views est la box de chaque hébergements dans article */
 .views p {
   margin: 0.75vw 1.5vw;
   box-sizing: border-box;
@@ -73,7 +77,7 @@ aside {
   justify-content: center;
   align-items: center;
 }
-
+/* sideviews est la box de chaque hébergement dans aside */
 .sideviews p {
   width: 300px;
   height: 130px;
@@ -102,7 +106,8 @@ aside {
   align-items: center;
 }
 
-/* end of flexbox hébergements*/
+/* end of flexbox hébergements article + aside */
+
 /*flexbox  activités*/
 .legs {
   border: 1px solid black;
@@ -170,7 +175,7 @@ aside {
   border-bottom-right-radius: 10px 10px;
   box-shadow: none;
 }
-
+/* mise en forme des liens */
 a:hover {
   /*text-decoration: overline;*/
   color: #0064fc;
