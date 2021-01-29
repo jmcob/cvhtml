@@ -1,3 +1,9 @@
+/* font */
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+/*mise en forme header*/
 .header {
   display: flex;
   justify-content: space-between;
@@ -9,13 +15,16 @@
   padding: 0 2rem;
 }
 
+.inscription {
+  color: #0064fc;
+}
+/* end of mise en forme header*/
+
 .search_field {
   padding: 0 3rem;
 }
 
-* {
-  font-family: "Raleway", sans-serif;
-}
+/* flexbox hébergements */
 .core {
   display: flex;
   flex-direction: row;
@@ -58,6 +67,9 @@ aside {
   flex-direction: row;
   flex-wrap: wrap;
 }
+
+/* end of flexbox hébergements*/
+/*flexbox  activités*/
 .legs {
   border: 1px solid black;
   margin-top: 2rem;
@@ -76,11 +88,37 @@ aside {
   border: 1px solid black;
   width: 18vw;
 }
+/* end of flexbox hébergements et activités*/
 
+/* flexbox footer */
 .footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   border: 1px solid black;
+}
+
+/* end of flexbox footer */
+
+/* mise en forme search field */
+.search_field_button {
+  color: white;
+  background-color: #0064fc;
+  margin: 0px;
+  padding: 0px;
+}
+input {
+  margin: 0px;
+}
+
+a:hover {
+  /*text-decoration: overline;*/
+  color: #0064fc;
+  border-top: 1px solid #0064fc;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
