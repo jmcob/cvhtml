@@ -82,6 +82,7 @@ aside {
 .sideviews img {
   object-fit: contain;
   object-fit: cover;
+  object-fit: scale-down
   width: 24vw;
   height: 170px;
   min-width: 265px;
@@ -148,3 +149,4 @@ a {
   text-decoration: none;
   color: black;
 }
+
