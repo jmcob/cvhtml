@@ -1,31 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="styles.css">
- <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/04b5a3f05a.js" crossorigin="anonymous"></script>
+
+
+
+  <title>Reservia</title>
 </head>
 <body>
- <header class="header">
+  <header class="header">
   <img class="logo" src="images/logo/Reservia.svg" alt="logo"/>
   <nav class="menu">
-   <ul>
-    <li>Hébergements</li>
-    <li>Activités</li>
-    <li>S'inscrire</li>
-   </ul>
+    <ul>
+    <li><a href="#">Hébergements</a></li>
+    <li><a href="#">Activités</a></li>
+    <li class="inscription">S'inscrire</li>
+    </ul>
   </nav>
- </header>
- <main>
+  </header>
+  <main>
   <section class="search_field">
-   <h1 class="search_field_title">Trouvez votre hébergement pour des vacances de rêve</h1>
-   <p class="search_field_text">En plein centre ville ou en pleine nature</p>
-   <form class="search_field_form" action=""></form>
-   <input class="search_field_form_input" type="search" name="Ville" id="Ville" placeholder="Marseille, France">
-   <button class="search_field_button" type="submit">Rechercher</button>
+    <h1 class="search_field_title">Trouvez votre hébergement pour des vacances de rêve</h1>
+    <p class="search_field_text">En plein centre ville ou en pleine nature</p>
+    <form class="search_field_form" action="">
+    <i class="fas fa-map-marker-alt"></i>
+<input class="search_field_form_input" type="search" name="Ville" id="Ville" placeholder="Marseille, France">
+    <button class="search_field_button" type="submit">Rechercher</button>
+    <p class="filtres">Filtres <button class="filter"><i class="fas fa-money-bill-wave"></i> 
+Économique</button> <button class="filter"><i class="fas fa-child"></i> Familial</button> <button class="filter"><i class="fas fa-heart"></i> Romantique</button> <button class="filter"><i class="fas fa-dog"></i>
+ Animaux autorisés</button></p>
+    </form>
+    <p class="i">Plus de 500 logements sont disponibles dans cette ville</p>
 
-  </section>
- </main>
+    <section class="core">
+    <article class="article">
+      <h3 class="article_title">Hébergements à Marseille</h3>
+      <div class="views">
+      <div class="hotel 1">
+      <p>
+        Auberge la Cannebière
+      </p>
+      </div>
+      <div class="hotel 2"></div>
+      <p>
+      Hôtel du port
+      </p>
+      <div class="hotel 3"></div>
+      <p>
+      Hôtel les mouettes
+      </p>
+      <div class="hotel 4"></div>
+      <p>
+      Hôtel de la mer
+      </p>
+      <div class="hotel 5"></div>
+      <p>
+      Auberge Le Panier
+      </p>
+      <div class="hotel 6">
+      <p>Hôtel chez Amina</p>
+      </div>
+      </div>
+      <p class="article_end">Afficher plus</p>
+    </article>
+    <aside class="aside">
+      <h3 class="aside_title">Les plus populaires <i class="fas fa-chart-line"></i></h3>
+      <div class="sideviews">
+      <div class="hotel 1">
+        <p>
+        Hôtel Le soleil du matin
+        </p>
+      </div>
+      <div class="hotel 2"></div>
+      <p>
+        Au cœur de l'eau Chambres d'hôtes
+      </p>
+      <div class="hotel 3"></div>
+      <p>
+        Hôtel Tout bleu et Blanc
+      </p>
+      </div>
+    </article>
+    </section>
+    <section class="legs">
+    <h3 class="legs_title">Activités à Marseille</h3>
+    <div class="pics">
+      <div class="pic 1">
+      <p>
+        Vieux Port
+      </p>
+      </div>
+      <div class="pic 2">
+      <p>
+      Fort de Pomègues
+      </p>
+      <p>Îles du Frioul</p></div>
+      <div class="pic 3">
+      <p>
+      Parc National des Calanques
+      </p></div>
+      <div class="pic 4">
+      <p>
+      Notre-Dame-de-la-Garde
+      </p>
+      <p>Parc Longchamp</p></div>
+    </div>
+    </section>
+    <footer class="footer">
+    <div class="foot 1">
+    <h3 class="foot 1">A propos</h3>
+    <p class="foot 1">Fonctionnement du site</p>
+    <p class="foot 1">Conditions générales de vente</p>
+    <p class="foot 1">Données et confidentialité</p>
+    </div>
+    <div class="foot 2">
+      <h3 class="foot 2">Nos hébergements</h3>
+      <p class="foot 2">Charte qualité</p>
+      <p class="foot 2">Soumettre votre hôtel</p>
+    </div>
+    <div class="foot 3">
+      <h3 class="foot 3">Assistance</h3>
+      <p class="foot 3">Centre d'aide</p>
+      <p class="foot 3">nous contacter</p>
+    </div>
+    </footer>
+   </main>
 </body>
 </html>

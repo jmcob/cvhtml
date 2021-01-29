@@ -1,14 +1,130 @@
+/* font */
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+/*mise en forme header*/
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 0 3rem;
+  padding: 0;
 }
 
 .menu li {
   display: inline-flex;
-  padding: 0 2rem;
+  padding-left: 2vw;
 }
 
-.search_field {
-  padding: 0 3rem;
+.inscription {
+  color: #0064fc;
+}
+/* end of mise en forme header*/
+
+body {
+  padding: 0 3vw;
+}
+
+/* flexbox hébergements */
+.core {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+article {
+  border: 1px solid black;
+  width: 59vw;
+  max-height: fit-content;
+  margin-right: 2vw;
+  background-color: #f2f2f2;
+}
+
+aside {
+  border: 1px solid black;
+  width: 30vw;
+  max-height: fit-content;
+  background-color: #f2f2f2;
+}
+
+.views p {
+  padding: 30px;
+  margin: 0.75vw 1.5vw;
+  box-sizing: border-box;
+  border: 1px solid black;
+  background-color: white;
+  width: 16vw;
+}
+
+.views {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.sideviews p {
+  padding: 30px;
+  margin: 0.75vw 1.5vw;
+  width: 28vw;
+  box-sizing: border-box;
+  border: 1px solid black;
+  background-color: white;
+}
+.sideviews {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* end of flexbox hébergements*/
+/*flexbox  activités*/
+.legs {
+  border: 1px solid black;
+  margin-top: 1.5vw;
+  margin-bottom: 1.5vw;
+}
+.pics {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.pic {
+  padding: 2vw;
+  margin: 1.5vw;
+  box-sizing: border-box;
+  border: 1px solid black;
+  width: 19.5vw;
+}
+/* end of flexbox hébergements et activités*/
+
+/* flexbox footer */
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 1px solid black;
+  background-color: #f2f2f2;
+  width: 100vw;
+}
+
+/* end of flexbox footer */
+
+/* mise en forme search field */
+.search_field_button {
+  color: white;
+  background-color: #0064fc;
+  margin: 0px;
+  padding: 0px;
+}
+
+a:hover {
+  /*text-decoration: overline;*/
+  color: #0064fc;
+  padding-top: 2rem;
+  border-top: 1px solid #0064fc;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }

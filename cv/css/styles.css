@@ -29,6 +29,10 @@ img {
   z-index: 1;
 }
 
+body {
+  background-image: linear-gradient(white, BlanchedAlmond);
+}
+
 #header {
   margin-left: 20px;
   height: fit-content;
@@ -42,28 +46,44 @@ img {
 }
 
 .section {
-  width: 280px;
+  width: 270px;
   padding: 20px;
+  padding-bottom: 0px;
   margin: 10px;
   box-sizing: border-box;
   height: fit-content;
   border: 12px solid gold;
-  /*box-shadow: 20px -16px teal;*/
+  background-image: linear-gradient(white, transparent);
+}
+/*box-shadow: 20px -16px teal;*/
+
+.section6 {
+  width: 560px;
+  padding: 20px;
+  padding-bottom: 0px;
+  margin: 10px;
+  box-sizing: border-box;
+  height: fit-content;
+  border: 12px solid gold;
+  background-image: linear-gradient(white, transparent);
 }
 
 .section:hover {
   box-shadow: 12px -12px tomato;
 }
 
-
 ul {
   padding: 0.5em;
 }
 
-
 #pic {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#pic img {
+  max-width: 150px;
 }
 
 h1 {
@@ -71,6 +91,13 @@ h1 {
   font-size: 25px;
   font-family: monospace;
   margin: 0 20px;
+}
+
+h1 a {
+  text-decoration: none;
+  font-family: monospace;
+  color: black;
+  font-size: 25px;
 }
 
 h2 {
@@ -91,7 +118,6 @@ h3 {
   background-color: transparent;
   color: indigo;
 }
-
 h4 {
   color: black;
   margin-left: 10px;
@@ -99,9 +125,8 @@ h4 {
   margin-bottom: 8px;
 }
 
-}
 p {
-  text-indent: 40px;
+  text-indent: 21px;
 }
 
 em {
@@ -126,7 +151,7 @@ a {
 }
 
 a:hover {
-  background-color: teal;
+  background-color: lightseagreen;
 }
 
 a:active {
@@ -140,9 +165,14 @@ header {
 
 footer {
   margin: 20px;
-  background-color: white;
   padding: 1.5em;
   box-sizing: border-box;
   margin: 0%;
   color: white;
+  text-align: center;
+}
+
+ol li {
+  line-height: 1.5rem;
+  list-style-position: inside;
 }
