@@ -53,6 +53,7 @@ aside {
   border: 2.5px solid white;
   background-color: white;
   width: 300px;
+  box-shadow: 2px 2px 2px lightgray;
 }
 .views img {
   object-fit: contain;
@@ -81,6 +82,7 @@ aside {
   border: 2.5px solid white;
   border-radius: 20px 20px;
   background-color: white;
+  box-shadow: 2px 2px 2px lightgrey;
 }
 
 .sideviews img {
