@@ -40,9 +40,9 @@ ul {
 article {
   /* aka hébergements */
   border-radius: 20px 20px;
-  margin-right: 2%;
   width: calc(100% - 350px - 5%);
   background-color: #f2f2f2;
+  min-width: 350px;
 }
 
 aside {
@@ -50,12 +50,14 @@ aside {
   border-radius: 20px 20px;
   width: 350px;
   padding: 1.5%;
+  margin-bottom: 30px;
+  margin-left: 2%;
   background-color: #f2f2f2;
 }
 
 /* views est la box de chaque hébergements dans article */
 .views p {
-  margin: 0.75vw 1.5vw;
+  margin: 1.5vw 1.5vw;
   box-sizing: border-box;
   border-radius: 20px 20px;
   border: 2.5px solid white;
