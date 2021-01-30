@@ -17,7 +17,7 @@ img {
 
 #paint {
   width: 20px;
-  background-image: url("/images/painting.png");
+  background-image: url("/./oc/images/painting.png");
   height: 100%;
   background-repeat: repeat-y;
   position: absolute;
