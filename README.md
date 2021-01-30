@@ -5,4 +5,4 @@ You'll find my CV and some school projects, nearly everything i did from the beg
 
 Thanks for giving me some advice !
 
-Regards, Jean-Maxime Cobac
+Regards, Jean-Maxime
