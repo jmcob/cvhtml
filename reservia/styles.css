@@ -2,17 +2,25 @@
 * {
   font-family: "Raleway", sans-serif;
 }
+.bloc_page {
+  padding: 0 3vw;
+}
+
+body {
+  margin: 0;
+}
 
 /*mise en forme header*/
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 0;
 }
-
+ul {
+  margin: 0;
+}
 .menu li {
   display: inline-flex;
-  padding-left: 2vw;
+  padding-left: 3vw;
 }
 
 .inscription {
@@ -20,61 +28,110 @@
 }
 /* end of mise en forme header*/
 
-body {
-  padding: 0 3vw;
-}
-
 /* flexbox hébergements */
 .core {
+  /*container pour section, aka hébergement + les plus populaire*/
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   flex-wrap: wrap;
+  width: 100%;
 }
+
 article {
-  border: 1px solid black;
-  width: 59vw;
-  max-height: fit-content;
-  margin-right: 2vw;
+  /* aka hébergements */
+  border-radius: 20px 20px;
+  width: calc(100% - 350px - 5%);
   background-color: #f2f2f2;
 }
 
 aside {
-  border: 1px solid black;
-  width: 30vw;
-  max-height: fit-content;
+  /* aka les plus populaires*/
+  border-radius: 20px 20px;
+  width: 350px;
+  padding: 1.5%;
+  margin-bottom: 30px;
+  margin-left: 2%;
   background-color: #f2f2f2;
 }
+@media screen and (max-width: 600px) {
+  aside,
+  article {
+    width: 100%;
+  }
+}
 
+/* views est la box de chaque hébergements dans article */
 .views p {
-  padding: 30px;
-  margin: 0.75vw 1.5vw;
+  margin: 1.5vw 1.5vw;
   box-sizing: border-box;
-  border: 1px solid black;
+  border-radius: 20px 20px;
+  border: 2.5px solid white;
   background-color: white;
-  width: 16vw;
+  width: 250px;
+  height: 200px;
+  box-shadow: 2px 2px 2px lightgrey;
+}
+.views img {
+  object-fit: contain;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border: 2.5px solid white;
+  box-sizing: border-box;
+  width: 245px;
+  height: 120px;
 }
 
 .views {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+/* sideviews est la box de chaque hébergement dans aside */
+.sideviews p {
+  width: 340px;
+  height: 150px;
+  margin: 0.75vw;
+  box-sizing: border-box;
+  border: 2.5px solid white;
+  border-radius: 20px 20px;
+  background-color: white;
+  box-shadow: 2px 2px 2px lightgrey;
 }
 
-.sideviews p {
-  padding: 30px;
-  margin: 0.75vw 1.5vw;
-  width: 28vw;
-  box-sizing: border-box;
-  border: 1px solid black;
-  background-color: white;
+.sideviews img {
+  object-fit: cover;
+  border: 2.5px solid white;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  height: 140px;
+  width: 130px;
+  float: left;
 }
+
 .sideviews {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
+  align-items: center;
 }
 
-/* end of flexbox hébergements*/
+@media screen and (max-width: 600px) {
+  .views p,
+  .sideviews p {
+    width: calc(100% - 5vw);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .views img {
+    width: calc(100% - 2.5px);
+  }
+}
+/* end of flexbox hébergements article + aside */
+
 /*flexbox  activités*/
 .legs {
   border: 1px solid black;
@@ -85,14 +142,32 @@ aside {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .pic {
-  padding: 2vw;
-  margin: 1.5vw;
+  margin: 1vw;
+  min-width: 200px;
+  box-sizing: border-box;
+  border-radius: 20px 20px;
+}
+.pic p {
+  margin: 0;
   box-sizing: border-box;
   border: 1px solid black;
-  width: 19.5vw;
+  background-color: white;
+  width: 200px;
+  border-radius: 20px 20px;
+}
+
+.pic img {
+  object-fit: contain;
+  object-fit: cover;
+  object-fit: scale-down;
+  width: 200px;
+  height: 150px;
+  border-radius: 20px 20px;
 }
 /* end of flexbox hébergements et activités*/
 
@@ -104,27 +179,34 @@ aside {
   justify-content: space-around;
   border: 1px solid black;
   background-color: #f2f2f2;
-  width: 100vw;
+  margin: 0px;
 }
 
 /* end of flexbox footer */
 
 /* mise en forme search field */
+.search_field_form_input {
+  height: 35px;
+}
+
 .search_field_button {
   color: white;
   background-color: #0064fc;
   margin: 0px;
   padding: 0px;
+  height: 35px;
+  border-top-right-radius: 10px 10px;
+  border-bottom-right-radius: 10px 10px;
+  box-shadow: none;
 }
-
+/* mise en forme des liens */
 a:hover {
-  /*text-decoration: overline;*/
   color: #0064fc;
-  padding-top: 2rem;
   border-top: 1px solid #0064fc;
 }
 
 a {
   text-decoration: none;
   color: black;
+  padding-top: 1.5rem;
 }
