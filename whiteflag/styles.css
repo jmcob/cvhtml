@@ -7,6 +7,7 @@ body {
   background: url(images/bg-header.jpg);
   margin: 0;
   padding: 0;
+  padding-left: 5vw;
 }
 
 .footer {
