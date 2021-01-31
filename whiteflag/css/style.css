@@ -13,16 +13,16 @@ img {
   height: 160px;
 }
 #header > div {
-  width: 940px;
+  width: auto;
   margin: 0 auto;
   padding: 0 10px;
   text-align: right;
 }
 /** Logo **/
 #logo {
-  float: left;
+  float: right;
 }
-/** Navigation **/
+/** Navigation
 #navigation {
   display: inline-block;
   line-height: 150px;
@@ -36,6 +36,8 @@ img {
   width: 102px;
   text-align: center;
 }
+
+
 #navigation li:first-child {
   margin-left: 0;
 }
@@ -49,154 +51,18 @@ img {
 #navigation li.selected a {
   color: #e29b1f;
 }
-/*------------------------------ CONTENTS ------------------------------*/
+*/
+
+* {
+  box-sizing: border-box;
+}
+
 #contents {
   background: #fff7db url("../images/content-border.jpg") repeat-x left bottom;
-  min-height: 600px;
-  padding-bottom: 10px;
-}
-#contents div {
-  width: 960px;
-  margin: 0 auto;
-  padding-top: 50px;
-}
-#contents h3 {
-  color: #a17b2d;
-  font-size: 16px;
-  font-weight: normal;
-  letter-spacing: 1px;
-  margin: 0;
-}
-#contents p {
-  color: #aa9387;
-  font-size: 13px;
-  line-height: 24px;
-  margin: 0 auto;
-  padding: 2vw 2vw 24px;
-  text-align: justify;
-}
-#contents p a {
-  color: black;
-}
-#contents a:hover {
-  color: black;
-}
-/** Adbox **/
-#contents div #adbox {
-  margin-bottom: 36px;
-  padding: 0;
-  text-align: center;
-}
-
-#content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
-/** Featured **/
-#contents div #featured {
-  background: url("../images/bg-featured.png") no-repeat center top;
-  width: 100%;
-  margin-bottom: 60px;
-  text-align: center;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 30px;
-  padding-bottom: 24px;
-}
-#featured ul {
-  display: inline-block;
-  list-style: none;
-  width: 960px;
-  margin: 0;
-  padding: 0;
-}
-#featured ul li {
-  float: left;
-  width: 300px;
-  margin: 0 10px;
-}
-#featured p {
-  padding: 0;
-  text-align: center;
-}
-/** About **/
-#contents div #about {
-  width: 730px;
-  padding: 20px 115px 0;
-}
-#about h3 {
-  margin: 30px 0 0;
-}
-#about p {
-  font-size: 13px;
-  margin: 0 auto;
-  text-align: justify;
-}
-/** Shop **/
-#contents div #shop {
-  width: 930px;
-  margin-bottom: 60px;
-  padding-left: 10px;
-  padding-right: 20px;
-}
-#shop div {
-  display: inline-block;
-  margin: 0 0 30px;
-}
-#shop div img {
-  float: left;
-  margin: 0 40px 30px 0;
-}
-/** MAIN **/
-#main {
-  float: left;
-  min-height: 100px;
-  width: 520px;
-  margin: 0 30px 0 100px;
-}
-#main div {
-  background: url("../images/separator.png") no-repeat center bottom;
-  display: inline-block;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  margin-bottom: 18px;
-}
-#main div h3 {
-  margin: 30px 0 12px;
-}
-#main div p {
-  text-align: justify;
-}
-
-/** Contact **/
-#contents div #contact {
-  width: 720px;
-  padding: 50px 120px 0;
-}
-#contact h4 {
-  color: #8a5c02;
-  font-size: 15px;
-  font-weight: normal;
-  line-height: 24px;
-  margin: 0;
-}
-#contact h4 a {
-  color: #8a5c02;
-  text-decoration: none;
-}
-#contact a.email {
-  font-size: 13px;
-}
-#contact p.numbers {
-  margin: 0 0 30px;
-  padding-left: 40px;
-}
-#contact p.address {
-  padding-left: 40px;
-}
 /*------------------------------ FOOTER ------------------------------*/
 #footer {
   background: url("../images/bg-footer.png") repeat-x center bottom;
@@ -210,7 +76,7 @@ img {
   color: #956836;
   font-size: 13px;
   line-height: 24px;
-  width: 960px;
+  width: 100vw;
   margin: 0 auto;
   text-align: center;
 }
