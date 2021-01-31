@@ -3,18 +3,11 @@ html {
   position: relative;
 }
 
-img {
-  width: 100%;
-  min-width: 140px;
-  max-width: 200px;
-  border-radius: 20px;
-  border: 2px solid black;
-}
 #top {
   color: black;
   font-weight: 900;
 }
-
+/* peinture a gauche */
 #paint {
   width: 20px;
   background-image: url("../images/painting.png");
@@ -30,7 +23,7 @@ img {
 }
 
 body {
-  background-image: linear-gradient(white, BlanchedAlmond);
+  background-image: linear-gradient(white, cornsilk);
 }
 
 #header {
@@ -48,6 +41,16 @@ header {
   flex-wrap: wrap;
 }
 
+/* profile pic*/
+img {
+  width: 100%;
+  min-width: 140px;
+  max-width: 200px;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+
+/*cases*/
 .section {
   width: 270px;
   padding: 20px;
@@ -58,7 +61,6 @@ header {
   border: 12px solid gold;
   background-image: linear-gradient(white, transparent);
 }
-/*box-shadow: 20px -16px teal;*/
 
 .section6 {
   width: 560px;
@@ -71,7 +73,7 @@ header {
   background-image: linear-gradient(white, transparent);
 }
 
-.section:hover {
+.section:hover .section6:hover {
   box-shadow: 12px -12px tomato;
 }
 
@@ -161,7 +163,7 @@ a:active {
   color: white;
   background-color: tomato;
 }
-
+/*footer*/
 footer {
   margin: 20px;
   padding: 1.5em;
@@ -170,7 +172,7 @@ footer {
   color: white;
   text-align: center;
 }
-
+/* listes ordonnées des boites jaunes homepage*/
 ol li {
   line-height: 1.5rem;
   list-style-position: inside;
