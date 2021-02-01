@@ -48,7 +48,7 @@ header {
   width: 270px;
   padding: 20px;
   padding-bottom: 0px;
-  margin: 10px;
+  margin: 20px;
   box-sizing: border-box;
   height: fit-content;
   border: 12px solid gold;
@@ -60,7 +60,7 @@ header {
   width: 560px;
   padding: 20px;
   padding-bottom: 0px;
-  margin: 10px;
+  margin: 20px;
   box-sizing: border-box;
   height: fit-content;
   border: 12px solid gold;
@@ -101,9 +101,15 @@ img {
 /*titles*/
 h1 {
   color: black;
+  width: 270px;
   font-size: 25px;
   font-family: monospace;
-  margin: 0 20px;
+  margin: 0px 20px 20px 0px;
+  border: 12px solid gold;
+  display: inline-block;
+  border-radius: 12px;
+  text-align: center;
+  padding: 10px;
 }
 
 h1 a {
