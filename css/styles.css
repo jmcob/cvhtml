@@ -119,6 +119,10 @@ h1 a {
   font-size: 25px;
 }
 
+h1:hover {
+  box-shadow: inset 12px -12px #e30b5d;
+}
+
 h2 {
   color: hsl(82, 83%, 43%);
   font-size: 1.6rem;
