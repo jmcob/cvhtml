@@ -52,6 +52,7 @@ header {
   box-sizing: border-box;
   height: fit-content;
   border: 12px solid gold;
+  border-radius: 12px;
   background-image: linear-gradient(white, transparent);
 }
 
@@ -63,6 +64,7 @@ header {
   box-sizing: border-box;
   height: fit-content;
   border: 12px solid gold;
+  border-radius: 12px;
   background-image: linear-gradient(white, transparent);
 }
 
@@ -71,7 +73,7 @@ header {
 }
 
 .section6:hover {
-  box-shadow: inset 0 12px -12px #0028ff;
+  box-shadow: 12px -12px #0028ff;
 }
 
 ul {
@@ -141,8 +143,9 @@ p {
 }
 
 em {
-  font-weight: bold;
   font-style: italic;
+  background-color: hsl(82, 83%, 43%);
+  color: white;
 }
 
 body {
