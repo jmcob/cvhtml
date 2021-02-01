@@ -66,8 +66,12 @@ header {
   background-image: linear-gradient(white, transparent);
 }
 
-.section:hover .section6:hover {
-  box-shadow: 12px -12px tomato;
+.section:hover {
+  box-shadow: 12px -12px #0028ff;
+}
+
+.section6:hover {
+  box-shadow: inset 0 12px -12px #0028ff;
 }
 
 ul {
@@ -108,7 +112,7 @@ h1 a {
 }
 
 h2 {
-  color: indigo;
+  color: hsl(82, 83%, 43%);
   font-size: 1.6rem;
   margin-left: 10px;
   text-align: center;
@@ -123,7 +127,7 @@ h3 {
   font-weight: bolder;
   font-size: larger;
   background-color: transparent;
-  color: indigo;
+  color: #0028ff;
 }
 h4 {
   color: black;
@@ -152,17 +156,17 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 a {
-  color: tomato;
+  color: #0028ff;
   font-weight: bolder;
 }
 
 a:hover {
-  background-color: lightseagreen;
+  background-color: #ffb742;
 }
 
 a:active {
   color: white;
-  background-color: tomato;
+  background-color: #0028ff;
 }
 /*footer*/
 footer {
