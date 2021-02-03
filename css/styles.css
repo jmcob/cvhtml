@@ -44,7 +44,14 @@ header {
 }
 
 /*boxes*/
-.section {
+.section-1,
+.section-2,
+.section-3,
+.section-4,
+.section-5,
+.section-6,
+.section-7,
+.section-8 {
   width: 270px;
   padding: 20px;
   padding-bottom: 0px;
@@ -53,26 +60,23 @@ header {
   height: fit-content;
   border: 12px solid gold;
   border-radius: 12px;
-  background-image: linear-gradient(white, transparent);
+}
+.section-1 {
+  border: 12px solid hsl(82, 83%, 43%);
 }
 
-.section6 {
+.section-6 {
   width: 560px;
-  padding: 20px;
-  padding-bottom: 0px;
-  margin: 20px;
-  box-sizing: border-box;
-  height: fit-content;
-  border: 12px solid gold;
-  border-radius: 12px;
-  background-image: linear-gradient(white, transparent);
 }
 
-.section:hover {
-  box-shadow: 12px -12px #0028ff;
-}
-
-.section6:hover {
+.section-1:hover,
+.section-2:hover,
+.section-3:hover,
+.section-4:hover,
+.section-5:hover,
+.section-6:hover,
+.section-7:hover,
+.section-8:hover {
   box-shadow: 12px -12px #0028ff;
 }
 
@@ -218,7 +222,7 @@ ol li {
   font-size: larger;
   font-weight: bold;
 }
-section {
+#section-jonas {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -227,7 +231,7 @@ p #img-caption {
   display: inline-block;
 }
 
-#main {
+.flexchapters {
   display: flex;
   flex-direction: column;
 }
