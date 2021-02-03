@@ -206,11 +206,11 @@ aside {
 
 /* figures and images for the pictures*/
 .pic {
-  min-width: 285px;
+  min-width: 295px;
   border-radius: 20px 20px;
   border: 1px solid black;
   flex-shrink: 1;
-  height: 445px;
+  height: 440px;
 }
 figure {
   background-color: white;
@@ -255,7 +255,7 @@ div .pic-5-6 {
 .pic-5 figcaption,
 .pic-6 figcaption,
 .pic-4 figcaption {
-  height: 55px;
+  height: 60px;
 }
 
 @media screen and (min-width: 701px) {
@@ -293,37 +293,37 @@ div .pic-5-6 {
   .pic-1 img,
   .pic-4 img {
     object-fit: cover;
-    width: 285px;
+    width: 295px;
     height: 390px;
     border-top-left-radius: 20px 20px;
     border-top-right-radius: 20px 20px;
   }
   .pic-2 img {
     object-fit: cover;
-    width: 285px;
-    height: 170px;
+    width: 295px;
+    height: 180px;
     border-top-left-radius: 20px 20px;
     border-top-right-radius: 20px 20px;
   }
   .pic-3 img {
     object-fit: cover;
-    width: 285px;
-    height: 95px;
+    width: 295px;
+    height: 100px;
     border-top-left-radius: 20px 20px;
     border-top-right-radius: 20px 20px;
   }
 
   .pic-5 img {
     object-fit: cover;
-    width: 285px;
-    height: 125px;
+    width: 295px;
+    height: 130px;
     border-top-left-radius: 20px 20px;
     border-top-right-radius: 20px 20px;
   }
   .pic-6 img {
     object-fit: cover;
-    width: 285px;
-    height: 135px;
+    width: 295px;
+    height: 145px;
     border-top-left-radius: 20px 20px;
     border-top-right-radius: 20px 20px;
   }
