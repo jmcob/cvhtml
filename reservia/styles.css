@@ -10,6 +10,10 @@
 body {
   margin: 0;
 }
+/*navbar*/
+.inscription {
+  color: #0064fc;
+}
 
 /*mise en forme header*/
 .header {
@@ -23,10 +27,34 @@ ul {
   display: inline-flex;
   padding-left: 3vw;
 }
-
-.inscription {
-  color: #0064fc;
+/* mise en forme search field */
+input #ville .search_field_form_input {
+  border: none;
 }
+
+button .gps {
+  border: 0px;
+}
+
+.search_field_button {
+  color: white;
+  background-color: #0064fc;
+  margin: 0px;
+  padding: 0px;
+  height: 45px;
+  box-shadow: none;
+  border: none;
+  border-top-right-radius: 10px 10px;
+  border-bottom-right-radius: 10px 10px;
+}
+div .location {
+  background-color: #f2f2f2;
+  display: inline-block;
+  min-width: 200px;
+  border: 2px solid #f2f2f2;
+  border-radius: 10px 10px;
+}
+
 /* end of mise en forme header*/
 
 /* Les plus populaires */
@@ -107,7 +135,7 @@ aside {
 /* sideviews est la box de chaque hébergement dans aside */
 .sideviews figure {
   width: 340px;
-  height: 150px;
+  height: 145px;
   margin: 0.75vw;
   box-sizing: border-box;
   border: 2.5px solid white;
@@ -173,7 +201,6 @@ aside {
   height: 445px;
 }
 figure {
-  margin: 20px 20px;
   background-color: white;
   border-radius: 20px 20px;
   box-shadow: 2px 2px 2px lightgrey;
@@ -207,6 +234,7 @@ div .pic-5-6 {
   justify-content: space-between;
   border: 1px solid black;
   height: fit-content;
+  padding: 0px;
 }
 
 .pic-1 figcaption,
@@ -270,21 +298,6 @@ div .pic-5-6 {
 
 /* end of flexbox footer */
 
-/* mise en forme search field */
-.search_field_form_input {
-  height: 35px;
-}
-
-.search_field_button {
-  color: white;
-  background-color: #0064fc;
-  margin: 0px;
-  padding: 0px;
-  height: 35px;
-  border-top-right-radius: 10px 10px;
-  border-bottom-right-radius: 10px 10px;
-  box-shadow: none;
-}
 /* mise en forme des liens */
 a:hover {
   color: #0064fc;
