@@ -5,6 +5,7 @@
 }
 .bloc_page {
   padding: 0 3vw;
+  box-sizing: border-box;
 }
 
 body {
@@ -115,12 +116,10 @@ aside {
   box-shadow: 2px 2px 2px lightgrey;
 }
 .views img {
-  object-fit: contain;
   object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border: 2.5px solid white;
-  box-sizing: border-box;
   width: 245px;
   height: 120px;
 }
@@ -163,13 +162,25 @@ aside {
 
 @media screen and (max-width: 700px) {
   .views figure,
-  .sideviews figure {
+  .sideviews figure,
+  .pic-1 figure,
+  .pic-4 figure,
+  .pic-2 figure,
+  .pic-3 figure,
+  .pic-5 figure,
+  .pic-6 figure {
     width: calc(100% - 5vw);
   }
 }
 
 @media screen and (max-width: 700px) {
-  .views img {
+  .views img,
+  .pic-1 img,
+  .pic-4 img,
+  .pic-2 img,
+  .pic-3 img,
+  .pic-5 img,
+  .pic-6 img {
     width: calc(100% - 2.5px);
   }
 }
@@ -188,52 +199,53 @@ aside {
 .pics {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
 /* figures and images for the pictures*/
 .pic {
-  margin: 1vw;
   min-width: 285px;
   border-radius: 20px 20px;
   border: 1px solid black;
+  flex-shrink: 1;
   height: 445px;
 }
 figure {
   background-color: white;
+
+  margin: 1.5vw;
   border-radius: 20px 20px;
   box-shadow: 2px 2px 2px lightgrey;
 }
 
-figure .pic-1,
-figure .pic-4 {
-  height: 445px;
-}
-.pic-2 figure {
-  max-height: 225px;
-  margin-top: 0px;
-}
-.pic-3 figure {
-  max-height: 150px;
-}
-
-.pic-5 figure {
-  max-height: 180px;
-  margin-top: 0px;
-  padding-top: 0px;
-}
+.pic-1 figure,
+.pic-4 figure,
+.pic-2 figure,
+.pic-3 figure,
+.pic-5 figure,
 .pic-6 figure {
-  max-height: 190px;
+  min-width: 250px;
+  flex-grow: 1;
+}
+.pic-1 img,
+.pic-4 img,
+.pic-2 img,
+.pic-3 img,
+.pic-5 img,
+.pic-6 img {
+  object-fit: cover;
+  min-width: 250px;
+  height: 120px;
+  border-top-left-radius: 20px 20px;
+  border-top-right-radius: 20px 20px;
 }
 
 div .pic-2-3,
 div .pic-5-6 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: noflex;
   border: 1px solid black;
-  height: fit-content;
   padding: 0px;
 }
 
@@ -245,42 +257,76 @@ div .pic-5-6 {
 .pic-4 figcaption {
   height: 55px;
 }
-.pic-1 img,
-.pic-4 img {
-  object-fit: cover;
-  width: 285px;
-  height: 390px;
-  border-top-left-radius: 20px 20px;
-  border-top-right-radius: 20px 20px;
-}
-.pic-2 img {
-  object-fit: cover;
-  width: 285px;
-  height: 170px;
-  border-top-left-radius: 20px 20px;
-  border-top-right-radius: 20px 20px;
-}
-.pic-3 img {
-  object-fit: cover;
-  width: 285px;
-  height: 95px;
-  border-top-left-radius: 20px 20px;
-  border-top-right-radius: 20px 20px;
-}
 
-.pic-5 img {
-  object-fit: cover;
-  width: 285px;
-  height: 125px;
-  border-top-left-radius: 20px 20px;
-  border-top-right-radius: 20px 20px;
-}
-.pic-6 img {
-  object-fit: cover;
-  width: 285px;
-  height: 135px;
-  border-top-left-radius: 20px 20px;
-  border-top-right-radius: 20px 20px;
+@media screen and (min-width: 701px) {
+  figure .pic-1,
+  figure .pic-4 {
+    height: 445px;
+  }
+  .pic-2 figure {
+    max-height: 225px;
+    margin-top: 0px;
+  }
+  .pic-3 figure {
+    max-height: 150px;
+  }
+
+  .pic-5 figure {
+    max-height: 180px;
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+  .pic-6 figure {
+    max-height: 190px;
+  }
+
+  div .pic-2-3,
+  div .pic-5-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid black;
+    height: 490px;
+    padding: 0px;
+  }
+
+  .pic-1 img,
+  .pic-4 img {
+    object-fit: cover;
+    width: 285px;
+    height: 390px;
+    border-top-left-radius: 20px 20px;
+    border-top-right-radius: 20px 20px;
+  }
+  .pic-2 img {
+    object-fit: cover;
+    width: 285px;
+    height: 170px;
+    border-top-left-radius: 20px 20px;
+    border-top-right-radius: 20px 20px;
+  }
+  .pic-3 img {
+    object-fit: cover;
+    width: 285px;
+    height: 95px;
+    border-top-left-radius: 20px 20px;
+    border-top-right-radius: 20px 20px;
+  }
+
+  .pic-5 img {
+    object-fit: cover;
+    width: 285px;
+    height: 125px;
+    border-top-left-radius: 20px 20px;
+    border-top-right-radius: 20px 20px;
+  }
+  .pic-6 img {
+    object-fit: cover;
+    width: 285px;
+    height: 135px;
+    border-top-left-radius: 20px 20px;
+    border-top-right-radius: 20px 20px;
+  }
 }
 
 /* end of flexbox hébergements et activités*/
