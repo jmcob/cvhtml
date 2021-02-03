@@ -221,5 +221,13 @@ ol li {
 section {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
+}
+p #img-caption {
+  display: inline-block;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
 }
