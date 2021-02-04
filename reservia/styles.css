@@ -63,6 +63,16 @@ div .location {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 25px 40px 25px 40px;
+}
+
+.article_title {
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+.article_end {
+  padding: 40px;
 }
 
 /* flexbox hébergements */
@@ -105,22 +115,34 @@ aside {
 }
 
 /* views est la box de chaque hébergements dans article */
-.views figure {
+figure .hotel-1,
+figure .hotel-2,
+figure .hotel-3,
+figure .hotel-4,
+figure .hotel-5,
+figure .hotel-6 {
   margin: 1.5vw 1.5vw;
   box-sizing: border-box;
   border-radius: 20px 20px;
-  border: 2.5px solid white;
+  border: 4px solid white;
   background-color: white;
   width: 250px;
   height: 200px;
   box-shadow: 2px 2px 2px lightgrey;
+  flex-basis: 25%;
 }
-.views img {
+
+.hotel-1 img,
+.hotel-2 img,
+.hotel-3 img,
+.hotel-4 img,
+.hotel-5 img,
+.hotel-6 img {
   object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  border: 2.5px solid white;
-  width: 245px;
+  border: 4px solid white;
+  width: 250px;
   height: 120px;
 }
 
