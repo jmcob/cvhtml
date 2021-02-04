@@ -193,6 +193,7 @@ figure .hotel-6 {
   .pic-5 figure,
   .pic-6 figure {
     width: calc(100% - 5vw);
+    margin-bottom: 30px;
   }
 }
 
@@ -237,8 +238,7 @@ figure .hotel-6 {
 }
 figure {
   background-color: white;
-
-  margin: 1.5vw;
+  margin: 15px 1.5vw 15px 1.5vw;
   border-radius: 20px 20px;
   box-shadow: 2px 2px 2px lightgrey;
 }
@@ -250,7 +250,6 @@ figure {
 .pic-5 figure,
 .pic-6 figure {
   min-width: 250px;
-  flex-grow: 1;
 }
 .pic-1 img,
 .pic-4 img,
@@ -280,7 +279,7 @@ div .pic-5-6 {
 .pic-4 figcaption {
   height: 60px;
 }
-
+/* desktop version of activités a Marseille*/
 @media screen and (min-width: 701px) {
   figure .pic-1,
   figure .pic-4 {
