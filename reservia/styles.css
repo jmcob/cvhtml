@@ -29,19 +29,22 @@ ul {
   padding-left: 3vw;
 }
 /* mise en forme search field */
-input #ville .search_field_form_input {
-  border: none;
+.search_field_form_input {
+  border: 1px solid #f2f2f2;
+  outline: none;
+  height: 45px;
+  margin: 0;
 }
 
-button .gps {
-  border: 0px;
+.gps {
+  border: none;
 }
 
 .search_field_button {
   color: white;
   background-color: #0064fc;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   height: 45px;
   box-shadow: none;
   border: none;
@@ -51,12 +54,28 @@ button .gps {
 div .location {
   background-color: #f2f2f2;
   display: inline-block;
-  min-width: 200px;
-  border: 2px solid #f2f2f2;
   border-radius: 10px 10px;
+  padding: 0;
+  margin: 0;
 }
 
 /* end of mise en forme header*/
+
+/* filtres */
+.filter {
+  color: #0065fc;
+  background-color: white;
+  border-radius: 30px 30px;
+  padding: 0 0.8rem 0 0;
+  border: 1px solid #f2f2f2;
+  margin: 1rem;
+}
+.fas.fa-money-bill-wave {
+  border-radius: 50%;
+  border: 1px solid #f2f2f2;
+  padding: 0.8rem;
+  background-color: #deebff;
+}
 
 /* Les plus populaires */
 .aside_title {
@@ -81,7 +100,6 @@ div .location {
   /*container pour section, aka hébergement + les plus populaire*/
   display: flex;
   flex-direction: row-reverse;
-  flex-wrap: initial;
 }
 
 article {
@@ -131,6 +149,11 @@ figure .hotel-6 {
   height: 200px;
   box-shadow: 2px 2px 2px lightgrey;
   flex-basis: 25%;
+}
+
+figcaption {
+  padding-left: 1rem;
+  margin-bottom: 1rem;
 }
 
 .hotel-1 img,
@@ -226,6 +249,11 @@ figure .hotel-6 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+/* stars */
+.stars {
+  color: #0065fc;
 }
 
 /* figures and images for the pictures*/
