@@ -34,6 +34,7 @@ ul {
   outline: none;
   height: 45px;
   margin: 0;
+  width: 250px;
 }
 
 .gps {
@@ -57,6 +58,10 @@ div .location {
   border-radius: 10px 10px;
   padding: 0;
   margin: 0;
+}
+
+.i {
+  font-weight: lighter;
 }
 
 /* end of mise en forme header*/
@@ -241,15 +246,30 @@ figcaption {
     width: calc(100% - 2.5px);
   }
 }
+
+/* stars for hotels */
+.bluestars {
+  color: #0065fc;
+}
+.greystars {
+  color: #d9d9d9;
+}
 /* end of flexbox hébergements article + aside */
 
 /*flexbox  activités*/
 /*overall activités container*/
 .legs {
-  border: 1px solid black;
   margin-top: 1.5vw;
   margin-bottom: 1.5vw;
   padding: 0.5vw 1.5vw;
+}
+
+/* stars */
+.bluestars {
+  color: #0065fc;
+}
+.greystars {
+  color: #d9d9d9;
 }
 
 /* pic ans picc container */
@@ -261,19 +281,10 @@ figcaption {
   align-items: center;
 }
 
-/* stars */
-.bluestars {
-  color: #0065fc;
-}
-.greystars {
-  color: #d9d9d9;
-}
-
 /* figures and images for the pictures*/
 .pic {
   min-width: 295px;
   border-radius: 20px 20px;
-  border: 1px solid black;
   flex-shrink: 1;
   height: 440px;
 }
@@ -308,7 +319,6 @@ figure {
 div .pic-2-3,
 div .pic-5-6 {
   display: noflex;
-  border: 1px solid black;
   padding: 0px;
 }
 
@@ -348,7 +358,6 @@ div .pic-5-6 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 1px solid black;
     height: 490px;
     padding: 0px;
   }
@@ -396,13 +405,26 @@ div .pic-5-6 {
 
 /* flexbox footer */
 .footer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  border: 1px solid black;
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
   background-color: #f2f2f2;
-  margin: 0px;
+  margin: none;
+}
+
+.foot-1 {
+  padding-left: 40px;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.foot-2 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.foot-3 {
+  grid-column: 3;
+  grid-row: 1;
 }
 
 /* end of flexbox footer */
