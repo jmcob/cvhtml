@@ -70,11 +70,21 @@ div .location {
   border: 1px solid #f2f2f2;
   margin: 1rem;
 }
-.fas.fa-money-bill-wave {
+.fas.fa-money-bill-wave,
+.fas.fa-child,
+.fas.fa-heart,
+.fas.fa-dog {
   border-radius: 50%;
   border: 1px solid #f2f2f2;
   padding: 0.8rem;
   background-color: #deebff;
+}
+
+.fas.fa-info {
+  border-radius: 100px 100px;
+  border: 1px solid #f2f2f2;
+  padding: 0.3rem;
+  color: #0065fc;
 }
 
 /* Les plus populaires */
@@ -252,8 +262,11 @@ figcaption {
 }
 
 /* stars */
-.stars {
+.bluestars {
   color: #0065fc;
+}
+.greystars {
+  color: #d9d9d9;
 }
 
 /* figures and images for the pictures*/
