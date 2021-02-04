@@ -34,7 +34,7 @@ ul {
   outline: none;
   height: 45px;
   margin: 0;
-  width: 250px;
+  width: 200px;
 }
 
 .gps {
@@ -100,13 +100,13 @@ div .location {
   margin: 25px 40px 25px 40px;
 }
 
-.article_title {
+.}e_title {
   margin-left: 40px;
   margin-top: 40px;
   margin-right: 40px;
 }
 
-.article_end {
+.}e_end {
   padding: 40px;
 }
 
@@ -117,14 +117,14 @@ div .location {
   flex-direction: row-reverse;
 }
 
-article {
+}e {
   /* aka hébergements */
   border-radius: 20px 20px;
   flex-shrink: 1;
   background-color: #f2f2f2;
 }
 .inbetween {
-  /* space between article and aside*/
+  /* space between }e and aside*/
   padding: 20px 20px;
 }
 aside {
@@ -137,9 +137,9 @@ aside {
   background-color: #f2f2f2;
 }
 
-/* to make article and aside 100% width on small screens, 700px is good */
+/* to make }e and aside 100% width on small screens, 700px is good */
 @media screen and (max-width: 700px) {
-  article,
+  }e,
   aside {
     width: 100%;
   }
@@ -148,7 +148,7 @@ aside {
   }
 }
 
-/* views est la box de chaque hébergements dans article */
+/* views est la box de chaque hébergements dans }e */
 figure .hotel-1,
 figure .hotel-2,
 figure .hotel-3,
@@ -254,7 +254,7 @@ figcaption {
 .greystars {
   color: #d9d9d9;
 }
-/* end of flexbox hébergements article + aside */
+/* end of flexbox hébergements }e + aside */
 
 /*flexbox  activités*/
 /*overall activités container*/
@@ -406,10 +406,37 @@ div .pic-5-6 {
 /* flexbox footer */
 .footer {
   display: grid;
-  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px 100px;
   background-color: #f2f2f2;
   margin: none;
 }
+/*@media screen and (max-width: 700px) {
+  .footer {
+  display: grid;
+  grid-template-rows: 100px 100px 100px;
+  background-color: #f2f2f2;
+  margin: none;
+  }
+
+  .foot-1 {
+  padding-left: 40px;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.foot-2 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.foot-3 {
+  grid-column: 1;
+  grid-row: 3;
+}
+  }
+
+
 
 .foot-1 {
   padding-left: 40px;
@@ -426,7 +453,7 @@ div .pic-5-6 {
   grid-column: 3;
   grid-row: 1;
 }
-
+*/
 /* end of flexbox footer */
 
 /* mise en forme des liens */
