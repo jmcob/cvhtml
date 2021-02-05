@@ -185,13 +185,22 @@ a:active {
 }
 /*footer*/
 footer {
-  margin: 20px;
-  padding: 1.5em;
+  padding: auto;
   box-sizing: border-box;
-  margin: 0%;
+  margin: 0px;
   color: white;
-  text-align: center;
+  text-align: left;
+  padding-left: 110px;
 }
+
+footer p {
+  font-size: smaller;
+}
+
+footer a {
+  font-size: medium;
+}
+
 /* listes ordonnées des boites jaunes homepage*/
 ol li {
   line-height: 1.5rem;
