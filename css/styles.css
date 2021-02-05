@@ -109,9 +109,7 @@ h1 {
   font-size: 25px;
   font-family: monospace;
   margin: 0px 20px 20px 0px;
-  border: 12px solid gold;
   display: inline-block;
-  border-radius: 12px;
   text-align: center;
   padding: 10px;
 }
