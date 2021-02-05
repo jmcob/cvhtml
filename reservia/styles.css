@@ -129,7 +129,6 @@ div .location {
 article {
   /* aka hébergements */
   border-radius: 20px 20px;
-  flex-shrink: 1;
   background-color: #f2f2f2;
   margin-left: 3vw;
 }
@@ -191,7 +190,6 @@ figure .hotel-6 {
 
 figcaption {
   padding-left: 1rem;
-  margin-bottom: 1rem;
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
@@ -204,6 +202,12 @@ figcaption {
 .stars {
   grid-row: 2 / 3;
   align-self: end;
+  padding: 5px;
+}
+
+.stars2 {
+  grid-row: 2 / 3;
+  align-self: start;
   padding: 5px;
 }
 
