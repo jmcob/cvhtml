@@ -10,27 +10,88 @@
 body {
   margin: 0;
 }
-/*navbar*/
-.inscription {
-  color: #0064fc;
+
+/* mise en forme des liens */
+a:hover {
+  color: #0065fc;
+  border-top: 1px solid #0065fc;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding-top: 1.5rem;
+  padding-bottom: 0.8rem;
 }
 
 /*mise en forme header*/
 header {
-  padding: 0 3vw;
+  padding-bottom: 0.8rem;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
 }
+
+/*navbar*/
+.inscription {
+  color: #0065fc;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-right: 20px;
+}
+
+@media (max-width: 700px) {
+  ul {
+    padding-top: 12vh;
+    padding-left: 0px;
+    margin-left: 0px;
+    display: block;
+    text-align: center;
+  }
+  ul a {
+    border-bottom: 4px solid #f2f2f2;
+    border-width: 100%;
+  }
+  ul a:hover {
+    color: #0065fc;
+    border-top: none;
+    border-bottom: 4px solid #0065fc;
+  }
+  header {
+    padding-left: 0px;
+  }
+  .header {
+    display: flex;
+    flex: none;
+  }
+  .logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-left: 20px;
+    padding-top: 0.8rem;
+  }
+  .nav {
+    margin: 0px;
+    padding-bottom: none;
+    width: 300px;
+    text-align: center;
+  }
+}
+
 ul {
   margin: 0;
+  margin-right: 7vw;
 }
 .menu li {
   display: inline-flex;
   padding-left: 3vw;
 }
+
 /* mise en forme search field */
 section.search_field {
   padding: 0 3vw;
@@ -474,15 +535,3 @@ div .pic-5-6 {
   }
 }
 /* end of flexbox footer */
-
-/* mise en forme des liens */
-a:hover {
-  color: #0064fc;
-  border-top: 1px solid #0064fc;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-  padding-top: 1.5rem;
-}
