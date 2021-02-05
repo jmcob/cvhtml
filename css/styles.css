@@ -10,7 +10,7 @@ html {
 /* peinture a gauche */
 #paint {
   width: 20px;
-  background-image: url("../images/painting.png");
+  background-image: url("../images/painting.jpg");
   height: 100%;
   background-repeat: repeat-y;
   position: absolute;
@@ -109,9 +109,7 @@ h1 {
   font-size: 25px;
   font-family: monospace;
   margin: 0px 20px 20px 0px;
-  border: 12px solid gold;
   display: inline-block;
-  border-radius: 12px;
   text-align: center;
   padding: 10px;
 }
@@ -187,13 +185,22 @@ a:active {
 }
 /*footer*/
 footer {
-  margin: 20px;
-  padding: 1.5em;
+  padding: auto;
   box-sizing: border-box;
-  margin: 0%;
+  margin: 0px;
   color: white;
-  text-align: center;
+  text-align: left;
+  padding-left: 110px;
 }
+
+footer p {
+  font-size: smaller;
+}
+
+footer a {
+  font-size: medium;
+}
+
 /* listes ordonnées des boites jaunes homepage*/
 ol li {
   line-height: 1.5rem;
