@@ -1,0 +1,40 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div img {
+  width: 90%;
+  max-width: 1024px;
+  padding-left: 0px;
+  margin: 0 5% 0 5%;
+}
+
+p {
+  display: inline-block;
+}
+h1 {
+  color: darkslategrey;
+  margin: 20px;
+}
+
+h2 {
+  margin: 20px;
+  color: black;
+  font-style: italic;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  margin: 20px;
+  background-color: white;
+}
+
+main {
+  background-color: lightgrey;
+  width: 100%;
+}

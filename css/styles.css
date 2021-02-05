@@ -3,21 +3,14 @@ html {
   position: relative;
 }
 
-img {
-  width: 100%;
-  min-width: 140px;
-  max-width: 200px;
-  border-radius: 20px;
-  border: 2px solid black;
-}
 #top {
   color: black;
   font-weight: 900;
 }
-
+/* peinture a gauche */
 #paint {
   width: 20px;
-  background-image: url("/./images/painting.png");
+  background-image: url("../images/painting.png");
   height: 100%;
   background-repeat: repeat-y;
   position: absolute;
@@ -28,11 +21,12 @@ img {
   overflow: hidden;
   z-index: 1;
 }
-
+/* body background */
 body {
-  background-image: linear-gradient(white, BlanchedAlmond);
+  background-image: linear-gradient(white, cornsilk);
 }
 
+/* header */
 #header {
   margin-left: 20px;
   height: fit-content;
@@ -41,6 +35,7 @@ header {
   margin: 20px 0 0 20px;
 }
 
+/*container for section boxes */
 #main {
   margin-left: 20px;
   display: flex;
@@ -48,35 +43,53 @@ header {
   flex-wrap: wrap;
 }
 
-.section {
+/*boxes*/
+.section-1,
+.section-2,
+.section-3,
+.section-4,
+.section-5,
+.section-6,
+.section-7,
+.section-8 {
   width: 270px;
   padding: 20px;
   padding-bottom: 0px;
-  margin: 10px;
+  margin: 20px;
   box-sizing: border-box;
   height: fit-content;
   border: 12px solid gold;
-  background-image: linear-gradient(white, transparent);
+  border-radius: 12px;
 }
-/*box-shadow: 20px -16px teal;*/
-
-.section6 {
-  width: 560px;
-  padding: 20px;
-  padding-bottom: 0px;
-  margin: 10px;
-  box-sizing: border-box;
-  height: fit-content;
-  border: 12px solid gold;
-  background-image: linear-gradient(white, transparent);
+.section-1 {
+  border: 12px solid hsl(82, 83%, 43%);
 }
 
-.section:hover {
-  box-shadow: 12px -12px tomato;
+.section-6 {
+  width: 580px;
+}
+
+.section-1:hover,
+.section-2:hover,
+.section-3:hover,
+.section-4:hover,
+.section-5:hover,
+.section-6:hover,
+.section-7:hover,
+.section-8:hover {
+  box-shadow: 12px -12px #0028ff;
 }
 
 ul {
   padding: 0.5em;
+}
+/* profile pic*/
+img {
+  width: 100%;
+  min-width: 140px;
+  max-width: 200px;
+  border-radius: 20px;
+  border: 2px solid black;
 }
 
 #pic {
@@ -89,11 +102,18 @@ ul {
   max-width: 150px;
 }
 
+/*titles*/
 h1 {
   color: black;
+  width: 270px;
   font-size: 25px;
   font-family: monospace;
-  margin: 0 20px;
+  margin: 0px 20px 20px 0px;
+  border: 12px solid gold;
+  display: inline-block;
+  border-radius: 12px;
+  text-align: center;
+  padding: 10px;
 }
 
 h1 a {
@@ -103,8 +123,12 @@ h1 a {
   font-size: 25px;
 }
 
+h1:hover {
+  box-shadow: inset 12px -12px #e30b5d;
+}
+
 h2 {
-  color: indigo;
+  color: hsl(82, 83%, 43%);
   font-size: 1.6rem;
   margin-left: 10px;
   text-align: center;
@@ -119,7 +143,7 @@ h3 {
   font-weight: bolder;
   font-size: larger;
   background-color: transparent;
-  color: indigo;
+  color: #0028ff;
 }
 h4 {
   color: black;
@@ -133,12 +157,12 @@ p {
 }
 
 em {
-  font-weight: bold;
   font-style: italic;
+  background-color: hsl(82, 83%, 43%);
+  color: white;
 }
 
 body {
-  background-color: white;
   margin: 0%;
   height: 100%;
 }
@@ -149,19 +173,19 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 a {
-  color: tomato;
+  color: #0028ff;
   font-weight: bolder;
 }
 
 a:hover {
-  background-color: lightseagreen;
+  background-color: #ffb742;
 }
 
 a:active {
   color: white;
-  background-color: tomato;
+  background-color: #0028ff;
 }
-
+/*footer*/
 footer {
   margin: 20px;
   padding: 1.5em;
@@ -170,7 +194,7 @@ footer {
   color: white;
   text-align: center;
 }
-
+/* listes ordonnées des boites jaunes homepage*/
 ol li {
   line-height: 1.5rem;
   list-style-position: inside;
@@ -197,4 +221,17 @@ ol li {
   font-family: cursive;
   font-size: larger;
   font-weight: bold;
+}
+#section-jonas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+p #img-caption {
+  display: inline-block;
+}
+
+.flexchapters {
+  display: flex;
+  flex-direction: column;
 }
