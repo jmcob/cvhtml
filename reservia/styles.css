@@ -22,8 +22,8 @@ a {
   color: black;
   padding-top: 3rem;
   padding-bottom: 0.8rem;
-  padding-left: 0.8rem;
-  padding-right: 0.8rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 /*mise en forme header desktop*/
@@ -60,15 +60,9 @@ ul {
 }
 /*mise en forme header mobile */
 @media (max-width: 700px) {
-  .nav1,
-  .nav2 {
-    border-bottom: 4px solid black;
-  }
-
   .nav1:hover,
   .nav2:hover {
     color: #0065fc;
-    border-top: none;
     border-bottom: 4px solid #0065fc;
   }
   a:hover {
@@ -79,13 +73,15 @@ ul {
     margin: 0px;
     margin-top: 100px;
     padding: 0px;
-    border: 0px;
+    width: 100%;
     justify-self: center;
+    border-bottom: 4px solid #f2f2f2;
   }
   .menu {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50vw 50vw;
     width: 100%;
+    /* border-bottom: 4px solid #f2f2f2; */
   }
   .menu div {
     padding-left: 0px;
