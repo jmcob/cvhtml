@@ -20,76 +20,65 @@ a:hover {
 a {
   text-decoration: none;
   color: black;
-  padding-top: 1.5rem;
+  padding-top: 3rem;
   padding-bottom: 0.8rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
 }
 
-/*mise en forme header*/
+/*mise en forme header desktop*/
 header {
   padding-bottom: 0.8rem;
 }
-
+.logo {
+  position: absolute;
+  left: 3vw;
+  top: 2rem;
+}
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+}
+ul {
+  margin: 0;
+  margin-right: 200px;
+}
+.menu li {
+  display: inline-flex;
+  padding-left: 3vw;
 }
 
-/*navbar*/
+/*s'inscrire*/
 .inscription {
   color: #0065fc;
   display: inline-block;
   position: absolute;
   right: 0;
   top: 0;
-  padding-right: 20px;
+  padding-right: 60px;
 }
-
+/*mise en forme header mobile */
 @media (max-width: 700px) {
-  ul {
-    padding-top: 12vh;
-    padding-left: 0px;
-    margin-left: 0px;
-    display: block;
-    text-align: center;
-  }
   ul a {
     border-bottom: 4px solid #f2f2f2;
-    border-width: 100%;
   }
   ul a:hover {
     color: #0065fc;
     border-top: none;
     border-bottom: 4px solid #0065fc;
   }
-  header {
-    padding-left: 0px;
+  .menu {
+    padding-top: 4rem;
   }
-  .header {
-    display: flex;
-    flex: none;
+  .inscription {
+    display: block;
+    padding-right: 30px;
   }
   .logo {
     position: absolute;
-    left: 0;
-    top: 0;
-    padding-left: 20px;
-    padding-top: 0.8rem;
+    left: 3vw;
+    top: 2rem;
   }
-  .nav {
-    margin: 0px;
-    padding-bottom: none;
-    width: 300px;
-    text-align: center;
-  }
-}
-
-ul {
-  margin: 0;
-  margin-right: 7vw;
-}
-.menu li {
-  display: inline-flex;
-  padding-left: 3vw;
 }
 
 /* mise en forme search field */
