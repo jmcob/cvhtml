@@ -104,6 +104,9 @@ section.search_field {
   height: 45px;
   margin: 0;
   width: 200px;
+  color: black;
+  font-size: large;
+  font-weight: bold;
 }
 
 @media (max-width: 700px) {
@@ -145,17 +148,24 @@ div .location {
 
 /* filtres */
 .filter {
-  color: #0065fc;
+  color: black;
+  font-size: large;
+  font-weight: bold;
   background-color: white;
   border-radius: 30px 30px;
   padding: 0 0.8rem 0 0;
   border: 1px solid #d9d9d9;
   margin: 1rem;
 }
+.filtres {
+  font-size: large;
+}
+
 .fas.fa-money-bill-wave,
 .fas.fa-child,
 .fas.fa-heart,
 .fas.fa-dog {
+  color: #0065fc;
   border-radius: 50%;
   border: 3px solid #deebff;
   padding: 0.8rem;
