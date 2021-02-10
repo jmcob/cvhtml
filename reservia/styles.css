@@ -23,12 +23,12 @@ html {
   padding: 0;
 }
 /* mise en forme des liens */
-a:hover {
+a:hover header {
   color: #0065fc;
   border-top: 1px solid #0065fc;
 }
 
-a {
+a header {
   text-decoration: none;
   color: black;
   padding: 3rem 3rem 0.8rem 3rem;
@@ -162,6 +162,11 @@ div .location {
   border: 2px solid #d9d9d9;
   margin: 1rem;
 }
+
+.filter:hover {
+  transform: scale(1.2);
+}
+
 .filtres {
   font-size: large;
 }
@@ -199,7 +204,7 @@ div .location {
 }
 
 .article_title {
-  margin: 25px 40px 25px 40px;
+  margin: 40px 40px 25px 40px;
 }
 .article_end {
   margin: 40px;
@@ -227,6 +232,7 @@ aside {
   background-color: #f2f2f2;
   border-radius: 20px 20px;
   margin-right: 3vw;
+  padding: 1.5vw;
 }
 
 /* to make article and aside 100% width on small screens, 700px is good */
