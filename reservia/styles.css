@@ -1,14 +1,7 @@
-/* font */
+/* font and page properties*/
 * {
   font-family: "Raleway", sans-serif;
   box-sizing: border-box;
-}
-.bloc_page {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
 }
 
 /* mise en forme des liens */
@@ -20,17 +13,11 @@ a:hover {
 a {
   text-decoration: none;
   color: black;
-  padding-top: 3rem;
-  padding-bottom: 0.8rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding: 3rem 3rem 0.8rem 3rem;
 }
 
 /*mise en forme header desktop*/
-header {
-  padding-bottom: 0.5rem;
-  margin: 0vw;
-}
+
 .logo {
   position: absolute;
   left: 3vw;
@@ -49,11 +36,9 @@ nav {
 /*s'inscrire*/
 .inscription {
   color: #0065fc;
-  display: inline-block;
   position: absolute;
   right: 0;
   top: 0;
-  margin-right: 0px;
 }
 /*mise en forme header mobile */
 @media (max-width: 700px) {
@@ -68,7 +53,7 @@ nav {
   div .nav1,
   div .nav2 {
     margin: 0px;
-    margin-top: 100px;
+    margin-top: 60px;
     padding: 0px;
     width: 100%;
     border-bottom: 4px solid #f2f2f2;
@@ -77,18 +62,16 @@ nav {
     display: grid;
     grid-template-columns: 50vw 50vw;
     width: 100%;
-    /* border-bottom: 4px solid #f2f2f2; */
   }
-  .menu div {
+  /* .menu div {
     padding-left: 0px;
-  }
+  }*/
   .inscription {
-    display: block;
-    padding-right: 30px;
+    padding-right: 3vw;
   }
   .logo {
     position: absolute;
-    left: 6vw;
+    left: 3vw;
     top: 2rem;
   }
 }
@@ -100,19 +83,12 @@ section.search_field {
 
 .search_field_form_input {
   border: 1px solid #f2f2f2;
-  outline: none;
   height: 45px;
   margin: 0;
   width: 200px;
   color: black;
   font-size: large;
   font-weight: bold;
-}
-
-@media (max-width: 700px) {
-  .search_field_form_input {
-    width: 150px;
-  }
 }
 
 .gps {
@@ -124,9 +100,8 @@ section.search_field {
   color: white;
   background-color: #0064fc;
   margin: 0;
-  padding: 0;
+  padding: 0px;
   height: 45px;
-  box-shadow: none;
   border: none;
   border-top-right-radius: 10px 10px;
   border-bottom-right-radius: 10px 10px;
@@ -136,25 +111,25 @@ div .location {
   border-top-left-radius: 10px 10px;
   border-bottom-left-radius: 10px 10px;
   display: inline-block;
-  padding: 0;
-  margin: 0;
 }
 
-.i {
-  font-weight: lighter;
+@media (max-width: 700px) {
+  .search_field_form_input {
+    width: 150px;
+  }
 }
 
-/* end of mise en forme header*/
+/* end of mise en forme header and searchfield*/
 
-/* filtres */
+/* mise en forme filtres */
 .filter {
   color: black;
   font-size: large;
   font-weight: bold;
   background-color: white;
   border-radius: 30px 30px;
-  padding: 0 0.8rem 0 0;
-  border: 1px solid #d9d9d9;
+  padding: 0 1rem 0 0;
+  border: 2px solid #d9d9d9;
   margin: 1rem;
 }
 .filtres {
@@ -181,7 +156,11 @@ div .location {
   color: #0065fc;
 }
 
-/* Les plus populaires */
+.i {
+  font-weight: lighter;
+}
+
+/* Mise en forme Les plus populaires */
 .aside_title {
   display: flex;
   flex-direction: row;
@@ -190,13 +169,10 @@ div .location {
 }
 
 .article_title {
-  margin-left: 40px;
-  margin-top: 40px;
-  margin-right: 40px;
+  margin: 25px 40px 25px 40px;
 }
-
 .article_end {
-  padding: 40px;
+  margin: 40px;
 }
 
 /* flexbox hébergements */
@@ -218,7 +194,6 @@ article {
 }
 aside {
   /* aka les plus populaires*/
-  flex-shrink: 1;
   background-color: #f2f2f2;
   border-radius: 20px 20px;
   margin-right: 3vw;
@@ -243,14 +218,9 @@ aside {
     flex-wrap: wrap;
     margin: none;
   }
-
-  div.bloc_page {
-    padding: none;
-    margin: none;
-  }
 }
 
-/* views est la box de chaque hébergements dans }e */
+/* views est le container de chaque hébergements dans article */
 figure .hotel-1,
 figure .hotel-2,
 figure .hotel-3,
@@ -258,7 +228,6 @@ figure .hotel-4,
 figure .hotel-5,
 figure .hotel-6 {
   margin: 1.5vw 1.5vw;
-  box-sizing: border-box;
   border-radius: 20px 20px;
   border: 4px solid white;
   background-color: white;
@@ -312,7 +281,7 @@ figcaption {
   justify-content: center;
   align-items: center;
 }
-/* sideviews est la box de chaque hébergement dans aside */
+/* sideviews est le container de chaque hébergement dans aside */
 .sideviews figure {
   width: 340px;
   height: 145px;
@@ -353,9 +322,6 @@ figcaption {
     width: calc(100% - 5vw);
     margin-bottom: 30px;
   }
-}
-
-@media screen and (max-width: 700px) {
   .views img,
   .pic-1 img,
   .pic-4 img,
@@ -374,7 +340,8 @@ figcaption {
 .greystars {
   color: #d9d9d9;
 }
-/* end of flexbox hébergements }e + aside */
+
+/* end of flexbox hébergements article + aside */
 
 /*flexbox  activités*/
 /*overall activités container*/
@@ -384,15 +351,7 @@ figcaption {
   padding: 0.5vw 1.5vw;
 }
 
-/* stars */
-.bluestars {
-  color: #0065fc;
-}
-.greystars {
-  color: #d9d9d9;
-}
-
-/* pic ans picc container */
+/* pics container of pic div, figures inside mobile version*/
 .legs_title {
   padding: 0 3vw;
 }
@@ -406,7 +365,7 @@ figcaption {
   padding: 0 3vw;
 }
 
-/* figures and images for the pictures*/
+/* figures and images for the pictures of pics mobile version*/
 .pic {
   min-width: 295px;
   border-radius: 20px 20px;
@@ -535,6 +494,7 @@ div .pic-5-6 {
   background-color: #f2f2f2;
   padding: 0 3vw;
   justify-items: start;
+  margin: none;
 }
 
 @media screen and (max-width: 700px) {
