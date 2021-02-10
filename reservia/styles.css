@@ -376,9 +376,7 @@ figcaption {
 /*flexbox  activités*/
 /*overall activités container*/
 .legs {
-  margin-top: 1.5vw;
-  margin-bottom: 1.5vw;
-  padding: 0.5vw 1.5vw;
+  margin: 3vw 1.5vw;
 }
 
 /* pics container of pic div, figures inside mobile version*/
@@ -392,7 +390,7 @@ figcaption {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0 3vw;
+  padding: 0vw;
 }
 
 /* figures and images for the pictures of pics mobile version*/
