@@ -22,16 +22,35 @@ html {
   margin-bottom: 0;
   padding: 0;
 }
-/* mise en forme des liens */
-a:hover header {
+/* mise en forme des liens header (menu) */
+.inscription a:hover {
   color: #0065fc;
-  border-top: 1px solid #0065fc;
+  border-top: 2px solid #0065fc;
 }
 
-a header {
+a {
   text-decoration: none;
   color: black;
+}
+.menu {
+  padding: 20px 180px 0px 0px;
+}
+
+.nav1,
+.nav2,
+.inscription {
   padding: 3rem 3rem 0.8rem 3rem;
+}
+
+div .nav1,
+div .nav2 {
+  padding-top: 30px;
+}
+
+div .nav1:hover,
+div .nav2:hover,
+.inscription:hover {
+  border-top: 2px solid #0065fc;
 }
 
 /*mise en forme header desktop*/
@@ -75,6 +94,11 @@ nav {
     padding: 0px;
     width: 100%;
     border-bottom: 4px solid #f2f2f2;
+    text-align: center;
+  }
+  div .nav1:hover,
+  div .nav2:hover {
+    border-top: none;
   }
   .menu {
     display: grid;
@@ -124,7 +148,7 @@ section.search_field {
   border-bottom-right-radius: 10px 10px;
 }
 
-.fa-search {
+.searched {
   display: none;
 }
 
@@ -140,7 +164,7 @@ div .location {
   .search_field_form_input {
     width: 200px;
   }
-  .fa-search {
+  .searched {
     display: initial;
     padding: 5px;
   }
