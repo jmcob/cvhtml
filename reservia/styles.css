@@ -33,7 +33,7 @@ a {
   color: black;
 }
 .menu {
-  padding: 20px 180px 0px 0px;
+  padding: 0px 180px 0px 0px;
 }
 
 .nav1,
@@ -104,6 +104,7 @@ nav {
     display: grid;
     grid-template-columns: 50vw 50vw;
     width: 100%;
+    padding-top: 20px;
   }
   /* .menu div {
     padding-left: 0px;
