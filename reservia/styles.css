@@ -4,6 +4,24 @@
   box-sizing: border-box;
 }
 
+/*ESSAI POUR SUPPRIMER l'espace sous le FOOTER*/
+.bloc_page {
+  margin: 0;
+  padding: 0;
+}
+main {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin-bottom: 0;
+  padding: 0;
+  margin: 0;
+}
+html {
+  margin-bottom: 0;
+  padding: 0;
+}
 /* mise en forme des liens */
 a:hover {
   color: #0065fc;
@@ -494,7 +512,7 @@ div .pic-5-6 {
   background-color: #f2f2f2;
   padding: 0 3vw;
   justify-items: start;
-  margin: none;
+  margin: 0px;
 }
 
 @media screen and (max-width: 700px) {
