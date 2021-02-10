@@ -118,22 +118,35 @@ section.search_field {
   color: white;
   background-color: #0064fc;
   margin: 0;
-  padding: 0px;
+  padding: 2px;
   height: 45px;
   border: none;
   border-top-right-radius: 10px 10px;
   border-bottom-right-radius: 10px 10px;
 }
+
+.fa-search {
+  display: none;
+}
+
 div .location {
   background-color: #f2f2f2;
   border-top-left-radius: 10px 10px;
   border-bottom-left-radius: 10px 10px;
-  display: inline-block;
+  display: initial;
+  padding: 15px;
 }
 
 @media (max-width: 700px) {
   .search_field_form_input {
-    width: 150px;
+    width: 200px;
+  }
+  .fa-search {
+    display: initial;
+    padding: 5px;
+  }
+  .search {
+    display: none;
   }
 }
 
