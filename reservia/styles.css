@@ -269,12 +269,10 @@ aside {
     background-color: white;
   }
   aside {
-    margin: none;
     border-radius: 0px 0px;
   }
   .core {
     flex-wrap: wrap;
-    margin: none;
   }
 }
 
@@ -456,7 +454,6 @@ figure {
 
 div .pic-2-3,
 div .pic-5-6 {
-  display: noflex;
   padding: 0px;
 }
 
