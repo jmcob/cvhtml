@@ -22,6 +22,9 @@ html {
   margin-bottom: 0;
   padding: 0;
 }
+footer {
+  margin: 0;
+}
 /* mise en forme des liens header (menu) */
 .inscription a:hover {
   color: #0065fc;
@@ -78,7 +81,7 @@ nav {
   top: 0;
 }
 /*mise en forme header mobile */
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .nav1:hover,
   .nav2:hover {
     color: #0065fc;
@@ -159,7 +162,7 @@ div .location {
   padding: 15px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .search_field_form_input {
     width: 200px;
   }
@@ -257,8 +260,8 @@ aside {
   padding: 1.5vw;
 }
 
-/* to make article and aside 100% width on small screens, 700px is good */
-@media (max-width: 700px) {
+/* to make article and aside 100% width on small screens, 768px is good */
+@media (max-width: 768px) {
   article,
   aside {
     width: 100%;
@@ -364,7 +367,7 @@ figcaption {
   align-items: center;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   .views figure,
   .sideviews figure,
   .pic-1 figure,
@@ -548,7 +551,7 @@ div .pic-5-6 {
   margin: 0px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   .footer {
     display: grid;
     grid-template-rows: 1fr 0.8fr 0.5fr;
