@@ -4,6 +4,17 @@
   box-sizing: border-box;
 }
 
+:root {
+  --main-color: #0065fc;
+  /*#0065fc */
+  --secondary-color: #deebff;
+  --bg-color: #f2f2f2;
+  --shadow-color: lightgrey;
+  --font-color: black;
+  --filter-border-color: #d9d9d9;
+  --fig-bg-color: white;
+}
+
 /*ESSAI POUR SUPPRIMER l'espace sous le FOOTER*/
 .bloc_page {
   margin: 0;
@@ -27,13 +38,13 @@ footer {
 }
 /* mise en forme des liens header (menu) */
 .inscription a:hover {
-  color: #0065fc;
-  border-top: 2px solid #0065fc;
+  color: var(--main-color);
+  border-top: 2px solid var(--main-color);
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: var(--font-color);
 }
 .menu {
   padding: 0px 180px 0px 0px;
@@ -53,7 +64,7 @@ div .nav2 {
 div .nav1:hover,
 div .nav2:hover,
 .inscription:hover {
-  border-top: 2px solid #0065fc;
+  border-top: 2px solid var(--main-color);
 }
 
 /*mise en forme header desktop*/
@@ -75,7 +86,7 @@ nav {
 }
 /*s'inscrire*/
 .inscription {
-  color: #0065fc;
+  color: var(--main-color);
   position: absolute;
   right: 0;
   top: 0;
@@ -84,8 +95,8 @@ nav {
 @media (max-width: 768px) {
   .nav1:hover,
   .nav2:hover {
-    color: #0065fc;
-    border-bottom: 4px solid #0065fc;
+    color: var(--main-color);
+    border-bottom: 4px solid var(--main-color);
   }
   a:hover {
     border-top: none;
@@ -96,7 +107,7 @@ nav {
     margin-top: 60px;
     padding: 0px;
     width: 100%;
-    border-bottom: 4px solid #f2f2f2;
+    border-bottom: 4px solid var(--bg-color);
     text-align: center;
   }
   div .nav1:hover,
@@ -126,7 +137,7 @@ section.search_field {
 }
 
 .search_field_form_input {
-  border: 1px solid #f2f2f2;
+  border: 1px solid var(--bg-color);
   height: 45px;
   margin: 0;
   width: 200px;
@@ -140,8 +151,8 @@ section.search_field {
 }
 
 .search_field_button {
-  color: white;
-  background-color: #0064fc;
+  color: var(--fig-bg-color);
+  background-color: var(--main-color);
   margin: 0;
   padding: 2px;
   height: 45px;
@@ -155,7 +166,7 @@ section.search_field {
 }
 
 div .location {
-  background-color: #f2f2f2;
+  background-color: var(--bg-color);
   border-top-left-radius: 10px 10px;
   border-bottom-left-radius: 10px 10px;
   display: initial;
@@ -179,13 +190,13 @@ div .location {
 
 /* mise en forme filtres */
 .filter {
-  color: black;
+  color: var(--font-color);
   font-size: large;
   font-weight: bold;
-  background-color: white;
+  background-color: var(--fig-bg-color);
   border-radius: 30px 30px;
   padding: 0 1rem 0 0;
-  border: 2px solid #d9d9d9;
+  border: 2px solid var(--filter-border-color);
   margin: 1rem;
 }
 
@@ -201,19 +212,19 @@ div .location {
 .fas.fa-child,
 .fas.fa-heart,
 .fas.fa-dog {
-  color: #0065fc;
+  color: var(--main-color);
   border-radius: 50%;
   padding: 0.8rem;
-  background-color: #deebff;
+  background-color: var(--secondary-color);
 }
 
 .fas.fa-info {
   border-radius: 100%;
-  border: 1px solid #d9d9d9;
+  border: 1px solid var(--filter-border-color);
   text-align: center;
   padding: 5px;
   width: 30px;
-  color: #0065fc;
+  color: var(--main-color);
 }
 
 .i {
@@ -245,7 +256,7 @@ div .location {
 article {
   /* aka hébergements */
   border-radius: 20px 20px;
-  background-color: #f2f2f2;
+  background-color: var(--bg-color);
   margin-left: 3vw;
 }
 .inbetween {
@@ -254,7 +265,7 @@ article {
 }
 aside {
   /* aka les plus populaires*/
-  background-color: #f2f2f2;
+  background-color: var(--bg-color);
   border-radius: 20px 20px;
   margin-right: 3vw;
   padding: 1.5vw;
@@ -269,7 +280,7 @@ aside {
   }
 
   article {
-    background-color: white;
+    background-color: var(--fig-bg-color);
   }
   aside {
     border-radius: 0px 0px;
@@ -288,10 +299,10 @@ figure .hotel-5,
 figure .hotel-6 {
   margin: 1.5vw 1.5vw;
   border-radius: 20px 20px;
-  border: 4px solid white;
+  border: 4px solid var(--fig-bg-color);
   width: 250px;
   height: 200px;
-  box-shadow: 2px 2px 2px lightgrey;
+  box-shadow: 2px 2px 2px var(--shadow-color);
   flex-basis: 25%;
 }
 
@@ -327,7 +338,7 @@ figcaption {
   object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  border: 4px solid white;
+  border: 4px solid var(--fig-bg-color);
   width: 250px;
   height: 120px;
 }
@@ -345,14 +356,14 @@ figcaption {
   height: 145px;
   margin: 0.75vw;
   box-sizing: border-box;
-  border: 2.5px solid white;
+  border: 2.5px solid var(--fig-bg-color);
   border-radius: 20px 20px;
-  box-shadow: 2px 2px 2px lightgrey;
+  box-shadow: 2px 2px 2px var(--shadow-color);
 }
 
 .sideviews img {
   object-fit: cover;
-  border: 2.5px solid white;
+  border: 2.5px solid var(--fig-bg-color);
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   height: 140px;
@@ -392,10 +403,10 @@ figcaption {
 
 /* stars for hotels */
 .bluestars {
-  color: #0065fc;
+  color: var(--main-color);
 }
 .greystars {
-  color: #d9d9d9;
+  color: var(--filter-border-color);
 }
 
 /* end of flexbox hébergements article + aside */
@@ -428,10 +439,10 @@ figcaption {
   height: 440px;
 }
 figure {
-  background-color: white;
+  background-color: var(--fig-bg-color);
   margin: 15px 1.5vw 15px 1.5vw;
   border-radius: 20px 20px;
-  box-shadow: 2px 2px 2px lightgrey;
+  box-shadow: 2px 2px 2px var(--shadow-color);
 }
 
 .pic-1 figure,
@@ -545,7 +556,7 @@ div .pic-5-6 {
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: #f2f2f2;
+  background-color: var(--bg-color);
   padding: 0 3vw;
   justify-items: start;
   margin: 0px;
@@ -556,7 +567,7 @@ div .pic-5-6 {
     display: grid;
     grid-template-rows: 1fr 0.8fr 0.5fr;
     grid-template-columns: 100%;
-    background-color: #f2f2f2;
+    background-color: var(--bg-color);
   }
   .foot-1 {
     grid-row: 1;
