@@ -1,11 +1,11 @@
-/* font and page properties*/
+/* 1/ font and page properties*/
 * {
   font-family: "Raleway", sans-serif;
   box-sizing: border-box;
 }
 
 .bloc_page {
-  margin: 0vw 3vw;
+  margin: 0vw 0vw;
   padding: 0;
 }
 
@@ -38,7 +38,7 @@ html {
 footer {
   margin: 0;
 }
-/* mise en forme des liens header (menu) */
+/* 2/ HEADER :  mise en forme des liens header (menu) */
 .inscription a:hover {
   color: var(--main-color);
   border-top: 2px solid var(--main-color);
@@ -69,7 +69,7 @@ div .nav2:hover,
   border-top: 2px solid var(--main-color);
 }
 
-/*mise en forme header desktop*/
+/*DESKTOP : mise en forme header desktop*/
 
 .logo {
   position: absolute;
@@ -93,7 +93,7 @@ nav {
   right: 0;
   top: 0;
 }
-/*mise en forme header mobile */
+/* MOBILE : mise en forme header mobile */
 @media (max-width: 768px) {
   .nav1:hover,
   .nav2:hover {
@@ -124,18 +124,18 @@ nav {
   }
 
   .inscription {
-    padding-right: 3vw;
+    padding-right: 7vw;
   }
   .logo {
     position: absolute;
-    left: 3vw;
+    left: 7vw;
     top: 2rem;
   }
 }
 
-/* mise en forme search field */
+/* 3/ mise en forme search field */
 section.search_field {
-  margin: 0;
+  margin: 3vw;
 }
 
 .search_field_form_input {
@@ -159,8 +159,7 @@ section.search_field {
   padding: 2px;
   height: 45px;
   border: none;
-  border-top-right-radius: 10px 10px;
-  border-bottom-right-radius: 10px 10px;
+  border-radius: 10px 10px;
 }
 
 .searched {
@@ -190,7 +189,7 @@ div .location {
 
 /* end of mise en forme header and searchfield*/
 
-/* mise en forme filtres */
+/* 4/ mise en forme filtres */
 .filter {
   color: var(--font-color);
   font-size: large;
@@ -199,7 +198,7 @@ div .location {
   border-radius: 30px 30px;
   padding: 0 1rem 0 0;
   border: 2px solid var(--filter-border-color);
-  margin: 0.5rem;
+  margin: 3vw;
 }
 
 .filter:hover {
@@ -231,26 +230,29 @@ div .location {
 
 .i {
   font-weight: lighter;
+  margin: 3vw;
 }
 
-/* Mise en forme Les plus populaires */
+/* 5/ Mise en forme popular & accommodation : flexboxes */
 .popular_title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0;
+  margin: 3vw;
+}
+.fa-chart-line {
+  margin: 3vw;
 }
 
 .accomodation_title {
-  margin: 0;
+  margin: 3vw;
 }
 .accomodation_end {
-  margin: 0;
+  margin: 3vw;
 }
 
-/* flexbox hébergements */
 .section {
-  /*container pour section, aka hébergement + les plus populaire*/
+  /*container pour section, aka accomodation & popular*/
   display: flex;
   flex-direction: row-reverse;
 }
@@ -262,7 +264,7 @@ div .location {
   margin-left: 0vw;
 }
 .inbetween {
-  /* space between article and aside*/
+  /* space between popular and accomodation*/
   padding: 20px 20px;
 }
 .popular {
@@ -273,50 +275,48 @@ div .location {
   padding: 1.5vw;
 }
 
-/* to make article and aside 100% width on small screens, 768px is good */
+/* MOBILE flexboxes popular ans accomodations, 768px is good */
 @media (max-width: 768px) {
-  .accomodation,
-  .popular {
+  a .accomodation,
+  a .popular {
+    display: inline-block;
+    box-sizing: content-box;
     width: 100%;
-    margin: 0px;
   }
 
+  .accomodation,
+  .popular {
+    min-width: 100%;
+    margin: 0px;
+  }
   .accomodation {
     background-color: var(--fig-bg-color);
   }
   .popular {
     border-radius: 0px 0px;
-
-  }
-  .popular_figure {
-    min-width: 340px;
-    width: 100%;
   }
   .section {
     flex-wrap: wrap;
   }
-.accomodation_figure_container {
-  flex-grow: 1;
-  width: 100%;
 }
 
-/* accomodation_figure_container est le container de chaque hébergements dans article */
+/* 6/ accomodation_figure_container est le container de chaque hébergements dans article */
 .accomodation_figure {
   margin: 1.5vw 1.5vw;
   border-radius: 20px 20px;
   border: 4px solid var(--fig-bg-color);
-  width: 250px;
-  height: 200px;
+  width: 248px;
+  height: 204px;
   box-shadow: 2px 2px 2px var(--shadow-color);
   flex-basis: 25%;
   background-color: var(--fig-bg-color);
-  max-width: 100%;
 }
 
 figcaption {
   padding-left: 1rem;
   display: grid;
   grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 
 .hotel_name {
@@ -341,7 +341,7 @@ figcaption {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border: 2.5px solid var(--fig-bg-color);
-  width: 242px;
+  width: 240px;
   height: 120px;
 }
 
@@ -353,7 +353,7 @@ figcaption {
   align-items: center;
   flex-grow: 1;
 }
-/* popular_figure_container est le container de chaque hébergement dans aside */
+/* 7/ popular_figure_container est le container de chaque hébergement dans aside */
 .popular_figure {
   width: 340px;
   height: 145px;
@@ -395,7 +395,7 @@ figcaption {
   }
 }
 
-/* stars for hotels */
+/* 8/ stars for hotels */
 .bluestars {
   color: var(--main-color);
 }
@@ -403,16 +403,15 @@ figcaption {
   color: var(--filter-border-color);
 }
 
-/* end of flexbox hébergements article + aside */
+/* END of flexbox hébergements article + aside */
 
-/*flexbox  activités*/
+/*flexbox  activity*/
 /*overall activités container*/
 .activity {
   margin: 0px;
   padding: 0px;
 }
 
-/* pics container of pic div, figures inside mobile version*/
 .activity_title {
   padding: 0;
 }
@@ -427,7 +426,7 @@ div .activity_container {
   justify-content: space-between;
   align-items: space-around;
 }
-/* DESKTOP version of activités a Marseille*/
+/* 9/ DESKTOP version of activités a Marseille*/
 .activity_figure {
   box-shadow: 2px 2px 2px var(--shadow-color);
   border-radius: 20px 20px;
@@ -506,7 +505,7 @@ div .pic-5-6 {
 .activity_figure figcaption {
   height: 60px;
 }
-/* figures and images for the pictures of activity MOBILE version*/
+/* 10/ figures and images for the pictures of activity MOBILE version*/
 @media screen and (max-width: 768px) {
   activity_figure {
     min-width: 295px;
@@ -534,9 +533,9 @@ div .pic-5-6 {
   }
 }
 
-/* end of flexbox hébergements et activités*/
+/* END of flexbox hébergements et activités*/
 
-/* flexbox footer */
+/* 11/ flexbox footer */
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
