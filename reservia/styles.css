@@ -1,11 +1,11 @@
-/* font and page properties*/
+/* 1/ font and page properties*/
 * {
   font-family: "Raleway", sans-serif;
   box-sizing: border-box;
 }
 
 .bloc_page {
-  margin: 0vw 3vw;
+  margin: 0vw 0vw;
   padding: 0;
 }
 
@@ -38,7 +38,7 @@ html {
 footer {
   margin: 0;
 }
-/* mise en forme des liens header (menu) */
+/* 2/ HEADER :  mise en forme des liens header (menu) */
 .inscription a:hover {
   color: var(--main-color);
   border-top: 2px solid var(--main-color);
@@ -69,7 +69,7 @@ div .nav2:hover,
   border-top: 2px solid var(--main-color);
 }
 
-/*mise en forme header desktop*/
+/*DESKTOP : mise en forme header desktop*/
 
 .logo {
   position: absolute;
@@ -93,7 +93,7 @@ nav {
   right: 0;
   top: 0;
 }
-/*mise en forme header mobile */
+/* MOBILE : mise en forme header mobile */
 @media (max-width: 768px) {
   .nav1:hover,
   .nav2:hover {
@@ -124,18 +124,18 @@ nav {
   }
 
   .inscription {
-    padding-right: 3vw;
+    padding-right: 7vw;
   }
   .logo {
     position: absolute;
-    left: 3vw;
+    left: 7vw;
     top: 2rem;
   }
 }
 
-/* mise en forme search field */
+/* 3/ mise en forme search field */
 section.search_field {
-  margin: 0;
+  margin: 3vw;
 }
 
 .search_field_form_input {
@@ -159,8 +159,7 @@ section.search_field {
   padding: 2px;
   height: 45px;
   border: none;
-  border-top-right-radius: 10px 10px;
-  border-bottom-right-radius: 10px 10px;
+  border-radius: 10px 10px;
 }
 
 .searched {
@@ -190,7 +189,7 @@ div .location {
 
 /* end of mise en forme header and searchfield*/
 
-/* mise en forme filtres */
+/* 4/ mise en forme filtres */
 .filter {
   color: var(--font-color);
   font-size: large;
@@ -199,7 +198,7 @@ div .location {
   border-radius: 30px 30px;
   padding: 0 1rem 0 0;
   border: 2px solid var(--filter-border-color);
-  margin: 0.5rem;
+  margin: 3vw;
 }
 
 .filter:hover {
@@ -231,26 +230,29 @@ div .location {
 
 .i {
   font-weight: lighter;
+  margin: 3vw;
 }
 
-/* Mise en forme Les plus populaires */
+/* 5/ Mise en forme popular & accommodation : flexboxes */
 .popular_title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0;
+  margin: 3vw;
+}
+.fa-chart-line {
+  margin: 3vw;
 }
 
 .accomodation_title {
-  margin: 0;
+  margin: 3vw;
 }
 .accomodation_end {
-  margin: 0;
+  margin: 3vw;
 }
 
-/* flexbox hébergements */
 .section {
-  /*container pour section, aka hébergement + les plus populaire*/
+  /*container pour section, aka accomodation & popular*/
   display: flex;
   flex-direction: row-reverse;
 }
@@ -262,7 +264,7 @@ div .location {
   margin-left: 0vw;
 }
 .inbetween {
-  /* space between article and aside*/
+  /* space between popular and accomodation*/
   padding: 20px 20px;
 }
 .popular {
@@ -273,14 +275,20 @@ div .location {
   padding: 1.5vw;
 }
 
-/* to make article and aside 100% width on small screens, 768px is good */
+/* MOBILE flexboxes popular ans accomodations, 768px is good */
 @media (max-width: 768px) {
-  .accomodation,
-  .popular {
+  a .accomodation,
+  a .popular {
+    display: inline-block;
+    box-sizing: content-box;
     width: 100%;
-    margin: 0px;
   }
 
+  .accomodation,
+  .popular {
+    min-width: 100%;
+    margin: 0px;
+  }
   .accomodation {
     background-color: var(--fig-bg-color);
   }
@@ -292,21 +300,23 @@ div .location {
   }
 }
 
-/* views est le container de chaque hébergements dans article */
+/* 6/ accomodation_figure_container est le container de chaque hébergements dans article */
 .accomodation_figure {
   margin: 1.5vw 1.5vw;
   border-radius: 20px 20px;
   border: 4px solid var(--fig-bg-color);
-  width: 250px;
-  height: 200px;
+  width: 248px;
+  height: 204px;
   box-shadow: 2px 2px 2px var(--shadow-color);
   flex-basis: 25%;
+  background-color: var(--fig-bg-color);
 }
 
 figcaption {
   padding-left: 1rem;
   display: grid;
   grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 
 .hotel_name {
@@ -330,8 +340,8 @@ figcaption {
   object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  border: 4px solid var(--fig-bg-color);
-  width: 250px;
+  border: 2.5px solid var(--fig-bg-color);
+  width: 240px;
   height: 120px;
 }
 
@@ -339,26 +349,27 @@ figcaption {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: justify;
   align-items: center;
+  flex-grow: 1;
 }
-/* sideviews est le container de chaque hébergement dans aside */
+/* 7/ popular_figure_container est le container de chaque hébergement dans aside */
 .popular_figure {
   width: 340px;
   height: 145px;
   margin: 0.75vw;
   box-sizing: border-box;
-  border: 2.5px solid var(--fig-bg-color);
   border-radius: 20px 20px;
+  border: 4px solid var(--fig-bg-color);
   box-shadow: 2px 2px 2px var(--shadow-color);
+  background-color: var(--fig-bg-color);
 }
 
 .popular_figure img {
   object-fit: cover;
-  border: 2.5px solid var(--fig-bg-color);
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  height: 140px;
+  height: 137px;
   width: 130px;
   float: left;
 }
@@ -368,6 +379,8 @@ figcaption {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  max-width: 100%;
+  flex-grow: 1;
 }
 
 @media screen and (max-width: 768px) {
@@ -377,17 +390,12 @@ figcaption {
     margin-bottom: 30px;
   }
   .accomodation_figure img,
-  .pic-1 img,
-  .pic-4 img,
-  .pic-2 img,
-  .pic-3 img,
-  .pic-5 img,
-  .pic-6 img {
+  .activity_figure img {
     width: calc(100% - 2.5px);
   }
 }
 
-/* stars for hotels */
+/* 8/ stars for hotels */
 .bluestars {
   color: var(--main-color);
 }
@@ -395,134 +403,139 @@ figcaption {
   color: var(--filter-border-color);
 }
 
-/* end of flexbox hébergements article + aside */
+/* END of flexbox hébergements article + aside */
 
-/*flexbox  activités*/
+/*flexbox  activity*/
 /*overall activités container*/
 .activity {
-  margin: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
-/* pics container of pic div, figures inside mobile version*/
 .activity_title {
   padding: 0;
 }
-
+div .activity_container {
+  margin: 0;
+  padding: 0;
+}
 .activity_container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 0vw;
+  justify-content: space-between;
+  align-items: space-around;
 }
-
-/* figures and images for the pictures of activity mobile version*/
-activity_figure {
-  min-width: 295px;
-  border-radius: 20px 20px;
-  flex-shrink: 1;
-  height: 440px;
-  background-color: var(--fig-bg-color);
-  margin: 15px 1.5vw 15px 1.5vw;
-  border-radius: 20px 20px;
+/* 9/ DESKTOP version of activités a Marseille*/
+.activity_figure {
   box-shadow: 2px 2px 2px var(--shadow-color);
+  border-radius: 20px 20px;
+  margin: 0;
+  margin-bottom: 2vw;
 }
 
-activity_figure img {
-  object-fit: cover;
-  min-width: 250px;
-  height: 120px;
-  border-top-left-radius: 20px 20px;
-  border-top-right-radius: 20px 20px;
+.activity_figure .pic-1,
+.activity_figure .pic-4 {
+  height: 445px;
+}
+.pic-2 .activity_figure {
+  max-height: 225px;
+  margin-top: 0px;
+}
+.pic-3 .activity_figure {
+  max-height: 150px;
+}
+
+.pic-5 .activity_figure {
+  max-height: 180px;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.pic-6 .activity_figure {
+  max-height: 190px;
 }
 
 div .pic-2-3,
 div .pic-5-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 490px;
   padding: 0px;
 }
 
-activity_figure figcaption {
+.pic-1 img,
+.pic-4 img {
+  object-fit: cover;
+  width: 295px;
+  height: 390px;
+  border-top-left-radius: 20px 20px;
+  border-top-right-radius: 20px 20px;
+}
+.pic-2 img {
+  object-fit: cover;
+  width: 295px;
+  height: 180px;
+  border-top-left-radius: 20px 20px;
+  border-top-right-radius: 20px 20px;
+}
+.pic-3 img {
+  object-fit: cover;
+  width: 295px;
+  height: 100px;
+  border-top-left-radius: 20px 20px;
+  border-top-right-radius: 20px 20px;
+}
+
+.pic-5 img {
+  object-fit: cover;
+  width: 295px;
+  height: 130px;
+  border-top-left-radius: 20px 20px;
+  border-top-right-radius: 20px 20px;
+}
+.pic-6 img {
+  object-fit: cover;
+  width: 295px;
+  height: 145px;
+  border-top-left-radius: 20px 20px;
+  border-top-right-radius: 20px 20px;
+}
+
+.activity_figure figcaption {
   height: 60px;
 }
-/* desktop version of activités a Marseille*/
-@media screen and (min-width: 701px) {
+/* 10/ figures and images for the pictures of activity MOBILE version*/
+@media screen and (max-width: 768px) {
   activity_figure {
-    box-shadow: var(--shadow-color);
+    min-width: 295px;
+    border-radius: 20px 20px;
+    flex-shrink: 1;
+    height: 440px;
+    background-color: var(--fig-bg-color);
+    margin: 15px 1.5vw 15px 1.5vw;
+    border-radius: 20px 20px;
+    box-shadow: 2px 2px 2px var(--shadow-color);
+    flex-grow: 1;
   }
 
-  figure .pic-1,
-  figure .pic-4 {
-    height: 445px;
-  }
-  .pic-2 figure {
-    max-height: 225px;
-    margin-top: 0px;
-  }
-  .pic-3 figure {
-    max-height: 150px;
-  }
-
-  .pic-5 figure {
-    max-height: 180px;
-    margin-top: 0px;
-    padding-top: 0px;
-  }
-  .pic-6 figure {
-    max-height: 190px;
+  activity_figure img {
+    object-fit: cover;
+    min-width: 250px;
+    height: 120px;
+    border-top-left-radius: 20px 20px;
+    border-top-right-radius: 20px 20px;
   }
 
   div .pic-2-3,
   div .pic-5-6 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 490px;
     padding: 0px;
-  }
-
-  .pic-1 img,
-  .pic-4 img {
-    object-fit: cover;
-    width: 295px;
-    height: 390px;
-    border-top-left-radius: 20px 20px;
-    border-top-right-radius: 20px 20px;
-  }
-  .pic-2 img {
-    object-fit: cover;
-    width: 295px;
-    height: 180px;
-    border-top-left-radius: 20px 20px;
-    border-top-right-radius: 20px 20px;
-  }
-  .pic-3 img {
-    object-fit: cover;
-    width: 295px;
-    height: 100px;
-    border-top-left-radius: 20px 20px;
-    border-top-right-radius: 20px 20px;
-  }
-
-  .pic-5 img {
-    object-fit: cover;
-    width: 295px;
-    height: 130px;
-    border-top-left-radius: 20px 20px;
-    border-top-right-radius: 20px 20px;
-  }
-  .pic-6 img {
-    object-fit: cover;
-    width: 295px;
-    height: 145px;
-    border-top-left-radius: 20px 20px;
-    border-top-right-radius: 20px 20px;
   }
 }
 
-/* end of flexbox hébergements et activités*/
+/* END of flexbox hébergements et activités*/
 
-/* flexbox footer */
+/* 11/ flexbox footer */
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
