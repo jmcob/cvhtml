@@ -124,18 +124,18 @@ nav {
   }
 
   .inscription {
-    padding-right: 7vw;
+    padding-right: 3vw;
   }
   .logo {
     position: absolute;
-    left: 7vw;
+    left: 3vw;
     top: 2rem;
   }
 }
 
 /* 3/ mise en forme search field */
 section.search_field {
-  margin: 3vw;
+  margin: 0;
 }
 
 .search_field_form_input {
@@ -159,7 +159,8 @@ section.search_field {
   padding: 2px;
   height: 45px;
   border: none;
-  border-radius: 10px 10px;
+  border-top-right-radius: 10px 10px;
+  border-bottom-right-radius: 10px 10px;
 }
 
 .searched {
@@ -198,7 +199,7 @@ div .location {
   border-radius: 30px 30px;
   padding: 0 1rem 0 0;
   border: 2px solid var(--filter-border-color);
-  margin: 3vw;
+  margin: 0.5rem;
 }
 
 .filter:hover {
@@ -230,7 +231,6 @@ div .location {
 
 .i {
   font-weight: lighter;
-  margin: 3vw;
 }
 
 /* 5/ Mise en forme popular & accommodation : flexboxes */
@@ -238,17 +238,14 @@ div .location {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 3vw;
-}
-.fa-chart-line {
-  margin: 3vw;
+  margin: 0;
 }
 
 .accomodation_title {
-  margin: 3vw;
+  margin: 0;
 }
 .accomodation_end {
-  margin: 3vw;
+  margin: 0;
 }
 
 .section {
@@ -277,8 +274,8 @@ div .location {
 
 /* MOBILE flexboxes popular ans accomodations, 768px is good */
 @media (max-width: 768px) {
-  a .accomodation,
-  a .popular {
+  .popular a,
+  .accomodation a {
     display: inline-block;
     box-sizing: content-box;
     width: 100%;
