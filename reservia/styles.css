@@ -104,7 +104,7 @@ nav {
   }
   div .nav1,
   div .nav2 {
-    margin: 3vw;
+    margin: 0vw;
     margin-top: 60px;
     padding: 0px;
     width: 100%;
@@ -349,7 +349,7 @@ figcaption {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: justify;
+  justify-content: center;
   align-items: center;
   flex-grow: 1;
 }
