@@ -339,7 +339,7 @@ div .location {
 
 /* 6/ accomodation_figure_container est le container de chaque hébergements dans article */
 
-/* .accomodation_figure {
+/* .accomodation_figure  {
   margin: 1.5vw 1.5vw;
   border-radius: 20px 20px;
   border: 4px solid var(--fig-bg-color);
