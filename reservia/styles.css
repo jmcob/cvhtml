@@ -127,14 +127,14 @@ nav {
   }
   .logo {
     position: absolute;
-    left: 3vw;
+    left: 4vw;
     top: 2rem;
   }
 }
 
 /* 3/ mise en forme search field */
 section.search_field {
-  margin: 3vw;
+  margin: 2vw 4vw;
 }
 
 .search_field_form_input {
@@ -176,8 +176,7 @@ div .location {
 
 @media (max-width: 768px) {
   .search_field_form_input {
-    border-radius: 10px 10px;
-    width: 200px;
+    width: calc(64vw - 20px);
   }
   .searched {
     display: initial;
@@ -194,7 +193,7 @@ div .location {
 /* end of mise en forme header and searchfield*/
 
 /* 4/ mise en forme filtres */
-.filter {
+.filter-button {
   color: var(--font-color);
   font-size: large;
   font-weight: bold;
@@ -203,14 +202,18 @@ div .location {
   padding: 0 1rem 0 0;
   border: 2px solid var(--filter-border-color);
   margin: 0.5rem;
+  margin-left: 0vw;
 }
 
-.filter:hover {
+.filter-button:hover {
   transform: scale(1.2);
 }
-
-.filtres {
+.filters-buttons {
+  margin: 0px;
+}
+.filters {
   font-size: large;
+  margin: 30px 0vw 0vw 0vw;
 }
 
 .fas.fa-money-bill-wave,
@@ -224,16 +227,17 @@ div .location {
 }
 
 .fas.fa-info {
-  border-radius: 100%;
-  border: 1px solid var(--filter-border-color);
-  text-align: center;
-  padding: 5px;
-  width: 30px;
   color: var(--main-color);
+}
+
+.fa-circle {
+  color: var(--filter-border-color);
 }
 
 .i {
   font-weight: lighter;
+  display: grid;
+  grid-template-columns: 50px 1fr;
 }
 
 /* 5/ Mise en forme popular & accommodation : flexboxes */
@@ -245,10 +249,10 @@ div .location {
 }
 
 .accomodation_title {
-  margin: 2vw;
+  margin: 3vw;
 }
 .accomodation_end {
-  margin: 2vw;
+  margin: 3vw;
 }
 
 .section {
@@ -414,6 +418,7 @@ figcaption {
 
 .activity_title {
   padding: 0vw;
+  margin: 0 2vw;
 }
 
 .activity_container {
@@ -430,32 +435,32 @@ figcaption {
   margin: 1.5vw;
 }
 
-.activity_figure .pic-1 {
+.activity_figure .activity-single-1 {
   margin-left: 0px;
 }
-.activity_figure .pic-1,
-.activity_figure .pic-4 {
+.activity_figure .activity-single-1,
+.activity_figure .activity-single-4 {
   height: 445px;
 }
-.pic-2 .activity_figure {
+.activity-single-2 .activity_figure {
   max-height: 225px;
   margin-top: 0px;
 }
-.pic-3 .activity_figure {
+.activity-single-3 .activity_figure {
   max-height: 150px;
 }
 
-.pic-5 .activity_figure {
+.activity-single-5 .activity_figure {
   max-height: 180px;
   margin-top: 0px;
   padding-top: 0px;
 }
-.pic-6 .activity_figure {
+.activity-single-6 .activity_figure {
   max-height: 190px;
 }
 
-div .pic-2-3,
-div .pic-5-6 {
+div .activity-single-2-3,
+div .activity-single-5-6 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -468,28 +473,28 @@ div .pic-5-6 {
   border-top-left-radius: 20px 20px;
   border-top-right-radius: 20px 20px;
 }
-.pic-1 img,
-.pic-4 img {
+.activity-single-1 img,
+.activity-single-4 img {
   height: 390px;
 }
-.pic-2 img {
+.activity-single-2 img {
   height: 180px;
 }
-.pic-3 img {
+.activity-single-3 img {
   height: 100px;
 }
 
-.pic-5 img {
+.activity-single-5 img {
   height: 130px;
 }
-.pic-6 img {
+.activity-single-6 img {
   height: 145px;
 }
 
 .activity_figure figcaption {
   height: 60px;
 }
-/* 10/ figures and images for the pictures of activity MOBILE version*/
+/* 10/ figures and images for the activity-singletures of activity MOBILE version*/
 @media (max-width: 768px) {
   .activity a {
     display: inline-block;
@@ -502,13 +507,11 @@ div .pic-5-6 {
   .activity_figure {
     min-width: 295px;
     border-radius: 20px 20px;
-    flex-shrink: 1;
     max-height: 440px;
     background-color: var(--fig-bg-color);
     margin: 15px 1.5vw 15px 1.5vw;
     border-radius: 20px 20px;
     box-shadow: 2px 2px 2px var(--shadow-color);
-    flex-grow: 1;
   }
 
   .activity_figure img {
@@ -523,10 +526,11 @@ div .pic-5-6 {
     height: 50px;
   }
 
-  div .pic-2-3,
-  div .pic-5-6 {
+  div .activity-single-2-3,
+  div .activity-single-5-6 {
     height: 430px;
     justify-content: start;
+    width: 100%;
   }
 }
 
