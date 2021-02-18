@@ -38,7 +38,7 @@ footer {
   margin: 0;
 }
 /* 2/ HEADER :  mise en forme des liens header (menu) */
-.inscription a:hover {
+.subscribe a:hover {
   color: var(--main-color);
   border-top: 2px solid var(--main-color);
 }
@@ -53,7 +53,7 @@ a {
 
 .nav1,
 .nav2,
-.inscription {
+.subscribe {
   padding: 3rem 3rem 0.8rem 3rem;
 }
 
@@ -64,7 +64,7 @@ div .nav2 {
 
 div .nav1:hover,
 div .nav2:hover,
-.inscription:hover {
+.subscribe:hover {
   border-top: 2px solid var(--main-color);
 }
 
@@ -86,7 +86,7 @@ nav {
   padding-top: 33px;
 }
 /*s'inscrire*/
-.inscription {
+.subscribe {
   color: var(--main-color);
   position: absolute;
   right: 0;
@@ -122,7 +122,7 @@ nav {
     padding-top: 20px;
   }
 
-  .inscription {
+  .subscribe {
     padding-right: 3vw;
   }
   .logo {
@@ -241,57 +241,89 @@ div .location {
 }
 
 /* 5/ Mise en forme popular & accommodation : flexboxes */
+
+.popular_accomodation_container {
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid yellow;
+  flex-direction: row-reverse;
+  height: 1200px;
+}
+
+.popular {
+  height: 950px;
+  flex: 30%;
+  border: 2px solid orangered;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-color);
+  border-radius: 20px 20px;
+}
 .popular_title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 1.2vw;
+  margin: 1rem;
+  border: 2px solid pink;
+}
+.popular_figure_container {
+  display: flex;
+  border: 2px solid orange;
+  flex-direction: column;
+  margin: 1rem;
+}
+.popular_figure {
+  height: 150px;
+  border: 2px solid lightcoral;
+}
+
+.accomodation {
+  border: 2px solid lightblue;
+  margin: 1rem;
+  flex: 50%;
+  height: 950px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px 20px;
+  background-color: var(--bg-color);
 }
 
 .accomodation_title {
   margin: 3vw;
+  border: solid yellow;
 }
 .accomodation_end {
   margin: 3vw;
 }
-
-.section {
-  /*container pour section, aka accomodation & popular*/
+.accomodation_figure_container {
   display: flex;
+  flex-wrap: wrap;
+  height: 600px;
+  flex: 90%;
+  border: 2px solid lightslategray;
   flex-direction: row-reverse;
+  margin: 1rem;
 }
 
-.accomodation {
-  /* aka hébergements */
-  border-radius: 20px 20px;
-  background-color: var(--bg-color);
-  margin-left: 3vw;
-}
-.inbetween {
-  /* space between popular and accomodation*/
-  padding: 1.5vw 1.5vw;
-}
-.popular {
-  /* aka les plus populaires*/
-  background-color: var(--bg-color);
-  border-radius: 20px 20px;
-  margin-right: 3vw;
-  padding: 1.5vw;
+.accomodation_figure {
+  border: 2px solid lightcyan;
+  flex: 30%;
+  height: 150px;
+  margin: 1rem;
 }
 
-/* MOBILE flexboxes popular ans accomodations, 768px is good */
-@media (max-width: 768px) {
-  .popular a,
-  .accomodation a {
-    display: inline-block;
-    box-sizing: content-box;
-    width: 100%;
-  }
+.accomodation_figure img,
+.popular_figure img {
+  display: none;
+}
 
+/* MOBILE flexboxes popular and accomodations, 768px is good for ipad*/
+@media screen and (max-width: 768px) {
+  .popular_accomodation_container,
   .accomodation,
   .popular {
-    min-width: 100%;
-    margin: 0px;
+    height: fit-content;
   }
   .accomodation {
     background-color: var(--fig-bg-color);
@@ -299,20 +331,21 @@ div .location {
   .popular {
     border-radius: 0px 0px;
   }
-  .section {
+  .popular_accomodation_container {
     flex-wrap: wrap;
   }
 }
+*/
 
 /* 6/ accomodation_figure_container est le container de chaque hébergements dans article */
-.accomodation_figure {
+
+/* .accomodation_figure {
   margin: 1.5vw 1.5vw;
   border-radius: 20px 20px;
   border: 4px solid var(--fig-bg-color);
-  width: 248px;
+  flex: 100%;
   height: 204px;
   box-shadow: 2px 2px 2px var(--shadow-color);
-  flex-basis: 25%;
   background-color: var(--fig-bg-color);
 }
 
@@ -339,7 +372,7 @@ figcaption {
   align-self: start;
   padding: 5px;
 }
-
+/* mise en forme de ll'image dans la figure
 .accomodation_figure img {
   object-fit: cover;
   border-top-left-radius: 20px;
@@ -357,7 +390,7 @@ figcaption {
   align-items: center;
   flex-grow: 1;
 }
-/* 7/ popular_figure_container est le container de chaque hébergement dans aside */
+/* 7/ popular_figure_container est le container de chaque hébergement dans aside
 .popular_figure {
   width: 340px;
   height: 145px;
