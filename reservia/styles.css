@@ -291,7 +291,7 @@ div .location {
 .accomodation {
   border: 2px solid lightblue;
   margin: 1rem;
-  flex: 50%;
+  flex: 55%;
   height: 950px;
   display: flex;
   flex-direction: column;
@@ -320,9 +320,10 @@ div .location {
   flex: 30%;
   height: 250px;
   margin: 1rem;
+  padding: 0px;
   border-radius: 20px 20px;
   box-shadow: 2px 2px 2px var(--shadow-color);
-  background-color: var(--fig-bg-color);
+  background-color: red;
   border: 4px solid var(--fig-bg-color);
 }
 
@@ -330,9 +331,44 @@ div .location {
   object-fit: cover;
   height: 120px;
   width: 100%;
+  margin: 0;
   border-top-left-radius: 20px 20px;
   border-top-right-radius: 20px 20px;
-  border: 4px solid black;
+  border: 4px solid green;
+}
+
+/* 6/ figcaption des figures */
+
+.popular figcaption {
+  padding-left: 1rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+
+.hotel_name {
+  grid-row: 1 / 2;
+  padding: 5px;
+}
+
+.stars {
+  grid-row: 3 / 4;
+  align-self: end;
+  padding: 5px;
+}
+
+.stars-grey {
+  grid-row: 3 / 4;
+  align-self: start;
+  padding: 5px;
+}
+
+/* 8/ stars for hotels */
+.bluestars {
+  color: var(--main-color);
+}
+.greystars {
+  color: var(--filter-border-color);
 }
 
 /* MOBILE flexboxes popular and accomodations, 768px is good for ipad*/
@@ -351,99 +387,6 @@ div .location {
   .popular_accomodation_container {
     flex-wrap: wrap;
   }
-}
-
-/* 6/ accomodation_figure_container est le container de chaque hébergements dans article */
-
-figcaption {
-  padding-left: 1rem;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr;
-}
-
-.hotel_name {
-  grid-row: 1 / 2;
-  padding: 5px;
-}
-
-.stars {
-  grid-row: 2 / 3;
-  align-self: end;
-  padding: 5px;
-}
-
-.stars-grey {
-  grid-row: 2 / 3;
-  align-self: start;
-  padding: 5px;
-}
-/* mise en forme de ll'image dans la figure
-.accomodation_figure img {
-  object-fit: cover;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border: 2.5px solid var(--fig-bg-color);
-  width: 240px;
-  height: 120px;
-}
-
-.accomodation_figure_container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-/* 7/ popular_figure_container est le container de chaque hébergement dans aside
-.popular_figure {
-  width: 340px;
-  height: 145px;
-  margin: 1.5vw;
-  box-sizing: border-box;
-  border-radius: 20px 20px;
-  border: 4px solid var(--fig-bg-color);
-  box-shadow: 2px 2px 2px var(--shadow-color);
-  background-color: var(--fig-bg-color);
-}
-
-.popular_figure img {
-  object-fit: cover;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  height: 137px;
-  width: 130px;
-  float: left;
-}
-
-.popular_figure_container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  max-width: 100%;
-  flex-grow: 1;
-}
-
-@media screen and (max-width: 768px) {
-  .accomodation_figure,
-  .popular figure {
-    width: calc(100% - 5vw);
-    margin-bottom: 30px;
-  }
-  .accomodation_figure img,
-  .activity_figure img {
-    width: calc(100% - 2.5px);
-  }
-}
-
-/* 8/ stars for hotels */
-.bluestars {
-  color: var(--main-color);
-}
-.greystars {
-  color: var(--filter-border-color);
 }
 
 /* END of flexbox hébergements article + aside */
@@ -555,7 +498,7 @@ div .activity-single-5-6 {
 
   .activity_figure img {
     object-fit: cover;
-    min-width: 250px;
+    flex: 22%;
     height: 120px;
     border-top-left-radius: 20px 20px;
     border-top-right-radius: 20px 20px;
