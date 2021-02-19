@@ -275,7 +275,10 @@ div .location {
 }
 .popular_figure {
   height: 150px;
-  border: 2px solid lightcoral;
+  border-radius: 20px 20px;
+  box-shadow: 2px 2px 2px var(--shadow-color);
+  background-color: var(--fig-bg-color);
+  border: 4px solid var(--fig-bg-color);
 }
 
 .accomodation {
@@ -307,17 +310,19 @@ div .location {
 }
 
 .accomodation_figure {
-  border: 2px solid lightcyan;
   flex: 30%;
   height: 150px;
   margin: 1rem;
+  border-radius: 20px 20px;
+  box-shadow: 2px 2px 2px var(--shadow-color);
+  background-color: var(--fig-bg-color);
+  border: 4px solid var(--fig-bg-color);
 }
 
 .accomodation_figure img,
 .popular_figure img {
   display: none;
 }
-
 /* MOBILE flexboxes popular and accomodations, 768px is good for ipad*/
 @media screen and (max-width: 768px) {
   .popular_accomodation_container,
@@ -338,16 +343,6 @@ div .location {
 */
 
 /* 6/ accomodation_figure_container est le container de chaque hébergements dans article */
-
-/* .accomodation_figure  {
-  margin: 1.5vw 1.5vw;
-  border-radius: 20px 20px;
-  border: 4px solid var(--fig-bg-color);
-  flex: 100%;
-  height: 204px;
-  box-shadow: 2px 2px 2px var(--shadow-color);
-  background-color: var(--fig-bg-color);
-}
 
 figcaption {
   padding-left: 1rem;
