@@ -240,21 +240,67 @@ div .location {
   grid-template-columns: 50px 1fr;
 }
 
-/* 5/ Mise en forme popular & accommodation : flexboxes */
+/* 5/ Mise en forme Acoomodation, flexboxes */
 
 .popular_accomodation_container {
   display: flex;
   flex-wrap: wrap;
   border: 2px solid yellow;
-  flex-direction: row-reverse;
-  height: 1200px;
+  flex-direction: row;
+  height: fit-content;
+  margin: 3vw;
+  padding: 0px;
 }
 
-.popular {
-  height: 950px;
-  flex: 30%;
-  border: 2px solid orangered;
+.accomodation {
+  margin-right: 2rem;
+  flex: 50%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px 20px;
+  background-color: var(--bg-color);
+}
+
+.accomodation_title {
   margin: 1rem;
+}
+.accomodation_end {
+  margin: 3vw;
+}
+.card_accomodation_container {
+  display: flex;
+  flex-wrap: wrap;
+  height: fit-content;
+  flex: 100%;
+  flex-direction: row;
+  margin: 1rem;
+}
+.card {
+  flex: 30%;
+  margin: 1rem;
+  border-radius: 20px 20px;
+  box-shadow: 2px 2px 2px var(--shadow-color);
+  background-color: var(--fig-bg-color);
+  border: 4px solid var(--fig-bg-color);
+  height: 220px;
+}
+
+.card img {
+  object-fit: cover;
+  height: 120px;
+  width: 100%;
+  margin: 0;
+  border-top-left-radius: 20px 20px;
+  border-top-right-radius: 20px 20px;
+  border: 4px solid var(--fig-bg-color);
+}
+/* POPULAR*/
+.popular {
+  height: fit-content;
+  flex: 20%;
+  border: 2px solid orangered;
+  margin: 0rem;
   display: flex;
   flex-direction: column;
   background-color: var(--bg-color);
@@ -267,20 +313,21 @@ div .location {
   margin: 1rem;
   border: 2px solid pink;
 }
-.popular_figure_container {
+.popular_card_container {
   display: flex;
   border: 2px solid orange;
   flex-direction: column;
   margin: 1rem;
 }
-.popular_figure {
+.popular_card {
   height: 150px;
   border-radius: 20px 20px;
+  margin: 1rem;
   box-shadow: 2px 2px 2px var(--shadow-color);
   background-color: var(--fig-bg-color);
   border: 4px solid var(--fig-bg-color);
 }
-.popular_figure img {
+.popular_card img {
   width: 30%;
   float: left;
   object-fit: cover;
@@ -288,82 +335,34 @@ div .location {
   border-top-left-radius: 20px 20px;
   border-bottom-left-radius: 20px 20px;
 }
-.accomodation {
-  border: 2px solid lightblue;
-  margin: 1rem;
-  flex: 55%;
-  height: 950px;
-  display: flex;
-  flex-direction: column;
-  border-radius: 20px 20px;
-  background-color: var(--bg-color);
-}
-
-.accomodation_title {
-  margin: 3vw;
-  border: solid yellow;
-}
-.accomodation_end {
-  margin: 3vw;
-}
-.accomodation_figure_container {
-  display: flex;
-  flex-wrap: wrap;
-  height: 600px;
-  flex: 90%;
-  border: 2px solid lightslategray;
-  flex-direction: row;
-  margin: 1rem;
-}
-
-.accomodation_figure {
-  flex: 30%;
-  height: 250px;
-  margin: 1rem;
-  padding: 0px;
-  border-radius: 20px 20px;
-  box-shadow: 2px 2px 2px var(--shadow-color);
-  background-color: red;
-  border: 4px solid var(--fig-bg-color);
-}
-
-.accomodation_figure img {
-  object-fit: cover;
-  height: 120px;
-  width: 100%;
-  margin: 0;
-  border-top-left-radius: 20px 20px;
-  border-top-right-radius: 20px 20px;
-  border: 4px solid green;
-}
-
 /* 6/ figcaption des figures */
 
-.popular figcaption {
+.caption {
   padding-left: 1rem;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 70px 70px;
   grid-template-columns: 1fr;
 }
 
 .hotel_name {
-  grid-row: 1 / 2;
+  grid-row: 1;
   padding: 5px;
 }
 
 .stars {
-  grid-row: 3 / 4;
+  grid-row: 2;
   align-self: end;
   padding: 5px;
+  align-items: end;
 }
 
 .stars-grey {
-  grid-row: 3 / 4;
+  grid-row: 3;
   align-self: start;
   padding: 5px;
 }
 
-/* 8/ stars for hotels */
+/* 8/ stars colors */
 .bluestars {
   color: var(--main-color);
 }
@@ -380,12 +379,14 @@ div .location {
   }
   .accomodation {
     background-color: var(--fig-bg-color);
+    margin-right: none;
   }
   .popular {
     border-radius: 0px 0px;
   }
   .popular_accomodation_container {
     flex-wrap: wrap;
+    margin: 0px;
   }
 }
 
