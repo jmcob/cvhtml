@@ -194,6 +194,7 @@ div .location {
 .filters_container {
   display: flex;
   flex-direction: row;
+  margin-top: 1rem;
 }
 @media (max-width: 540px) {
   .filters_container {
@@ -258,7 +259,7 @@ div .location {
   flex-wrap: wrap;
   flex-direction: row;
   height: fit-content;
-  margin: 3vw;
+  margin: 2vw 3vw 3vw 3vw;
   padding: 0px;
 }
 
