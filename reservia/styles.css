@@ -434,7 +434,6 @@ h3 {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: space-around;
 }
 /* 9/ DESKTOP version of activités a Marseille*/
 .activity_card {
