@@ -20,20 +20,12 @@
   --fig-bg-color: white;
 }
 
-/*ESSAI POUR SUPPRIMER l'espace sous le FOOTER*/
-main {
-  margin-bottom: 0px;
-  padding: 0;
-}
+/*POUR SUPPRIMER l'espace sous le FOOTER*/
 body {
-  margin-bottom: 0;
   padding: 0;
   margin: 0;
 }
-html {
-  margin-bottom: 0px;
-  padding: 0;
-}
+
 footer {
   margin: 0;
 }
@@ -48,7 +40,7 @@ a {
   color: var(--font-color);
 }
 .menu {
-  padding: 0px 130px 0px 0px;
+  padding: 0px 150px 0px 0px;
 }
 
 .nav1,
@@ -59,7 +51,7 @@ a {
 
 div .nav1,
 div .nav2 {
-  padding-top: 30px;
+  padding-top: 32px;
 }
 
 div .nav1:hover,
@@ -72,7 +64,7 @@ div .nav2:hover,
 
 .logo {
   position: absolute;
-  left: 3vw;
+  left: 4vw;
   top: 2rem;
 }
 .header {
@@ -101,6 +93,7 @@ nav {
   }
   a:hover {
     border-top: none;
+    color: var(--main-color);
   }
   div .nav1,
   div .nav2 {
@@ -123,7 +116,7 @@ nav {
   }
 
   .subscribe {
-    padding-right: 3vw;
+    padding-right: 4vw;
   }
   .logo {
     position: absolute;
@@ -145,6 +138,9 @@ section.search_field {
   font-size: large;
   font-weight: bold;
 }
+.search_field_form_input::placeholder {
+  color: var(--font-color);
+}
 
 .gps {
   border: none;
@@ -154,6 +150,8 @@ section.search_field {
 .search_field_button {
   color: var(--fig-bg-color);
   background-color: var(--main-color);
+  font-weight: bold;
+  font-size: large;
   margin: 0;
   padding: 2px;
   height: 45px;
