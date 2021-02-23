@@ -306,6 +306,11 @@ div .location {
   border-top-left-radius: 20px 20px;
   border-top-right-radius: 20px 20px;
 }
+h3 {
+  font-weight: bold;
+  font-size: medium;
+  margin: 0px;
+}
 /* POPULAR*/
 .popular {
   height: fill;
