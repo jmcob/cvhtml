@@ -174,7 +174,7 @@ div .location {
 
 @media (max-width: 768px) {
   .search_field_form_input {
-    width: calc(64vw - 20px);
+    width: calc(54vw - 20px);
   }
   .searched {
     display: initial;
