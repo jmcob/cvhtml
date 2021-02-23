@@ -204,7 +204,7 @@ div .location {
 }
 
 .filter-button:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .filters-buttons {
   margin: 0px;
