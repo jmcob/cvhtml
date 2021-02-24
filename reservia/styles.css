@@ -20,25 +20,17 @@
   --fig-bg-color: white;
 }
 
-/*ESSAI POUR SUPPRIMER l'espace sous le FOOTER*/
-main {
-  margin-bottom: 0px;
-  padding: 0;
-}
+/*POUR SUPPRIMER l'espace sous le FOOTER*/
 body {
-  margin-bottom: 0;
   padding: 0;
   margin: 0;
 }
-html {
-  margin-bottom: 0px;
-  padding: 0;
-}
+
 footer {
   margin: 0;
 }
 /* 2/ HEADER :  mise en forme des liens header (menu) */
-.inscription a:hover {
+.subscribe a:hover {
   color: var(--main-color);
   border-top: 2px solid var(--main-color);
 }
@@ -48,23 +40,23 @@ a {
   color: var(--font-color);
 }
 .menu {
-  padding: 0px 130px 0px 0px;
+  padding: 0px 150px 0px 0px;
 }
 
 .nav1,
 .nav2,
-.inscription {
+.subscribe {
   padding: 3rem 3rem 0.8rem 3rem;
 }
 
 div .nav1,
 div .nav2 {
-  padding-top: 30px;
+  padding-top: 32px;
 }
 
 div .nav1:hover,
 div .nav2:hover,
-.inscription:hover {
+.subscribe:hover {
   border-top: 2px solid var(--main-color);
 }
 
@@ -72,7 +64,7 @@ div .nav2:hover,
 
 .logo {
   position: absolute;
-  left: 3vw;
+  left: 4vw;
   top: 2rem;
 }
 .header {
@@ -86,7 +78,7 @@ nav {
   padding-top: 33px;
 }
 /*s'inscrire*/
-.inscription {
+.subscribe {
   color: var(--main-color);
   position: absolute;
   right: 0;
@@ -101,6 +93,7 @@ nav {
   }
   a:hover {
     border-top: none;
+    color: var(--main-color);
   }
   div .nav1,
   div .nav2 {
@@ -122,8 +115,8 @@ nav {
     padding-top: 20px;
   }
 
-  .inscription {
-    padding-right: 3vw;
+  .subscribe {
+    padding-right: 4vw;
   }
   .logo {
     position: absolute;
@@ -145,6 +138,9 @@ section.search_field {
   font-size: large;
   font-weight: bold;
 }
+.search_field_form_input::placeholder {
+  color: var(--font-color);
+}
 
 .gps {
   border: none;
@@ -154,6 +150,8 @@ section.search_field {
 .search_field_button {
   color: var(--fig-bg-color);
   background-color: var(--main-color);
+  font-weight: bold;
+  font-size: large;
   margin: 0;
   padding: 2px;
   height: 45px;
@@ -176,7 +174,7 @@ div .location {
 
 @media (max-width: 768px) {
   .search_field_form_input {
-    width: calc(64vw - 20px);
+    width: calc(54vw - 20px);
   }
   .searched {
     display: initial;
@@ -193,6 +191,20 @@ div .location {
 /* end of mise en forme header and searchfield*/
 
 /* 4/ mise en forme filtres */
+.filters_container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+@media (max-width: 540px) {
+  .filters_container {
+    flex-direction: column;
+  }
+  .filters-buttons {
+    margin: 0rem;
+  }
+}
+
 .filter-button {
   color: var(--font-color);
   font-size: large;
@@ -206,14 +218,14 @@ div .location {
 }
 
 .filter-button:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .filters-buttons {
-  margin: 0px;
+  margin: 0.5rem;
 }
 .filters {
   font-size: large;
-  margin: 30px 0vw 0vw 0vw;
+  margin: 30px 20px 0vw 0vw;
 }
 
 .fas.fa-money-bill-wave,
@@ -240,166 +252,130 @@ div .location {
   grid-template-columns: 50px 1fr;
 }
 
-/* 5/ Mise en forme popular & accommodation : flexboxes */
-.popular_title {
+/* 5/ Mise en forme Acoomodation, flexboxes */
+
+.popular_accomodation_container {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
-  margin: 1.2vw;
+  height: fill;
+  margin: 2vw 3vw 3vw 3vw;
+  padding: 0px;
+}
+
+.accomodation {
+  margin-right: 2vw;
+  flex: 60%;
+  height: fill;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px 20px;
+  background-color: var(--bg-color);
 }
 
 .accomodation_title {
-  margin: 3vw;
+  margin: 2vw 1vw 1vw 3vw;
 }
 .accomodation_end {
   margin: 3vw;
 }
-
-.section {
-  /*container pour section, aka accomodation & popular*/
+.card_accomodation_container {
   display: flex;
-  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  height: fit-content;
+  flex: 100%;
+  flex-direction: row;
+  margin: 1vw;
 }
-
-.accomodation {
-  /* aka hébergements */
+.card {
+  flex: 30%;
+  margin: 1vw;
+  min-width: 200px;
   border-radius: 20px 20px;
-  background-color: var(--bg-color);
-  margin-left: 3vw;
-}
-.inbetween {
-  /* space between popular and accomodation*/
-  padding: 1.5vw 1.5vw;
-}
-.popular {
-  /* aka les plus populaires*/
-  background-color: var(--bg-color);
-  border-radius: 20px 20px;
-  margin-right: 3vw;
-  padding: 1.5vw;
-}
-
-/* MOBILE flexboxes popular ans accomodations, 768px is good */
-@media (max-width: 768px) {
-  .popular a,
-  .accomodation a {
-    display: inline-block;
-    box-sizing: content-box;
-    width: 100%;
-  }
-
-  .accomodation,
-  .popular {
-    min-width: 100%;
-    margin: 0px;
-  }
-  .accomodation {
-    background-color: var(--fig-bg-color);
-  }
-  .popular {
-    border-radius: 0px 0px;
-  }
-  .section {
-    flex-wrap: wrap;
-  }
-}
-
-/* 6/ accomodation_figure_container est le container de chaque hébergements dans article */
-.accomodation_figure {
-  margin: 1.5vw 1.5vw;
-  border-radius: 20px 20px;
-  border: 4px solid var(--fig-bg-color);
-  width: 248px;
-  height: 204px;
   box-shadow: 2px 2px 2px var(--shadow-color);
-  flex-basis: 25%;
   background-color: var(--fig-bg-color);
+  border: 5px solid var(--fig-bg-color);
+  height: 220px;
 }
 
-figcaption {
+.card img {
+  object-fit: cover;
+  height: 120px;
+  width: 100%;
+  margin: 0;
+  border-top-left-radius: 20px 20px;
+  border-top-right-radius: 20px 20px;
+}
+h3 {
+  font-weight: bold;
+  font-size: medium;
+  margin: 0px;
+}
+/* POPULAR*/
+.popular {
+  height: fill;
+  flex: 22%;
+  margin: 0rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-color);
+  border-radius: 20px 20px;
+}
+.popular_title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2vw 3vw 1vw 3vw;
+}
+.popular_card_container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+.popular_card {
+  height: 150px;
+  border-radius: 20px 20px;
+  margin: 1rem;
+  box-shadow: 2px 2px 2px var(--shadow-color);
+  background-color: var(--fig-bg-color);
+  border: 5px solid var(--fig-bg-color);
+}
+.popular_card img {
+  width: 40%;
+  float: left;
+  object-fit: cover;
+  height: 142px;
+  border-top-left-radius: 20px 20px;
+  border-bottom-left-radius: 20px 20px;
+}
+/* 6/ caption des figures */
+
+.caption {
   padding-left: 1rem;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 70px 70px;
   grid-template-columns: 1fr;
 }
 
 .hotel_name {
-  grid-row: 1 / 2;
+  grid-row: 1;
   padding: 5px;
 }
 
 .stars {
-  grid-row: 2 / 3;
+  grid-row: 2;
   align-self: end;
   padding: 5px;
+  align-items: end;
 }
 
 .stars-grey {
-  grid-row: 2 / 3;
+  grid-row: 3;
   align-self: start;
   padding: 5px;
 }
 
-.accomodation_figure img {
-  object-fit: cover;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border: 2.5px solid var(--fig-bg-color);
-  width: 240px;
-  height: 120px;
-}
-
-.accomodation_figure_container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-/* 7/ popular_figure_container est le container de chaque hébergement dans aside */
-.popular_figure {
-  width: 340px;
-  height: 145px;
-  margin: 1.5vw;
-  box-sizing: border-box;
-  border-radius: 20px 20px;
-  border: 4px solid var(--fig-bg-color);
-  box-shadow: 2px 2px 2px var(--shadow-color);
-  background-color: var(--fig-bg-color);
-}
-
-.popular_figure img {
-  object-fit: cover;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  height: 137px;
-  width: 130px;
-  float: left;
-}
-
-.popular_figure_container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  max-width: 100%;
-  flex-grow: 1;
-}
-
-@media screen and (max-width: 768px) {
-  .accomodation_figure,
-  .popular figure {
-    width: calc(100% - 5vw);
-    margin-bottom: 30px;
-  }
-  .accomodation_figure img,
-  .activity_figure img {
-    width: calc(100% - 2.5px);
-  }
-}
-
-/* 8/ stars for hotels */
+/* 8/ stars colors */
 .bluestars {
   color: var(--main-color);
 }
@@ -407,10 +383,41 @@ figcaption {
   color: var(--filter-border-color);
 }
 
-/* END of flexbox hébergements article + aside */
+/* MOBILE flexboxes popular and accomodations, 768px is good for ipad*/
+@media screen and (max-width: 768px) {
+  .popular_accomodation_container,
+  .accomodation,
+  .popular {
+    height: fit-content;
+  }
+  .accomodation {
+    background-color: var(--fig-bg-color);
+    margin-right: 0px;
+  }
+  .popular {
+    border-radius: 0px 0px;
+  }
+  .popular_title {
+    margin-left: 5vw;
+  }
+  .popular_accomodation_container {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    margin: 0px;
+  }
+  .popular_card {
+    margin: 0.5rem;
+  }
+}
+@media screen and (max-width: 540px) {
+  .card {
+    flex: 100%;
+    margin: 1rem;
+  }
+}
+/* END of flexbox articles + aside */
 
-/*flexbox  activity*/
-/*overall activités container*/
+/*flexbox  activity mise en forme*/
 .activity {
   margin: 3vw 1.5vw 3vw 1.5vw;
   padding: 0px;
@@ -426,36 +433,35 @@ figcaption {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: space-around;
 }
 /* 9/ DESKTOP version of activités a Marseille*/
-.activity_figure {
+.activity_card {
   box-shadow: 2px 2px 2px var(--shadow-color);
   border-radius: 20px 20px;
   margin: 1.5vw;
 }
 
-.activity_figure .activity-single-1 {
+.activity_card .activity-single-1 {
   margin-left: 0px;
 }
-.activity_figure .activity-single-1,
-.activity_figure .activity-single-4 {
+.activity_card .activity-single-1,
+.activity_card .activity-single-4 {
   height: 445px;
 }
-.activity-single-2 .activity_figure {
+.activity-single-2 .activity_card {
   max-height: 225px;
   margin-top: 0px;
 }
-.activity-single-3 .activity_figure {
+.activity-single-3 .activity_card {
   max-height: 150px;
 }
 
-.activity-single-5 .activity_figure {
+.activity-single-5 .activity_card {
   max-height: 180px;
   margin-top: 0px;
   padding-top: 0px;
 }
-.activity-single-6 .activity_figure {
+.activity-single-6 .activity_card {
   max-height: 190px;
 }
 
@@ -467,7 +473,7 @@ div .activity-single-5-6 {
   height: 490px;
   padding: 0px;
 }
-.activity_figure img {
+.activity_card img {
   object-fit: cover;
   width: 295px;
   border-top-left-radius: 20px 20px;
@@ -491,20 +497,20 @@ div .activity-single-5-6 {
   height: 145px;
 }
 
-.activity_figure figcaption {
+.activity_card .caption {
   height: 60px;
 }
 /* 10/ figures and images for the activity-singletures of activity MOBILE version*/
-@media (max-width: 768px) {
+@media (max-width: 540px) {
   .activity a {
     display: inline-block;
     box-sizing: content-box;
     width: 100%;
   }
-  .activity_figure img {
+  .activity_card img {
     width: 100%;
   }
-  .activity_figure {
+  .activity_card {
     min-width: 295px;
     border-radius: 20px 20px;
     max-height: 440px;
@@ -512,17 +518,18 @@ div .activity-single-5-6 {
     margin: 15px 1.5vw 15px 1.5vw;
     border-radius: 20px 20px;
     box-shadow: 2px 2px 2px var(--shadow-color);
+    margin: 1rem;
   }
 
-  .activity_figure img {
+  .activity_card img {
     object-fit: cover;
-    min-width: 250px;
+    flex: 22%;
     height: 120px;
     border-top-left-radius: 20px 20px;
     border-top-right-radius: 20px 20px;
   }
 
-  .activity_figure figcaption {
+  .activity_card .caption {
     height: 50px;
   }
 
@@ -541,12 +548,12 @@ div .activity-single-5-6 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   background-color: var(--bg-color);
-  padding: 0 3vw;
+  padding: 0 4vw;
   justify-items: start;
   margin: 0px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 540px) {
   .footer {
     display: grid;
     grid-template-rows: 1fr 0.8fr 0.5fr;
