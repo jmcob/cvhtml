@@ -290,7 +290,7 @@ div .location {
 .card {
   flex: 30%;
   margin: 1vw;
-  min-width: 200px;
+  min-width: 180px;
   border-radius: 20px 20px;
   box-shadow: 2px 2px 2px var(--shadow-color);
   background-color: var(--fig-bg-color);
@@ -326,6 +326,7 @@ h3 {
   flex-direction: row;
   justify-content: space-between;
   margin: 2vw 3vw 1vw 3vw;
+  font-size: x-large;
 }
 .popular_card_container {
   display: flex;
@@ -335,10 +336,11 @@ h3 {
 .popular_card {
   height: 150px;
   border-radius: 20px 20px;
-  margin: 1rem;
+  margin-top: 1rem;
   box-shadow: 2px 2px 2px var(--shadow-color);
   background-color: var(--fig-bg-color);
   border: 5px solid var(--fig-bg-color);
+  min-width: 225px;
 }
 .popular_card img {
   width: 40%;
@@ -415,6 +417,11 @@ h3 {
     margin: 1rem;
   }
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+.popular_accomodation_container {
+  flex-direction: column-reverse;
+}
+}
 /* END of flexbox articles + aside */
 
 /*flexbox  activity mise en forme*/
@@ -434,11 +441,17 @@ h3 {
   flex-direction: row;
   justify-content: space-evenly;
 }
+
+
 /* 9/ DESKTOP version of activités a Marseille*/
+.
+
 .activity_card {
   box-shadow: 2px 2px 2px var(--shadow-color);
   border-radius: 20px 20px;
   margin: 1.5vw;
+  flex: 22%;
+  min-width
 }
 
 .activity_card .activity-single-1 {
@@ -507,11 +520,17 @@ div .activity-single-5-6 {
     box-sizing: content-box;
     width: 100%;
   }
+  .activity {
+    align-content: center;
+    justify-content: center;
+  }
+
+
   .activity_card img {
     width: 100%;
   }
   .activity_card {
-    min-width: 295px;
+    min-width: 250px;
     border-radius: 20px 20px;
     max-height: 440px;
     background-color: var(--fig-bg-color);
@@ -523,7 +542,7 @@ div .activity-single-5-6 {
 
   .activity_card img {
     object-fit: cover;
-    flex: 22%;
+    flex: 20%;
     height: 120px;
     border-top-left-radius: 20px 20px;
     border-top-right-radius: 20px 20px;
