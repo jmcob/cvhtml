@@ -418,9 +418,9 @@ h3 {
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-.popular_accomodation_container {
-  flex-direction: column-reverse;
-}
+  .popular_accomodation_container {
+    flex-direction: column-reverse;
+  }
 }
 /* END of flexbox articles + aside */
 
@@ -442,18 +442,33 @@ h3 {
   justify-content: space-evenly;
 }
 
-
 /* 9/ DESKTOP version of activités a Marseille*/
-.
+.activity_container_item {
+  flex: 22%;
+  margin: 1.5vw;
+}
+
+.activity picture {
+  width: 100%;
+}
 
 .activity_card {
   box-shadow: 2px 2px 2px var(--shadow-color);
   border-radius: 20px 20px;
-  margin: 1.5vw;
-  flex: 22%;
-  min-width
 }
-
+div .activity-single-2-3,
+div .activity-single-5-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 490px;
+  padding: 0px;
+}
+.activity_card picture {
+  object-fit: cover;
+  border-top-left-radius: 20px 20px;
+  border-top-right-radius: 20px 20px;
+}
 .activity_card .activity-single-1 {
   margin-left: 0px;
 }
@@ -477,21 +492,6 @@ h3 {
 .activity-single-6 .activity_card {
   max-height: 190px;
 }
-
-div .activity-single-2-3,
-div .activity-single-5-6 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 490px;
-  padding: 0px;
-}
-.activity_card img {
-  object-fit: cover;
-  width: 295px;
-  border-top-left-radius: 20px 20px;
-  border-top-right-radius: 20px 20px;
-}
 .activity-single-1 img,
 .activity-single-4 img {
   height: 390px;
@@ -514,7 +514,7 @@ div .activity-single-5-6 {
   height: 60px;
 }
 /* 10/ figures and images for the activity-singletures of activity MOBILE version*/
-@media (max-width: 540px) {
+@media (max-width: 768px) {
   .activity a {
     display: inline-block;
     box-sizing: content-box;
@@ -524,9 +524,7 @@ div .activity-single-5-6 {
     align-content: center;
     justify-content: center;
   }
-
-
-  .activity_card img {
+  .activity_card picture {
     width: 100%;
   }
   .activity_card {
@@ -540,9 +538,8 @@ div .activity-single-5-6 {
     margin: 1rem;
   }
 
-  .activity_card img {
+  .activity_card picture {
     object-fit: cover;
-    flex: 20%;
     height: 120px;
     border-top-left-radius: 20px 20px;
     border-top-right-radius: 20px 20px;
