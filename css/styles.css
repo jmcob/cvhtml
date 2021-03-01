@@ -15,6 +15,7 @@ html {
   --box-shadow-color: #0028ff;
   --links-color: #0028ff;
   --h2-color: hsl(82, 83%, 43%);
+  --a1-border: hsl(82, 83%, 43%);
   --h1-shadow-color: #e30b5d;
   --links-hover-color: #ffb742;
   --linear-bg-1: cornsilk;
@@ -74,7 +75,7 @@ header {
   border-radius: 12px;
 }
 .article-1 {
-  border: 12px solid var(--h2-color);
+  border: 12px solid var(--a1-border);
 }
 
 .article-6 {
