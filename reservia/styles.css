@@ -4,8 +4,10 @@
   box-sizing: border-box;
 }
 .wrapper {
-  margin: 0vw 0vw;
+  margin: 0vw auto;
   padding: 0;
+  max-width: 1268px;
+  justify-content: start;
 }
 
 body {
@@ -38,7 +40,7 @@ a {
   color: var(--font-color);
 }
 .menu {
-  padding: 0px 150px 0px 0px;
+  padding: 0px 2vw 0px 0px;
 }
 
 .nav1,
@@ -59,28 +61,30 @@ div .nav2:hover,
 }
 
 /*DESKTOP : mise en forme header desktop*/
-
-.logo {
-  position: absolute;
-  left: 4vw;
-  top: 2rem;
-}
 .header {
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
 }
+
+.logo {
+  margin-left: 4vw;
+  margin-top: 2rem;
+  margin-right: auto;
+}
+
 nav {
-  padding-right: 200px;
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
   padding-top: 33px;
 }
-/*s'inscrire*/
-.subscribe {
+nav .menu {
+  padding-right: 0px;
+}
+
+.subscribe a {
   color: var(--main-color);
-  position: absolute;
-  right: 0;
-  top: 0;
 }
 /* MOBILE : mise en forme header mobile */
 @media (max-width: 768px) {
@@ -156,6 +160,7 @@ section.search_field {
   border: none;
   border-top-right-radius: 10px 10px;
   border-bottom-right-radius: 10px 10px;
+  cursor: pointer;
 }
 
 .searched {
@@ -213,6 +218,7 @@ div .location {
   border: 2px solid var(--filter-border-color);
   margin: 0.5rem;
   margin-left: 0vw;
+  cursor: pointer;
 }
 
 .filter-button:hover {
@@ -286,7 +292,7 @@ div .location {
   margin: 1vw;
 }
 .card {
-  flex: 30%;
+  flex: 28%;
   margin: 1vw;
   min-width: 180px;
   border-radius: 20px 20px;
