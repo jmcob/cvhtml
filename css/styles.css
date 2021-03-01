@@ -187,6 +187,7 @@ em {
   font-style: italic;
   background-color: var(--h2-color);
   color: white;
+  font-size: large;
 }
 
 body {
