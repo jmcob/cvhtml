@@ -83,6 +83,14 @@ header {
 }
 .article-5 {
   border: 12px solid var(--a5-color);
+  box-shadow: ;
+}
+.article-7 {
+  border: 12px solid var(--h2-color);
+}
+
+.article-3 {
+  border: 12px solid var(--a5-color);
 }
 
 @media (min-width: 948px) {
@@ -97,6 +105,9 @@ header {
 
 .article-card:hover {
   box-shadow: 12px -12px var(--box-shadow-color);
+}
+.article-7:hover {
+  box-shadow: 12px -12px var(--h1-shadow-color);
 }
 
 ul {
