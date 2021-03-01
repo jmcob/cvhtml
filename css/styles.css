@@ -82,7 +82,7 @@ header {
   border: 12px solid var(--h1-shadow-color);
 }
 .article-5 {
-    border: 12px solid var(--a5-color);
+  border: 12px solid var(--a5-color);
 }
 
 @media (min-width: 948px) {
@@ -92,11 +92,11 @@ header {
   .article-5 {
     position: relative;
     bottom: 120px;
-}
+  }
   footer {
     position: relative;
     bottom: 240px;
-}
+  }
 }
 
 .article-card:hover {
@@ -213,7 +213,6 @@ footer {
   margin: 0px;
   text-align: left;
   padding-left: 110px;
-  
 }
 
 footer p {
@@ -236,7 +235,7 @@ ol li {
   text-align: justify;
   padding: 2vw 4vw;
   box-sizing: border-box;
-  border: 2px solid var(--border-color)
+  border: 2px solid var(--border-color);
   margin: 2vw;
 }
 
