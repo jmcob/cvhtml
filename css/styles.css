@@ -204,6 +204,7 @@ a:active {
 }
 /*footer*/
 footer {
+  display: none;
   padding: auto;
   box-sizing: border-box;
   margin: 0px;
