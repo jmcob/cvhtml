@@ -93,10 +93,6 @@ header {
     position: relative;
     bottom: 120px;
   }
-  footer {
-    position: relative;
-    bottom: 240px;
-  }
 }
 
 .article-card:hover {
