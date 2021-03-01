@@ -123,11 +123,11 @@ nav .menu {
 
   .subscribe {
     position: absolute;
-    right: 3vw;
+    right: 0vw;
   }
   .logo {
     position: absolute;
-    left: 0vw;
+    left: 3vw;
     top: 0px;
   }
 }
@@ -181,6 +181,9 @@ div .location {
 }
 
 @media (max-width: 768px) {
+  section.search_field {
+    margin: 2vw 5vw;
+  }
   .search_field_form_input {
     width: calc(54vw - 20px);
   }
@@ -203,14 +206,6 @@ div .location {
   display: flex;
   flex-direction: row;
   margin-top: 1rem;
-}
-@media (max-width: 540px) {
-  .filters_container {
-    flex-direction: column;
-  }
-  .filters-buttons {
-    margin: 0rem;
-  }
 }
 
 .filter-button {
@@ -260,7 +255,14 @@ div .location {
   display: grid;
   grid-template-columns: 50px 1fr;
 }
-
+@media (max-width: 768px) {
+  .filters_container {
+    flex-direction: column;
+  }
+  .filters-buttons {
+    margin: 0.5rem 0px 0px 0px;
+  }
+}
 /* 5/ Mise en forme Acoomodation, flexboxes */
 
 .popular_accomodation_container {
@@ -442,7 +444,7 @@ h3 {
   }
   .accomodation {
     background-color: var(--fig-bg-color);
-    margin-right: 0px;
+    margin: 1rem 1vw;
   }
   .popular {
     border-radius: 0px 0px;
@@ -471,7 +473,7 @@ h3 {
 
 /* pré10 / flexbox  activity mise en forme*/
 .activity {
-  margin: 3vw 3vw 3vw 3vw;
+  margin: 3vw 0vw;
   padding: 0px;
 }
 
@@ -570,6 +572,12 @@ div .activity-single-5-6 {
 }
 
 /* 11/ figures and images for the activity-singletures of activity MOBILE version*/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .activity {
+    margin: 0px;
+  }
+}
+
 @media (max-width: 768px) {
   .activity {
     justify-content: center;
@@ -615,24 +623,16 @@ div .activity-single-5-6 {
   margin: 0px;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 767px) {
   .footer {
-    display: grid;
-    grid-template-rows: 1fr 0.9fr 0.6fr;
-    grid-template-columns: 100%;
+    display: flex;
+    flex-direction: column;
     background-color: var(--bg-color);
   }
-  .foot-1 {
-    grid-row: 1;
-    grid-column: 1;
-  }
-  .foot-2 {
-    grid-row: 2;
-    grid-column: 1;
-  }
-  .foot-3 {
-    grid-row: 3;
-    grid-column: 1;
+  div .foot-1,
+  div .foot-2,
+  div .foot-3 {
+    padding-left: 2.5vw;
   }
 }
 /* end of flexbox footer */
