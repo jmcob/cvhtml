@@ -76,6 +76,8 @@ header {
 }
 .article-1 {
   border: 12px solid var(--a1-border);
+  width: fit-content;
+  min-width: 270px;
 }
 
 .article-6 {
