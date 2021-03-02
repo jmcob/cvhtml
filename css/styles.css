@@ -135,8 +135,6 @@ img {
   width: 100%;
   min-width: 140px;
   max-width: 200px;
-  border-radius: 20px;
-  border: 2px solid var(--text-color);
 }
 
 #pic {
@@ -147,6 +145,8 @@ img {
 
 #pic img {
   max-width: 150px;
+  border-radius: 20px;
+  border: 2px solid var(--text-color);
 }
 
 /*titles*/
@@ -297,4 +297,8 @@ p #img-caption {
 .linksup {
   color: gold;
   text-decoration: none;
+}
+.reservialogo img {
+  border: none;
+  border-radius: none;
 }
