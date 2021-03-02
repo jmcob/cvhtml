@@ -18,7 +18,7 @@ html {
   --a1-border: hsl(82, 83%, 43%);
   --h1-shadow-color: #e30b5d;
   --links-hover-color: #ffb742;
-  --linear-bg-1: cornsilk;
+  --linear-bg-1: rgb(223, 244, 250);
   --linear-bg-2: white;
   --a5-color: lightblue;
 }
