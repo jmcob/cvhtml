@@ -53,7 +53,11 @@ body {
 header {
   margin: 20px 0 0 20px;
 }
-
+.titlesup {
+  color: gold;
+  font-size: 25px;
+  font-family: monospace;
+}
 /*container for section boxes */
 #main {
   margin-left: 20px;
@@ -274,4 +278,13 @@ p #img-caption {
 .flexchapters {
   display: flex;
   flex-direction: column;
+}
+
+/* Ceci concerne la page dd'accueil de Reservia */
+.visit_link {
+  display: inline-block;
+}
+.linksup {
+  color: gold;
+  text-decoration: none;
 }
