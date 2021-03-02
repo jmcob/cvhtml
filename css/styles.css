@@ -78,6 +78,12 @@ header {
   border: 12px solid var(--border-color);
   border-radius: 12px;
 }
+
+.article-card:hover {
+  box-shadow: 12px -12px var(--box-shadow-color);
+  transform: scale(1.05);
+}
+
 .article-1 {
   border: 12px solid var(--a1-border);
   width: fit-content;
