@@ -83,6 +83,11 @@ header {
   width: fit-content;
   min-width: 270px;
 }
+@media (max-width: 768px) {
+  .article-1 {
+    max-width: 270px;
+  }
+}
 
 .article-6 {
   width: 580px;
@@ -164,7 +169,6 @@ h1:hover {
 h2 {
   color: var(--h2-color);
   font-size: 1.6rem;
-  margin-left: 10px;
   text-align: center;
 }
 
