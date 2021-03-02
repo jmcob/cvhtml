@@ -3,12 +3,21 @@
   font-family: "Raleway", sans-serif;
   box-sizing: border-box;
 }
-
-.bloc_page {
-  margin: 0vw 0vw;
+.wrapper {
+  margin: 0vw auto;
   padding: 0;
+  max-width: 1268px;
+  justify-content: start;
 }
 
+body {
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  margin: 0;
+}
 /* Page colors*/
 :root {
   --main-color: #0065fc;
@@ -20,15 +29,6 @@
   --fig-bg-color: white;
 }
 
-/*POUR SUPPRIMER l'espace sous le FOOTER*/
-body {
-  padding: 0;
-  margin: 0;
-}
-
-footer {
-  margin: 0;
-}
 /* 2/ HEADER :  mise en forme des liens header (menu) */
 .subscribe a:hover {
   color: var(--main-color);
@@ -40,7 +40,7 @@ a {
   color: var(--font-color);
 }
 .menu {
-  padding: 0px 150px 0px 0px;
+  padding: 0px 2vw 0px 0px;
 }
 
 .nav1,
@@ -61,29 +61,35 @@ div .nav2:hover,
 }
 
 /*DESKTOP : mise en forme header desktop*/
-
-.logo {
-  position: absolute;
-  left: 4vw;
-  top: 2rem;
-}
 .header {
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
 }
+
+.logo {
+  margin-left: 3vw;
+  margin-top: 2rem;
+  margin-right: auto;
+}
+
 nav {
-  padding-right: 200px;
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
   padding-top: 33px;
 }
-/*s'inscrire*/
-.subscribe {
-  color: var(--main-color);
-  position: absolute;
-  right: 0;
-  top: 0;
+nav .menu {
+  padding-right: 0px;
 }
+
+.subscribe a {
+  color: var(--main-color);
+}
+.subscribe a:hover {
+  border-top: none;
+}
+
 /* MOBILE : mise en forme header mobile */
 @media (max-width: 768px) {
   .nav1:hover,
@@ -98,36 +104,37 @@ nav {
   div .nav1,
   div .nav2 {
     margin: 0vw;
-    margin-top: 60px;
+    margin-top: 100px;
     padding: 0px;
     width: 100%;
     border-bottom: 4px solid var(--bg-color);
     text-align: center;
   }
   div .nav1:hover,
-  div .nav2:hover {
+  div .nav2:hover,
+  div .subscribe {
     border-top: none;
   }
   .menu {
     display: grid;
     grid-template-columns: 50vw 50vw;
     width: 100%;
-    padding-top: 20px;
   }
 
   .subscribe {
-    padding-right: 4vw;
+    position: absolute;
+    right: 0vw;
   }
   .logo {
     position: absolute;
-    left: 4vw;
-    top: 2rem;
+    left: 3vw;
+    top: 0px;
   }
 }
 
 /* 3/ mise en forme search field */
 section.search_field {
-  margin: 2vw 4vw;
+  margin: 2vw 3vw;
 }
 
 .search_field_form_input {
@@ -158,6 +165,7 @@ section.search_field {
   border: none;
   border-top-right-radius: 10px 10px;
   border-bottom-right-radius: 10px 10px;
+  cursor: pointer;
 }
 
 .searched {
@@ -173,6 +181,9 @@ div .location {
 }
 
 @media (max-width: 768px) {
+  section.search_field {
+    margin: 2vw 5vw;
+  }
   .search_field_form_input {
     width: calc(54vw - 20px);
   }
@@ -196,14 +207,6 @@ div .location {
   flex-direction: row;
   margin-top: 1rem;
 }
-@media (max-width: 540px) {
-  .filters_container {
-    flex-direction: column;
-  }
-  .filters-buttons {
-    margin: 0rem;
-  }
-}
 
 .filter-button {
   color: var(--font-color);
@@ -215,6 +218,7 @@ div .location {
   border: 2px solid var(--filter-border-color);
   margin: 0.5rem;
   margin-left: 0vw;
+  cursor: pointer;
 }
 
 .filter-button:hover {
@@ -251,7 +255,14 @@ div .location {
   display: grid;
   grid-template-columns: 50px 1fr;
 }
-
+@media (max-width: 768px) {
+  .filters_container {
+    flex-direction: column;
+  }
+  .filters-buttons {
+    margin: 0.5rem 0px 0px 0px;
+  }
+}
 /* 5/ Mise en forme Acoomodation, flexboxes */
 
 .popular_accomodation_container {
@@ -289,8 +300,8 @@ div .location {
 }
 .card {
   flex: 30%;
-  margin: 1vw;
-  min-width: 200px;
+  margin: 0.5vw;
+  min-width: 180px;
   border-radius: 20px 20px;
   box-shadow: 2px 2px 2px var(--shadow-color);
   background-color: var(--fig-bg-color);
@@ -311,7 +322,7 @@ h3 {
   font-size: medium;
   margin: 0px;
 }
-/* POPULAR*/
+/* 6. POPULAR*/
 .popular {
   height: fill;
   flex: 22%;
@@ -326,6 +337,7 @@ h3 {
   flex-direction: row;
   justify-content: space-between;
   margin: 2vw 3vw 1vw 3vw;
+  font-size: x-large;
 }
 .popular_card_container {
   display: flex;
@@ -335,10 +347,11 @@ h3 {
 .popular_card {
   height: 150px;
   border-radius: 20px 20px;
-  margin: 1rem;
+  margin-top: 1rem;
   box-shadow: 2px 2px 2px var(--shadow-color);
   background-color: var(--fig-bg-color);
   border: 5px solid var(--fig-bg-color);
+  min-width: 225px;
 }
 .popular_card img {
   width: 40%;
@@ -348,10 +361,10 @@ h3 {
   border-top-left-radius: 20px 20px;
   border-bottom-left-radius: 20px 20px;
 }
-/* 6/ caption des figures */
+/* 7/ caption des figures */
 
 .caption {
-  padding-left: 1rem;
+  padding-left: 0.5rem;
   display: grid;
   grid-template-rows: 70px 70px;
   grid-template-columns: 1fr;
@@ -383,8 +396,8 @@ h3 {
   color: var(--filter-border-color);
 }
 
-/* MOBILE flexboxes popular and accomodations, 768px is good for ipad*/
-@media screen and (max-width: 768px) {
+/* 9. MOBILE flexboxes popular and accomodations, 768px is good for ipad*/
+@media screen and (max-width: 767px) {
   .popular_accomodation_container,
   .accomodation,
   .popular {
@@ -398,7 +411,7 @@ h3 {
     border-radius: 0px 0px;
   }
   .popular_title {
-    margin-left: 5vw;
+    margin: 2rem 5vw 0.5rem 5vw;
   }
   .popular_accomodation_container {
     flex-wrap: wrap;
@@ -408,24 +421,65 @@ h3 {
   .popular_card {
     margin: 0.5rem;
   }
-}
-@media screen and (max-width: 540px) {
   .card {
     flex: 100%;
     margin: 1rem;
   }
+  .accomodation_title {
+    margin: 2rem 5vw 0.5rem 5vw;
+  }
+  .accomodation_end {
+    margin: 1rem 6vw;
+  }
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .popular_card img {
+    width: 30%;
+  }
+
+  .popular_accomodation_container,
+  .accomodation,
+  .popular {
+    height: fit-content;
+  }
+  .accomodation {
+    background-color: var(--fig-bg-color);
+    margin: 1rem 1vw;
+  }
+  .popular {
+    border-radius: 0px 0px;
+  }
+  .popular_title {
+    margin: 2vw 6vw;
+  }
+  .popular_accomodation_container {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    margin: 0px;
+  }
+  .popular_card {
+    margin: 0.5rem;
+  }
+  .accomodation_title {
+    margin: 1rem 2vw;
+  }
+
+  .accomodation_end {
+    margin: 1rem 2vw;
+  }
+}
+
 /* END of flexbox articles + aside */
 
-/*flexbox  activity mise en forme*/
+/* pré10 / flexbox  activity mise en forme*/
 .activity {
-  margin: 3vw 1.5vw 3vw 1.5vw;
+  margin: 3vw 0vw;
   padding: 0px;
 }
 
 .activity_title {
   padding: 0vw;
-  margin: 0 2vw;
+  margin: 0 3vw;
 }
 
 .activity_container {
@@ -433,38 +487,21 @@ h3 {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
+  margin: 2vw 3vw;
 }
-/* 9/ DESKTOP version of activités a Marseille*/
+.activity_container:nth-child(4) {
+  margin-right: 0px;
+}
+/* 10/ DESKTOP version of activités a Marseille*/
+.activity_container_item {
+  flex: 20%;
+  margin: 1.5vw 1.5vw 1.5vw 1.5vw;
+}
+
 .activity_card {
   box-shadow: 2px 2px 2px var(--shadow-color);
   border-radius: 20px 20px;
-  margin: 1.5vw;
 }
-
-.activity_card .activity-single-1 {
-  margin-left: 0px;
-}
-.activity_card .activity-single-1,
-.activity_card .activity-single-4 {
-  height: 445px;
-}
-.activity-single-2 .activity_card {
-  max-height: 225px;
-  margin-top: 0px;
-}
-.activity-single-3 .activity_card {
-  max-height: 150px;
-}
-
-.activity-single-5 .activity_card {
-  max-height: 180px;
-  margin-top: 0px;
-  padding-top: 0px;
-}
-.activity-single-6 .activity_card {
-  max-height: 190px;
-}
-
 div .activity-single-2-3,
 div .activity-single-5-6 {
   display: flex;
@@ -475,102 +512,127 @@ div .activity-single-5-6 {
 }
 .activity_card img {
   object-fit: cover;
-  width: 295px;
+  height: 120px;
+  width: 100%;
   border-top-left-radius: 20px 20px;
   border-top-right-radius: 20px 20px;
+}
+.activity-single-1 {
+  margin-left: 0px;
+}
+.activity-single-1,
+.activity-single-4 {
+  height: 445px;
+}
+.activity-single-2 {
+  max-height: 255px;
+  margin-top: 0px;
+}
+.activity-single-3 {
+  max-height: 165px;
+}
+
+.activity-single-5 {
+  max-height: 203px;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.activity-single-6 {
+  max-height: 215px;
+}
+
+.activity_card .caption {
+  height: 60px;
 }
 .activity-single-1 img,
 .activity-single-4 img {
   height: 390px;
 }
 .activity-single-2 img {
-  height: 180px;
+  height: 200px;
 }
 .activity-single-3 img {
-  height: 100px;
+  height: 110px;
 }
 
 .activity-single-5 img {
-  height: 130px;
-}
-.activity-single-6 img {
   height: 145px;
 }
-
-.activity_card .caption {
-  height: 60px;
+.activity-single-6 img {
+  height: 160px;
 }
-/* 10/ figures and images for the activity-singletures of activity MOBILE version*/
-@media (max-width: 540px) {
-  .activity a {
-    display: inline-block;
-    box-sizing: content-box;
-    width: 100%;
+.activity-single-2-3,
+.activity-single-5-6 {
+  display: flex;
+  flex-flow: column wrap;
+  max-height: 445px;
+}
+.activity-single-5-6 {
+  margin-right: 0px;
+}
+
+/* 11/ figures and images for the activity-singletures of activity MOBILE version*/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .activity {
+    margin: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .activity {
+    justify-content: center;
+    margin: 1rem 2vw;
+  }
+  .activity_title {
+    margin: 2rem 5vw 1rem 5vw;
   }
   .activity_card img {
     width: 100%;
+    height: 120px;
   }
   .activity_card {
-    min-width: 295px;
+    min-width: 200px;
+    flex: 100%;
     border-radius: 20px 20px;
-    max-height: 440px;
+    max-height: 180px;
     background-color: var(--fig-bg-color);
-    margin: 15px 1.5vw 15px 1.5vw;
     border-radius: 20px 20px;
     box-shadow: 2px 2px 2px var(--shadow-color);
-    margin: 1rem;
+    margin: 1rem 2vw;
   }
-
-  .activity_card img {
-    object-fit: cover;
-    flex: 22%;
-    height: 120px;
-    border-top-left-radius: 20px 20px;
-    border-top-right-radius: 20px 20px;
+  .activity-single-2-3,
+  .activity-single-5-6 {
+    margin: 0px;
+    justify-content: space-around;
   }
 
   .activity_card .caption {
     height: 50px;
   }
-
-  div .activity-single-2-3,
-  div .activity-single-5-6 {
-    height: 430px;
-    justify-content: start;
-    width: 100%;
-  }
 }
 
 /* END of flexbox hébergements et activités*/
 
-/* 11/ flexbox footer */
+/* 12/ flexbox footer */
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   background-color: var(--bg-color);
-  padding: 0 4vw;
+  padding: 20px 3vw 0px 3vw;
   justify-items: start;
   margin: 0px;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 767px) {
   .footer {
-    display: grid;
-    grid-template-rows: 1fr 0.8fr 0.5fr;
-    grid-template-columns: 100%;
+    display: flex;
+    flex-direction: column;
     background-color: var(--bg-color);
   }
-  .foot-1 {
-    grid-row: 1;
-    grid-column: 1;
-  }
-  .foot-2 {
-    grid-row: 2;
-    grid-column: 1;
-  }
-  .foot-3 {
-    grid-row: 3;
-    grid-column: 1;
+  div .foot-1,
+  div .foot-2,
+  div .foot-3 {
+    padding-left: 2.5vw;
   }
 }
 /* end of flexbox footer */
