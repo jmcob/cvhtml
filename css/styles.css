@@ -90,6 +90,7 @@ header {
   width: fit-content;
   width: -moz-fit-content;
   min-width: 270px;
+  max-width: 890px;
 }
 @media (max-width: 768px) {
   .article-1 {
