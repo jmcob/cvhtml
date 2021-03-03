@@ -1,4 +1,4 @@
-# jmaxcob.fr : my portfolio as a webDev
+# dev.jmxi.art : my portfolio as a webDev
 
 These are my first projects as becoming a web developer.
 
