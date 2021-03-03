@@ -7,7 +7,10 @@ html {
   color: black;
   font-weight: 900;
 }
-
+#wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
 /*color variables*/
 :root {
   --text-color: black;
