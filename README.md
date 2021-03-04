@@ -1,4 +1,4 @@
-# <http://dev.jmxi.art> : my portfolio as a webDev
+# <http://jmax.dev/> : my portfolio as a webDev
 
 These are my first projects as becoming a web developer.
 
