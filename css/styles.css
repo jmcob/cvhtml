@@ -95,6 +95,11 @@ header {
   min-width: 270px;
   max-width: 890px;
 }
+/* article 2 index */
+.index-2 {
+  width: fit-content;
+  width: -moz-fit-content;
+}
 /* Couleur du mot source */
 .source {
   font-family: monospace;
@@ -122,14 +127,17 @@ header {
 .article-3 {
   border: 12px solid var(--a5-color);
 }
-
+/* Pour mettre lezs bloc en place en vue desktop, le 6 est le bloc formations sur le CV */
 @media (min-width: 948px) {
-  .article-6,
   .article-7,
   .article-8,
   .article-5 {
     position: relative;
     bottom: 120px;
+  }
+  .article-6 {
+    position: relative;
+    bottom: 128px;
   }
 }
 
