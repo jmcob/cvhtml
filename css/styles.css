@@ -95,6 +95,13 @@ header {
   min-width: 270px;
   max-width: 890px;
 }
+/* Couleur du mot source */
+.source {
+  font-family: monospace;
+  font-size: large;
+  background-color: #2800ff;
+  color: white;
+}
 @media (max-width: 768px) {
   .article-1 {
     max-width: 270px;
