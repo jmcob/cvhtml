@@ -7,10 +7,7 @@ html {
   color: black;
   font-weight: 900;
 }
-#wrapper {
-  max-width: 1024px;
-  margin: 0 auto;
-}
+
 /*color variables*/
 :root {
   --text-color: black;
@@ -27,17 +24,21 @@ html {
 }
 /* peinture a gauche */
 #paint {
-  width: 20px;
-  background-image: url("../images/painting.jpg");
+  width: 30px;
+  background-image: url("../images/image.jpg");
   height: 100%;
   background-repeat: repeat-y;
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
+  left: 0;ô
   right: 0;
   overflow: hidden;
   z-index: -1;
+  transition: all 750ms;
+}
+#paint:hover {
+  width: 174px;
 }
 /* body background */
 body {
@@ -47,14 +48,16 @@ body {
     var(--linear-bg-1)
   );
 }
-
+.page_container {
+  display: flex;
+  flex-direction: column;
+}
 /* header */
 #header {
-  margin-left: 20px;
+  margin: 20px 0 0 50px;
   height: fit-content;
-}
-header {
-  margin: 20px 0 0 20px;
+  background-color: white;
+  z-index: +1;
 }
 .titlesup {
   color: gold;
@@ -63,7 +66,7 @@ header {
 }
 /*container for section boxes */
 #main {
-  margin-left: 20px;
+  margin-left: 50px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -81,13 +84,15 @@ header {
   height: -moz-fit-content;
   border: 12px solid var(--border-color);
   border-radius: 12px;
-  transition: transform 400ms;
+  transition: all 400ms;
   cursor: pointer;
+  background-color: white;
 }
 
 .article-card:hover {
   box-shadow: 12px -12px var(--box-shadow-color);
   transform: scale(1.05);
+  background-color: gold;
 }
 
 .article-1 {
