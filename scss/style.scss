@@ -1,4 +1,4 @@
-@import "variables";
+@import "variables", "mixins";
 // css/styleindex.css
 body {
   font-family: avenir;
@@ -41,11 +41,30 @@ header {
   color: $accent;
 }
 // articles
+main {
+  display: flex;
+  flex-direction: row;
+}
 article {
-  margin: 50px;
+  padding: 50px;
+  margin: 50px 50px 0px 50px;
+  border-right: 4px solid $accent;
   background-color: $bg;
+  display: inline-block;
+  transition: 500ms;
+  width: 30%;
+  & h2 {
+    @include h2color;
+    margin: 20px;
+  }
+  &:hover {
+    background: $headershadow;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
 }
 footer {
+  text-align: center;
   margin: 50px;
   background-color: $bg;
 }

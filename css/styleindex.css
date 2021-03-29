@@ -40,12 +40,32 @@ header h1 {
   color: crimson;
 }
 
+main {
+  display: flex;
+  flex-direction: row;
+}
+
 article {
-  margin: 50px;
+  padding: 50px;
+  margin: 50px 50px 0px 50px;
+  border-right: 4px solid crimson;
   background-color: white;
+  display: inline-block;
+  transition: 500ms;
+  width: 30%;
+}
+article h2 {
+  color: #101046;
+  margin: 20px;
+}
+article:hover {
+  background: mistyrose;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 footer {
+  text-align: center;
   margin: 50px;
   background-color: white;
 }
