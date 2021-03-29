@@ -1,5 +1,6 @@
 body {
   font-family: avenir;
+  margin: 0px;
 }
 
 /* peinture a gauche */
@@ -22,14 +23,17 @@ body {
 }
 
 header {
-  border: 4px solid gold;
+  border-bottom: 4px solid gold;
   box-shadow: 2px 2px mistyrose;
-  margin: 50px;
+  margin: 0px 0px 0px 0px;
   background-color: midnightblue;
 }
 header a {
   text-decoration: none;
   color: mistyrose;
+}
+header h1 {
+  margin: 0px 30px;
 }
 
 .titlesup {

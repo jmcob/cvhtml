@@ -2,10 +2,11 @@
 // css/styleindex.css
 body {
   font-family: avenir;
+  margin: 0px;
 }
 /* peinture a gauche */
 #paint {
-  width: 30px;
+  width: $mainleftmargin;
   background-image: url("../images/image.jpg");
   height: 100%;
   background-repeat: repeat-y;
@@ -24,24 +25,27 @@ body {
 
 // header webdeveloper
 header {
-  border: 4px solid gold;
-  box-shadow: 2px 2px mistyrose;
-  margin: $mainleftmargin;
-  background-color: midnightblue;
+  border-bottom: 4px solid $headerborder;
+  box-shadow: 2px 2px $headershadow;
+  margin: 0px 0px 0px 0px;
+  background-color: $headerbg;
   & a {
     text-decoration: none;
     color: mistyrose;
   }
+  & h1 {
+    margin: 0px $mainleftmargin;
+  }
 }
 .titlesup {
-  color: crimson;
+  color: $accent;
 }
 // articles
 article {
-  margin: $mainleftmargin;
-  background-color: white;
+  margin: 50px;
+  background-color: $bg;
 }
 footer {
-  margin: $mainleftmargin;
-  background-color: white;
+  margin: 50px;
+  background-color: $bg;
 }
