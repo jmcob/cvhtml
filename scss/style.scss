@@ -47,22 +47,34 @@ main {
 }
 article {
   padding: 50px;
-  margin: 50px 50px 0px 50px;
+  margin: 50px 0px 0px 0px;
   border-right: 4px solid $accent;
   background-color: $bg;
   display: inline-block;
   transition: 500ms;
-  width: 30%;
   & h2 {
     @include h2color;
     margin: 20px;
   }
   &:hover {
     background: $headershadow;
+  }
+}
+.article__alt {
+  margin-left: 50px;
+  &:hover {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
   }
 }
+.article__ocr {
+  border: none;
+  &:hover {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}
+
 footer {
   text-align: center;
   margin: 50px;

@@ -47,12 +47,11 @@ main {
 
 article {
   padding: 50px;
-  margin: 50px 50px 0px 50px;
+  margin: 50px 0px 0px 0px;
   border-right: 4px solid crimson;
   background-color: white;
   display: inline-block;
   transition: 500ms;
-  width: 30%;
 }
 article h2 {
   color: #101046;
@@ -60,8 +59,22 @@ article h2 {
 }
 article:hover {
   background: mistyrose;
+}
+
+.article__alt {
+  margin-left: 50px;
+}
+.article__alt:hover {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+}
+
+.article__ocr {
+  border: none;
+}
+.article__ocr:hover {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 footer {
