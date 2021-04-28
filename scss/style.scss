@@ -1,53 +1,21 @@
-@import "variables", "mixins";
+@import "variables", "mixins", "paint", "header", "footer";
 // css/styleindex.css
 body {
   font-family: avenir;
   margin: 0px;
-}
-/* peinture a gauche */
-#paint {
-  width: $mainleftmargin;
-  background-image: url("../images/image.jpg");
-  height: 100%;
-  background-repeat: repeat-y;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  overflow: hidden;
-  z-index: -1;
-  transition: all 750ms;
-  &:hover {
-    width: 174px;
-  }
+  font-size: larger;
 }
 
-// header webdeveloper
-header {
-  border-bottom: 4px solid $headerborder;
-  box-shadow: 2px 2px $headershadow;
-  margin: 0px 0px 0px 0px;
-  background-color: $headerbg;
-  & a {
-    text-decoration: none;
-    color: mistyrose;
-  }
-  & h1 {
-    margin: 0px $mainleftmargin;
-  }
-}
-.titlesup {
-  color: $accent;
-}
 // articles
 main {
   display: flex;
+  margin: 3rem;
   flex-direction: row;
 }
+
 article {
   padding: 50px;
-  margin: 50px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
   border-right: 4px solid $accent;
   background-color: $bg;
   display: inline-block;
@@ -61,7 +29,6 @@ article {
   }
 }
 .article__alt {
-  margin-left: 50px;
   &:hover {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -75,8 +42,26 @@ article {
   }
 }
 
-footer {
-  text-align: center;
-  margin: 50px;
-  background-color: $bg;
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+  .article__alt {
+    border-right: none;
+    border-bottom: 4px solid $accent;
+
+    &:hover {
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: initial;
+    }
+  }
+  .article__ocr {
+    &:hover {
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+      border-top-right-radius: initial;
+      width: fill;
+    }
+  }
 }
