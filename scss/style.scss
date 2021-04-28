@@ -46,6 +46,9 @@ article {
   main {
     flex-direction: column;
   }
+  article {
+    padding: 20px;
+  }
   .article__alt {
     border-right: none;
     border-bottom: 4px solid $accent;
