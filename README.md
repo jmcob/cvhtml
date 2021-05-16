@@ -6,6 +6,6 @@ Please be kind !
 
 You'll find my CV and some school projects, nearly everything i did from the beginning of my short career !
 
-Thanks for giving me some advice, ans visit <http://jmax.dev/> !
+Thanks for giving me some advice, and visit <http://jmax.dev/> !
 
 Regards, Jean-Maxime
